@@ -1,32 +1,38 @@
+import { NavLink } from "react-router-dom";
+
 export default function Banner() {
   return (
-    <section className="bg-gray-900 text-white">
-      <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
-        <div className="mx-auto max-w-3xl text-center">
-          <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
-            Understand User Flow.
-            <span className="sm:block"> Increase Conversion. </span>
+    <section className="relative bg-[url(https://media.istockphoto.com/id/1093930098/vector/abstract-blockchain-network-background.jpg?s=1024x1024&w=is&k=20&c=evjOsQuUUGoCcAbSm-9tIA0cPrqgRD4nKYtmw_d5vpA=)] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
+
+      <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div className="max-w-xl text-center sm:text-left">
+          <h1 className="text-3xl font-extrabold sm:text-5xl">
+            Let us find your
+            <strong className="block font-extrabold text-rose-700">
+              Product
+            </strong>
           </h1>
 
-          <p className="mx-auto mt-4 max-w-xl sm:text-xl sm:leading-relaxed">
+          <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
             illo tenetur fuga ducimus numquam ea!
           </p>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-              href="/get-started"
+          <div className="mt-8 flex flex-wrap gap-4 text-center">
+            <NavLink
+              href="#"
+              className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
             >
               Get Started
-            </a>
+            </NavLink>
 
-            <a
-              className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-              href="/about"
+            <NavLink
+              href="#"
+              className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
             >
               Learn More
-            </a>
+            </NavLink>
           </div>
         </div>
       </div>

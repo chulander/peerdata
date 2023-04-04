@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export default function Section() {
+export default function SectionAlternate() {
   return (
     <section className="bg-gray-900 text-white">
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
@@ -211,12 +211,12 @@ export default function Section() {
         </div>
 
         <div className="mt-12 text-center">
-          <NavLink
-            to="/register"
+          <a
+            href="#"
             className="inline-block rounded bg-pink-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-pink-700 focus:outline-none focus:ring focus:ring-yellow-400"
           >
             Get Started Today
-          </NavLink>
+          </a>
         </div>
       </div>
     </section>
