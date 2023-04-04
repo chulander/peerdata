@@ -8,9 +8,6 @@ export default function Products() {
   return (
     <div>
       <ProductStory />
-      <Personas />
-      <BannerAlternate />
-      <SectionAlternate />
     </div>
   );
 }

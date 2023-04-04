@@ -1,7 +1,7 @@
 import Banner from "../containers/Banner";
 import BannerAlternate from "../containers/BannerAlternate";
 import Personas from "../containers/Personas";
-import SectionAlternate from "../containers/SectionAlternate";
+import ProductCategories from "../containers/ProductCategories";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Banner />
       <Personas />
       <BannerAlternate />
-      <SectionAlternate />
+      <ProductCategories subtitle="D.A.T.A Categories" />
     </div>
   );
 }
