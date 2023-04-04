@@ -1,4 +1,5 @@
 import Card from "../components/Card";
+import PersonaCard from "../components/PersonaCard";
 
 export default function Personas() {
   return (

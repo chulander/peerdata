@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        primary: "blue",
+      },
     },
   },
   plugins: [tailwindforms],

@@ -1,17 +1,17 @@
 import { NavLink } from "react-router-dom";
-export type Card = {
+export type ProductCategoryCard = {
   name: string;
   to: string;
   description?: string;
 };
-export default function CategoryCard({
+export default function ProductCategoryCard({
   name,
   to,
   description = `
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-    possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
+        possimus adipisci distinctio alias voluptatum blanditiis laudantium.
 `,
-}: Card) {
+}: ProductCategoryCard) {
   return (
     <NavLink
       className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-pink-500/10 hover:shadow-pink-500/10"

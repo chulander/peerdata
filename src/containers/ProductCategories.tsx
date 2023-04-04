@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import CategoryCard from "../components/CategoryCard";
+import CategoryCard from "../components/ProductCategoryCard";
 import Subtitle from "../components/Subtitle";
 
 export type ProductCategories = {
