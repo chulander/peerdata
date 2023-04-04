@@ -12,18 +12,18 @@ export default function Personas() {
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
             <Card
-              to="/products#owner"
+              to="/personas/data-owners"
               name="Data Owner"
               image="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
             />
             <Card
-              to="/products#investor"
-              name="Data Invest"
+              to="/personas/data-investors"
+              name="Data Investors"
               image="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
             />
             <Card
-              to="/products#consumer"
-              name="Data Consumer"
+              to="/personas/data-consumers"
+              name="Data Consumers"
               image="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
             />
           </div>

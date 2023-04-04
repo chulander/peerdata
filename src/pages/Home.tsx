@@ -1,7 +1,7 @@
-import Banner from "../layouts/Banner";
-import BannerAlternate from "../layouts/BannerAlternate";
-import Personas from "../layouts/Personas";
-import SectionAlternate from "../layouts/SectionAlternate";
+import Banner from "../containers/Banner";
+import BannerAlternate from "../containers/BannerAlternate";
+import Personas from "../containers/Personas";
+import SectionAlternate from "../containers/SectionAlternate";
 
 export default function Home() {
   return (
