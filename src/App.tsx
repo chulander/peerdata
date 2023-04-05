@@ -12,7 +12,7 @@ export default function Example() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/data-owner" element={<DataOwner />} />
+        <Route path="/data-owners" element={<DataOwner />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
       <Footer />

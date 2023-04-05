@@ -1,5 +1,4 @@
 import Card from "../components/Card";
-import PersonaCard from "../components/PersonaCard";
 
 export default function Personas() {
   return (
@@ -12,19 +11,19 @@ export default function Personas() {
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             <Card
-              to="/personas/data-owners"
+              to="/data-owners"
               name="Data Owner"
               image="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
             />
             <Card
-              to="/personas/data-investors"
+              to="/contact"
               name="Data Investors"
-              image="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
+              image="https://media.istockphoto.com/id/1160000498/photo/business-partnership-meeting-in-office.jpg?s=612x612&w=is&k=20&c=RIPtYg627kOZA6c0bGQ3PRhq_qM8QmBgvnEaV-agK28="
             />
             <Card
-              to="/personas/data-consumers"
+              to="/contact"
               name="Data Consumers"
-              image="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
+              image="https://media.istockphoto.com/id/1160135293/photo/business-people-discussion-advisor-concept.jpg?s=612x612&w=is&k=20&c=BxvUkSQ6MLsU25NSrxfWbLDlaRrvGT0oGkAPdVxGHPI="
             />
           </div>
         </div>
