@@ -8,7 +8,7 @@ import DataOwner from "./pages/DataOwner";
 export default function Example() {
   return (
     <div className="bg-white">
-      <Nav type="light" />
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />

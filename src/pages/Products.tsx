@@ -11,7 +11,7 @@ const discoverCategories: Array<ProductCategoryDetailCard> = [
     img: "https://media.istockphoto.com/id/1147405001/photo/searching-on-internet-concept.jpg?s=1024x1024&w=is&k=20&c=h7R_Qdx6lbZFuGY2VwVyZmfqe3kQN7Pmfhvmus7d_oI=",
   },
   {
-    name: "Discover Other Name",
+    name: "Discover Name 2",
     caption: "Discover Other Caption",
     description:
       "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
