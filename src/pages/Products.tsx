@@ -1,10 +1,4 @@
-import Banner from "../containers/Banner";
-import BannerAlternate from "../containers/BannerAlternate";
-import Personas from "../containers/Personas";
 import ProductStory from "../containers/ProductStory";
-import SectionAlternate from "../containers/SectionAlternate";
-import Subtitle from "../components/Subtitle";
-import CategoryCard from "../components/ProductCategoryCard";
 import ProductCategoryDetailCard from "../components/ProductCategoryDetailCard";
 import { ProductCategorySection } from "../layouts/ProductCategorySection";
 
@@ -106,19 +100,24 @@ export default function Products() {
   return (
     <div className="flex flex-col space-y-8">
       <ProductStory />
-      <ProductCategorySection
-        name="Discover"
-        categoryDetails={discoverCategories}
-      />
-      <ProductCategorySection
-        name="Assess"
-        categoryDetails={assessCategories}
-      />
-      <ProductCategorySection name="Trade" categoryDetails={tradeCategories} />
-      <ProductCategorySection
-        name="Amplify"
-        categoryDetails={amplifyCategories}
-      />
+      <section className="mx-10">
+        <ProductCategorySection
+          name="Discover"
+          categoryDetails={discoverCategories}
+        />
+        <ProductCategorySection
+          name="Assess"
+          categoryDetails={assessCategories}
+        />
+        <ProductCategorySection
+          name="Trade"
+          categoryDetails={tradeCategories}
+        />
+        <ProductCategorySection
+          name="Amplify"
+          categoryDetails={amplifyCategories}
+        />
+      </section>
     </div>
   );
 }

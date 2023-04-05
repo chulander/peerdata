@@ -67,36 +67,27 @@ export default function Footer() {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
+                  href="/about"
                 >
-                  About
+                  Company Information
                 </a>
               </li>
 
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
+                  href="/faq"
                 >
-                  Services
+                  F.A.Q
                 </a>
               </li>
 
               <li>
                 <a
                   className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
+                  href="/legal"
                 >
-                  Projects
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-gray-700 transition hover:text-gray-700/75"
-                  href="/"
-                >
-                  Blog
+                  Legal
                 </a>
               </li>
             </ul>
