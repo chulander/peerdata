@@ -27,15 +27,15 @@ const discoverCategories: Array<ProductCategoryDetailCard> = [
 
 const amplifyCategories: Array<ProductCategoryDetailCard> = [
   {
-    name: "Amplify Name",
+    name: "Amplify 1",
     caption: "Amplify Caption",
     description:
       "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
     img: "https://media.istockphoto.com/id/1147405001/photo/searching-on-internet-concept.jpg?s=1024x1024&w=is&k=20&c=h7R_Qdx6lbZFuGY2VwVyZmfqe3kQN7Pmfhvmus7d_oI=",
   },
   {
-    name: "Amplify Other Name",
-    caption: "Amplify Other Caption",
+    name: "Amplify 2",
+    caption: "Amplify Caption 2",
     description:
       "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
     img: "https://media.istockphoto.com/id/1147405001/photo/searching-on-internet-concept.jpg?s=1024x1024&w=is&k=20&c=h7R_Qdx6lbZFuGY2VwVyZmfqe3kQN7Pmfhvmus7d_oI=",

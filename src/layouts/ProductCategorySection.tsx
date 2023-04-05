@@ -13,7 +13,7 @@ export function ProductCategorySection({
 }: ProductCategorySection) {
   return (
     <section
-      className={`m-auto flex flex-col items-center space-y-4 py-8 text-center ${className}`}
+      className={`m-auto flex flex-col items-center space-y-4 px-4 py-8 text-center ${className}`}
     >
       <Subtitle text={name} />
       <div className="m-auto grid w-full grid-cols-1 items-center gap-x-8 gap-y-4 md:grid-cols-2 md:items-stretch">
