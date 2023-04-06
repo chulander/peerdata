@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom";
 export type Card = {
   name: string;
   to: string;
-  image: string;
+  img: string;
   description?: string;
 };
 export default function Card({
   name,
-  image,
+  img,
   to,
   description = `
   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
@@ -19,7 +19,7 @@ export default function Card({
     <NavLink to={to} className="group relative block bg-black">
       <img
         alt="Developer"
-        src={image}
+        src={img}
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
       />
 

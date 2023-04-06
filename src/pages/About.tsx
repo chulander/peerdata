@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div>
       <AboutBanner />
-      <section className="px-4">
+      <section className="space-y-4 p-4">
         <ImageContent
           alt="D.A.T.A Experts"
           direction="left"
@@ -16,7 +16,7 @@ export default function About() {
         <ImageContent
           alt="PeerData Values"
           name="PeerData Values"
-          description="Here at PeerData ,we believe only certain types of individuals have what it takes to revolutionize how data operates worldwide . As part of this culture ,we embrace those within it by understanding togetherness leads to amazing accomplishments ! All differences & exclusive perspectives are welcomed & encouraged so every employee puts forth their best effort.
+          description="Here at PeerData, we believe only certain types of individuals have what it takes to revolutionize how data operates worldwide . As part of this culture ,we embrace those within it by understanding togetherness leads to amazing accomplishments ! All differences & exclusive perspectives are welcomed & encouraged so every employee puts forth their best effort.
 
           The mysterious quality which separates us from others & gives rise to our original approach is acknowledged - Additionally ,Peer Data provides an atmosphere allowing for honest self expression without shame or inhibition."
           img="https://media.istockphoto.com/id/1185856904/photo/light-bulbs-concept.jpg?s=1024x1024&w=is&k=20&c=y3mGVgMEE3dGCqXg8aXVOZhNSLEfaabdTHjDitH8CB4="

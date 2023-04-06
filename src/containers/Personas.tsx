@@ -13,17 +13,17 @@ export default function Personas() {
             <Card
               to="/data-owners"
               name="Data Owner"
-              image="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
+              img="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=1024x1024&w=is&k=20&c=O_h1ic7M0SWTC40NVzYUTLWE2Yy8511S8QPUGEUT9tE="
             />
             <Card
               to="/contact"
               name="Data Investors"
-              image="https://media.istockphoto.com/id/1160000498/photo/business-partnership-meeting-in-office.jpg?s=612x612&w=is&k=20&c=RIPtYg627kOZA6c0bGQ3PRhq_qM8QmBgvnEaV-agK28="
+              img="https://media.istockphoto.com/id/1160000498/photo/business-partnership-meeting-in-office.jpg?s=612x612&w=is&k=20&c=RIPtYg627kOZA6c0bGQ3PRhq_qM8QmBgvnEaV-agK28="
             />
             <Card
               to="/contact"
               name="Data Consumers"
-              image="https://media.istockphoto.com/id/1160135293/photo/business-people-discussion-advisor-concept.jpg?s=612x612&w=is&k=20&c=BxvUkSQ6MLsU25NSrxfWbLDlaRrvGT0oGkAPdVxGHPI="
+              img="https://media.istockphoto.com/id/1160135293/photo/business-people-discussion-advisor-concept.jpg?s=612x612&w=is&k=20&c=BxvUkSQ6MLsU25NSrxfWbLDlaRrvGT0oGkAPdVxGHPI="
             />
           </div>
         </div>

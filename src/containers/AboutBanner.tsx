@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 export function AboutBanner() {
   return (
-    <section className="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
+    <section className="overflow-hidden border-2 bg-gray-50 sm:grid sm:grid-cols-2">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-xl text-center sm:text-left">
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
