@@ -14,7 +14,12 @@ export default function Example() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/data-owners" element={<DataOwner />} />
-        <Route path="/about" element={<About />} />
+        <Route
+          path="/about"
+          element={
+            <About img="https://media.istockphoto.com/id/1392016982/photo/mixed-group-of-business-people-sitting-around-a-table-and-talking.jpg?s=612x612&w=is&k=20&c=HYwuJmIim5Fr9xlm0ebEQtA_VuXxPhUixcYPkmRf2SU=" />
+          }
+        />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
       <Footer />

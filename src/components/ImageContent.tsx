@@ -22,19 +22,19 @@ export function ImageContent({
     >
       {direction === "left" ? (
         <Content
-          className="col-span-3"
+          className="sm:col-span-3"
           name={name}
           description={description}
           type={type}
         />
       ) : (
-        <Image className="col-span-2" img={img} alt={alt} />
+        <Image className="rounded sm:col-span-2" img={img} alt={alt} />
       )}
       {direction === "left" ? (
-        <Image className="col-span-2" img={img} alt={alt} />
+        <Image className="rounded sm:col-span-2" img={img} alt={alt} />
       ) : (
         <Content
-          className="col-span-3"
+          className="sm:col-span-3"
           name={name}
           description={description}
           type={type}
