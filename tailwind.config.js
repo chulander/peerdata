@@ -10,7 +10,7 @@ export default {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        primary: "blue",
+        primary: "#247D7D",
       },
     },
   },
