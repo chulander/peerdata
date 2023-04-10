@@ -3,22 +3,14 @@ export type Card = {
   name: string;
   to: string;
   img: string;
-  description?: string;
+  alt: string;
+  description: string;
 };
-export default function Card({
-  name,
-  img,
-  to,
-  description = `
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
-  perferendis hic asperiores quibusdam quidem voluptates doloremque
-  reiciendis nostrum harum. Repudiandae?
-`,
-}: Card) {
+export default function Card({ name, img, alt, to, description }: Card) {
   return (
     <NavLink to={to} className="group relative block bg-black">
       <img
-        alt="Developer"
+        alt={alt}
         src={img}
         className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
       />

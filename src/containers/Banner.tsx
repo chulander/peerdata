@@ -9,7 +9,7 @@ export default function Banner() {
         <div className="max-w-xl text-center sm:text-left">
           <h1 className="text-3xl font-extrabold sm:text-5xl">
             Let us find your
-            <strong className="block font-extrabold text-rose-700">
+            <strong className="block font-extrabold text-primary">
               Product
             </strong>
           </h1>
