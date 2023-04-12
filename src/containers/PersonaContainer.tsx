@@ -3,7 +3,7 @@ import useQuery from "../hooks/useQuery";
 
 import { Persona } from "../types/Persona";
 import { Container as ContainerType } from "../types/Container";
-import { personaContainerQuery } from "../queries/personaContainerQuery";
+import { personaContainerQuery } from "../pages/Home/queries/personaContainerQuery";
 
 export type PersonaContainer = Pick<ContainerType<Persona>, "title" | "blocks">;
 export function PersonasContainer() {
