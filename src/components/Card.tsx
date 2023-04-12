@@ -6,6 +6,7 @@ export type Card = {
   alt: string;
   description: string;
 };
+
 export default function Card({ name, img, alt, to, description }: Card) {
   return (
     <NavLink to={to} className="group relative block bg-black">
