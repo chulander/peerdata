@@ -1,4 +1,7 @@
+import { Link } from "./Link";
+
 export type Persona = {
+  __typename: string;
   id: string;
   name: string;
   description: string;
@@ -7,4 +10,5 @@ export type Persona = {
     id: string;
     url: string;
   };
+  link: Link;
 };

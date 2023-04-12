@@ -1,32 +1,47 @@
-export default function PersonaCard() {
+import { NavLink } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
+export type PersonaCard = {
+  name: string;
+  label: string;
+  to: string;
+  img: string;
+  alt: string;
+  description: string;
+};
+
+export function PersonaCard({
+  name,
+  img,
+  alt,
+  to,
+  label,
+  description,
+}: PersonaCard) {
   return (
-    <div className="flex justify-center">
-      <div className="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-        <a href="#!">
-          <img
-            className="rounded-t-lg"
-            src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
-            alt=""
-          />
-        </a>
-        <div className="p-6">
-          <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-            Card title
-          </h5>
-          <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-            Some quick example text to build on the card title and make up the
-            bulk of the card&apos; content.
-          </p>
-          <button
-            type="button"
-            className="inline-block rounded bg-blue-400 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-blue-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            Button
-          </button>
-        </div>
+    <div className="flex flex-col space-y-4">
+      <img
+        alt={alt}
+        src={img}
+        className="inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+      />
+      <p className="text-center text-xl font-bold text-black sm:text-2xl">
+        {name}
+      </p>
+      <div className="text-center text-black">
+        <ReactMarkdown>{description}</ReactMarkdown>
+      </div>
+
+      <div className="flex w-full flex-col items-center">
+        <NavLink
+          key={name}
+          to={to}
+          className="block rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+        >
+          {label}
+        </NavLink>
       </div>
     </div>
   );
 }
+
+export default PersonaCard;

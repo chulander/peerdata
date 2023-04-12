@@ -1,15 +1,15 @@
 import { NavLink } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 
 import { Hero as HeroType } from "../types/Hero";
-import ReactMarkdown from "react-markdown";
 export type HeroContainer = Pick<
   HeroType,
-  "title" | "subtitle" | "image" | "links"
+  "title" | "description" | "image" | "links"
 >;
 
 export function HeroContainer({
   title,
-  subtitle,
+  description,
   image,
   links,
 }: HeroContainer) {
@@ -27,19 +27,21 @@ export function HeroContainer({
           </h1>
 
           <div className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-            <ReactMarkdown>{subtitle}</ReactMarkdown>
+            <ReactMarkdown>{description}</ReactMarkdown>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
-            {links.map(({ slug, label, href }) => (
-              <NavLink
-                key={slug}
-                to={href}
-                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-              >
-                {label}
-              </NavLink>
-            ))}
+            {links.map(({ id, label, href }) => {
+              return (
+                <NavLink
+                  key={id}
+                  to={href}
+                  className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                >
+                  {label}
+                </NavLink>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { Link } from "./Link";
 
 export interface Hero extends System {
   title: string;
-  subtitle: string;
+  description: string;
   image: Asset;
   links: Link[];
   slug: string;

@@ -6,14 +6,14 @@ import Products from "./pages/Products";
 import DataOwner from "./pages/DataOwner";
 import About from "./pages/About";
 
-export default function Example() {
+export default function App() {
   return (
     <div className="m-auto max-w-screen-2xl bg-white">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/data-owners" element={<DataOwner />} />
+        <Route path="/data-owner" element={<DataOwner />} />
         <Route
           path="/about"
           element={

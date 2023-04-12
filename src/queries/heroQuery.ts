@@ -5,7 +5,7 @@ export const heroQuery = gql`
     hero(where: { slug: "home-hero" }) {
       id
       title
-      subtitle
+      description
       slug
       links {
         id
