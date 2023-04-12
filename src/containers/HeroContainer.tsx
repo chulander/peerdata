@@ -1,14 +1,18 @@
 import { NavLink } from "react-router-dom";
 
-import { Banner as BannerType } from "../types/Banner";
+import { Hero as HeroType } from "../types/Hero";
 import ReactMarkdown from "react-markdown";
+export type HeroContainer = Pick<
+  HeroType,
+  "title" | "subtitle" | "image" | "links"
+>;
 
-export default function Banner({
+export function HeroContainer({
   title,
   subtitle,
   image,
-  buttons,
-}: Pick<BannerType, "title" | "subtitle" | "image" | "buttons">) {
+  links,
+}: HeroContainer) {
   return (
     <section
       style={{ backgroundImage: `url(${image.url})` }}
@@ -22,12 +26,12 @@ export default function Banner({
             {title}
           </h1>
 
-          <p className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+          <div className="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
             <ReactMarkdown>{subtitle}</ReactMarkdown>
-          </p>
+          </div>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
-            {buttons.map(({ slug, label, href }) => (
+            {links.map(({ slug, label, href }) => (
               <NavLink
                 key={slug}
                 to={href}
@@ -42,3 +46,5 @@ export default function Banner({
     </section>
   );
 }
+
+export default HeroContainer;

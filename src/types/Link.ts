@@ -1,6 +1,6 @@
 import { System } from "./HeadlessCMS";
 
-export interface Button extends System {
+export interface Link extends System {
   label: string;
   slug: string;
   href: string;

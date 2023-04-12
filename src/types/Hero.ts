@@ -1,9 +1,10 @@
 import { System, Asset } from "./HeadlessCMS";
-import { Button } from "./Button";
+import { Link } from "./Link";
 
-export interface Banner extends System {
+export interface Hero extends System {
   title: string;
   subtitle: string;
   image: Asset;
-  buttons: Button[];
+  links: Link[];
+  slug: string;
 }
