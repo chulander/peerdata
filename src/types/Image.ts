@@ -1,10 +1,5 @@
 export type Image = {
+  __typename: string;
   id: string;
   url: string;
-};
-
-export type ImageContainer = {
-  id: string;
-  title: string;
-  image: Image;
 };

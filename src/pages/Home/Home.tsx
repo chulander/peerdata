@@ -1,35 +1,72 @@
 import HeroContainer from "../../containers/HeroContainer";
 import PersonasContainer from "../../containers/PersonasContainer";
-import { Hero as HeroType } from "../../types/Hero";
+import { Hero, Hero as HeroType } from "../../types/Hero";
 import useQuery from "../../hooks/useQuery";
 import { heroQuery } from "./queries/heroQuery";
 import CategoriesContainer from "../../containers/CategoriesContainer";
 import { ImageContainer } from "../../containers/ImageContainer";
-import { ImageContainer as ImageContainerType } from "../../types/Image";
-import { imageContainerQuery } from "./queries/imageContainerQuery";
+import { Image } from "../../types/Image";
+import { Page } from "../../types/Page";
+import { homePageQuery } from "./queries/homePageQuery";
+import { Container } from "../../types/Container";
+import { Persona } from "../../types/Persona";
+import { Category } from "../../types/Category";
 
 export function Home() {
-  const heroes = useQuery<HeroType>(heroQuery, "hero");
-  const imageContainer = useQuery<ImageContainerType>(
-    imageContainerQuery,
-    "container"
-  );
+  const homePage = useQuery<Page>(homePageQuery, "page");
 
-  return !heroes || !imageContainer ? null : (
+  return !homePage ? null : (
     <div>
-      <HeroContainer
-        title={heroes["title"]}
-        description={heroes["description"]}
-        image={heroes["image"]}
-        links={heroes["links"]}
-      />
-      <PersonasContainer />
-      <ImageContainer
-        id={imageContainer.id}
-        title={imageContainer.title}
-        image={imageContainer.image}
-      />
-      <CategoriesContainer />
+      {homePage.sections.map((section) => {
+        if (section.__typename === "Hero") {
+          const sectionType = section as HeroType;
+          return (
+            <HeroContainer
+              key={section["id"]}
+              title={sectionType["title"]}
+              description={sectionType["description"]}
+              image={sectionType["image"]}
+              links={sectionType["links"]}
+            />
+          );
+        }
+        if (section.__typename === "Container") {
+          const sectionType = section as Container<Persona | Category | Image>;
+          if (!sectionType.blocks.length) {
+            return (
+              <ImageContainer
+                key={sectionType["id"]}
+                id={sectionType["id"]}
+                title={sectionType["title"]}
+                image={sectionType["image"]}
+              />
+            );
+          } else {
+            if (sectionType.blocks[0].__typename === "Persona") {
+              const _section = sectionType as Container<Persona>;
+              return (
+                <PersonasContainer
+                  key={section["id"]}
+                  title={_section["title"]}
+                  blocks={_section["blocks"]}
+                />
+              );
+            }
+
+            if (sectionType.blocks[0].__typename === "Category") {
+              const _section = sectionType as Container<Category>;
+
+              return (
+                <CategoriesContainer
+                  key={section["id"]}
+                  title={_section["title"]}
+                  blocks={_section["blocks"]}
+                />
+              );
+            }
+          }
+        }
+      })}
     </div>
   );
 }
