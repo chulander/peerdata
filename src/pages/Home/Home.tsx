@@ -1,10 +1,11 @@
 import HeroContainer from "../../containers/HeroContainer";
 import BannerAlternate from "../../containers/BannerAlternate";
-import PersonasContainer from "../../containers/PersonaContainer";
+import PersonasContainer from "../../containers/PersonasContainer";
 import ProductCategories from "../../containers/ProductCategories";
 import { Hero as HeroType } from "../../types/Hero";
 import useQuery from "../../hooks/useQuery";
 import { heroQuery } from "./queries/heroQuery";
+import CategoriesContainer from "../../containers/CategoriesContainer";
 
 export function Home() {
   const heroes = useQuery<HeroType>(heroQuery, "hero");
@@ -19,7 +20,8 @@ export function Home() {
       />
       <PersonasContainer />
       <BannerAlternate />
-      <ProductCategories description="D.A.T.A Categories" />
+      <CategoriesContainer />
+      {/* <ProductCategories description="D.A.T.A Categories" /> */}
     </div>
   );
 }

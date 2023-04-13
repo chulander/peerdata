@@ -1,32 +1,31 @@
-import PersonaCard from "../components/PersonaCard";
+import CategoryCard from "../components/CategoryCard";
 import useQuery from "../hooks/useQuery";
 
 import { Persona } from "../types/Persona";
 import { Container as ContainerType } from "../types/Container";
-import { personaContainerQuery } from "../pages/Home/queries/personaContainerQuery";
+import { categoriesContainerQuery } from "../pages/Home/queries/categoriesContainerQuery";
 
-export type PersonaContainer = Pick<ContainerType<Persona>, "title" | "blocks">;
-export function PersonasContainer() {
-  const personaContainer = useQuery<ContainerType<Persona>>(
-    personaContainerQuery,
+export function CategoriesContainer() {
+  const categoriesContainer = useQuery<ContainerType<Persona>>(
+    categoriesContainerQuery,
     "container"
   );
   // const personas: Persona[] | null = usePersonas();
 
-  return personaContainer === null ? null : (
+  return categoriesContainer === null ? null : (
     <section>
       <div className="w-full  px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 gap-y-8 lg:gap-x-16">
           <div className="mx-auto max-w-full text-center lg:mx-0">
             <h2 className="text-3xl font-bold sm:text-4xl">
-              {personaContainer["title"]}
+              {categoriesContainer["title"]}
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            {personaContainer["blocks"].map(
+          <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-4">
+            {categoriesContainer["blocks"].map(
               ({ name, description, id, image, link }: Persona) => (
-                <PersonaCard
+                <CategoryCard
                   key={id}
                   name={name}
                   description={description}
@@ -44,4 +43,4 @@ export function PersonasContainer() {
   );
 }
 
-export default PersonasContainer;
+export default CategoriesContainer;

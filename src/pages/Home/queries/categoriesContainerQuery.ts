@@ -1,13 +1,13 @@
 import { gql } from "graphql-request";
 
-export const personaContainerQuery = gql`
-  query getPersonaContainer {
-    container(where: {slug: "personas-container"}) {
+export const categoriesContainerQuery = gql`
+  query getCategoriesContainer {
+    container(where: {slug: "categories-container"}) {
     id
     title
     blocks {
       __typename
-      ... on Persona {
+      ... on Category {
         id
         name
         description
