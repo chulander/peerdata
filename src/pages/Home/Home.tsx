@@ -16,7 +16,7 @@ export function Home() {
   const homePage = useQuery<Page>(homePageQuery, "page");
 
   return !homePage ? null : (
-    <div>
+    <div className="space-y-4">
       {homePage.sections.map((section) => {
         if (section.__typename === "Hero") {
           const sectionType = section as HeroType;

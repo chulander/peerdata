@@ -31,11 +31,11 @@ export function CategoryCard({
         <ReactMarkdown>{description}</ReactMarkdown>
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col sm:items-center md:items-start">
         <NavLink
           key={name}
           to={to}
-          className="block rounded bg-rose-600 px-12 py-3 text-center text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-full"
+          className="block w-full rounded bg-rose-600 px-12 py-3 text-center text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 md:w-fit"
         >
           {label}
         </NavLink>
