@@ -1,6 +1,4 @@
-import { Persona } from "./Persona";
-
-export type Container<T extends Persona> = {
+export type Container<T> = {
   id: string;
   title: string;
   blocks: T[];

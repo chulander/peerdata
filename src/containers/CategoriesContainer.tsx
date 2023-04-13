@@ -1,16 +1,15 @@
 import CategoryCard from "../components/CategoryCard";
 import useQuery from "../hooks/useQuery";
 
-import { Persona } from "../types/Persona";
+import { Category } from "../types/Category";
 import { Container as ContainerType } from "../types/Container";
 import { categoriesContainerQuery } from "../pages/Home/queries/categoriesContainerQuery";
 
 export function CategoriesContainer() {
-  const categoriesContainer = useQuery<ContainerType<Persona>>(
+  const categoriesContainer = useQuery<ContainerType<Category>>(
     categoriesContainerQuery,
     "container"
   );
-  // const personas: Persona[] | null = usePersonas();
 
   return categoriesContainer === null ? null : (
     <section>
@@ -24,7 +23,7 @@ export function CategoriesContainer() {
 
           <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-4">
             {categoriesContainer["blocks"].map(
-              ({ name, description, id, image, link }: Persona) => (
+              ({ name, description, id, image, link }: Category) => (
                 <CategoryCard
                   key={id}
                   name={name}

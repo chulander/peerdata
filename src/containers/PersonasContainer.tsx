@@ -10,7 +10,6 @@ export function PersonasContainer() {
     personasContainerQuery,
     "container"
   );
-  // const personas: Persona[] | null = usePersonas();
 
   return personasContainer === null ? null : (
     <section>

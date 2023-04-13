@@ -1,16 +1,21 @@
 import HeroContainer from "../../containers/HeroContainer";
-import BannerAlternate from "../../containers/BannerAlternate";
 import PersonasContainer from "../../containers/PersonasContainer";
-import ProductCategories from "../../containers/ProductCategories";
 import { Hero as HeroType } from "../../types/Hero";
 import useQuery from "../../hooks/useQuery";
 import { heroQuery } from "./queries/heroQuery";
 import CategoriesContainer from "../../containers/CategoriesContainer";
+import { ImageContainer } from "../../containers/ImageContainer";
+import { ImageContainer as ImageContainerType } from "../../types/Image";
+import { imageContainerQuery } from "./queries/imageContainerQuery";
 
 export function Home() {
   const heroes = useQuery<HeroType>(heroQuery, "hero");
+  const imageContainer = useQuery<ImageContainerType>(
+    imageContainerQuery,
+    "container"
+  );
 
-  return !heroes ? null : (
+  return !heroes || !imageContainer ? null : (
     <div>
       <HeroContainer
         title={heroes["title"]}
@@ -19,9 +24,12 @@ export function Home() {
         links={heroes["links"]}
       />
       <PersonasContainer />
-      <BannerAlternate />
+      <ImageContainer
+        id={imageContainer.id}
+        title={imageContainer.title}
+        image={imageContainer.image}
+      />
       <CategoriesContainer />
-      {/* <ProductCategories description="D.A.T.A Categories" /> */}
     </div>
   );
 }
