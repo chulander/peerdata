@@ -1,40 +1,10 @@
 import { HeroContainerWithoutImage } from "../../containers/HeroContainerWithoutImage";
 import BannerContainer from "../../containers/BannerContainer";
 import { ProductCategorySection } from "../../layouts/ProductCategorySection";
-import ProductCategoryDetailCard from "../../components/ProductCategoryDetailCard";
+import { Container } from "../../types/Container";
+import { CategoryCard } from "../../types/CategoryCard";
+import { Image } from "../../types/Image";
 
-const discoverCategories: Array<ProductCategoryDetailCard> = [
-  {
-    title: "Discover Name",
-    caption: "Discover Caption",
-    description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    img: "https://media.istockphoto.com/id/1147405001/photo/searching-on-internet-concept.jpg?s=1024x1024&w=is&k=20&c=h7R_Qdx6lbZFuGY2VwVyZmfqe3kQN7Pmfhvmus7d_oI=",
-  },
-  {
-    title: "Discover Other Name",
-    caption: "Discover Other Caption",
-    description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    img: "https://media.istockphoto.com/id/1147405001/photo/searching-on-internet-concept.jpg?s=1024x1024&w=is&k=20&c=h7R_Qdx6lbZFuGY2VwVyZmfqe3kQN7Pmfhvmus7d_oI=",
-  },
-];
-const amplifyCategories: Array<ProductCategoryDetailCard> = [
-  {
-    title: "Amplify 1",
-    caption: "Amplify Caption",
-    description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    img: "https://media.istockphoto.com/id/1147405001/photo/searching-on-internet-concept.jpg?s=1024x1024&w=is&k=20&c=h7R_Qdx6lbZFuGY2VwVyZmfqe3kQN7Pmfhvmus7d_oI=",
-  },
-  {
-    title: "Amplify 2",
-    caption: "Amplify Caption 2",
-    description:
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    img: "https://media.istockphoto.com/id/1147405001/photo/searching-on-internet-concept.jpg?s=1024x1024&w=is&k=20&c=h7R_Qdx6lbZFuGY2VwVyZmfqe3kQN7Pmfhvmus7d_oI=",
-  },
-];
 import useQuery from "../../hooks/useQuery";
 import { Hero } from "../../types/Hero";
 import { Page } from "../../types/Page";
@@ -47,7 +17,7 @@ export function DataOwner() {
 
   let i = 0;
   return !dataOwnersPage ? null : (
-    <div className="space-y-4">
+    <div className="flex flex-col space-y-4">
       {dataOwnersPage.sections.map((section) => {
         if (section.__typename === "Hero") {
           const sectionType = section as Hero;
@@ -75,15 +45,23 @@ export function DataOwner() {
             />
           );
         }
+
+        if (section.__typename === "Container") {
+          const sectionType = section as Container<CategoryCard | Image>;
+          if (
+            sectionType.blocks.length &&
+            sectionType.blocks[0]["__typename"] === "CategoryCard"
+          ) {
+            return (
+              <ProductCategorySection
+                key={sectionType["id"]}
+                title={sectionType["title"]}
+                cards={sectionType["blocks"] as CategoryCard[]}
+              />
+            );
+          }
+        }
       })}
-      {/* <ProductCategorySection
-        name="Discover"
-        categoryDetails={discoverCategories}
-      />
-      <ProductCategorySection
-        name="Amplify"
-        categoryDetails={amplifyCategories}
-      /> */}
     </div>
   );
 }

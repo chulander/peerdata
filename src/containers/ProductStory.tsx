@@ -9,7 +9,7 @@ export function ProductStory({
     <section
       id={id}
       style={{ backgroundImage: `url(${image.url})` }}
-      className={`relative bg-cover bg-center bg-no-repeat`}
+      className={`bg-cover bg-center bg-no-repeat`}
     >
       <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-1/3 lg:items-center">
         <div className="mx-auto max-w-3xl text-center">

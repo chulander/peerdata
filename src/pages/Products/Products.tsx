@@ -1,5 +1,4 @@
 import ProductStory from "../../containers/ProductStory";
-import ProductCategoryDetailCard from "../../components/ProductCategoryDetailCard";
 import { ProductCategorySection } from "../../layouts/ProductCategorySection";
 import { productsPageQuery } from "./queries/getProductsPageQuery";
 import useQuery from "../../hooks/useQuery";
@@ -44,24 +43,4 @@ export function Products() {
   );
 }
 
-// <ProductStory />
-// <section className="mx-10">
-//   <ProductCategorySection
-//     name="Discover"
-//     categoryDetails={discoverCategories}
-//   />
-//   <ProductCategorySection
-//     name="Assess"
-//     categoryDetails={assessCategories}
-//   />
-//   <ProductCategorySection
-//     name="Trade"
-//     categoryDetails={tradeCategories}
-//   />
-//   <ProductCategorySection
-//     name="Amplify"
-//     categoryDetails={amplifyCategories}
-//   />
-// </section>
-// );
-export default Products;
+export default Products

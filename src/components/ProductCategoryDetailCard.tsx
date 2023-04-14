@@ -15,7 +15,7 @@ export function ProductCategoryDetailCard({
 }: ProductCategoryDetailCard) {
   return (
     <div
-      className={`flex w-full flex-col items-center rounded-lg border border-gray-700 shadow md:max-w-xl md:flex-row ${className}`}
+      className={`flex w-full flex-col items-center rounded-lg border border-gray-200 shadow md:max-w-xl md:flex-row ${className}`}
     >
       <div className="flex h-full w-1/2 flex-col p-4 leading-normal">
         <h6 className="text-gray-900">{caption}</h6>

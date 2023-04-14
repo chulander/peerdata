@@ -33,6 +33,29 @@ export const dataOwnerPageQuery = gql`
             url
           }
         }
+        ... on Container {
+          __typename
+          id
+          title
+          image {
+            id
+            url
+          }
+          blocks {
+            __typename
+            ... on CategoryCard {
+              id
+              __typename
+              title
+              caption
+              description
+              image {
+                id
+                url
+              }
+            }
+          }
+        }
       }
     }
   }
