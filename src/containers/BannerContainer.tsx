@@ -47,9 +47,9 @@ export function BannerContainer({
   );
 }
 
-interface Content extends Pick<BannerContainer, "title" | "description"> {
+interface Content
+  extends Required<Pick<BannerContainer, "title" | "description" | "type">> {
   className?: string;
-  type: "dark" | "light";
 }
 
 function Content({ className, title, description, type }: Content) {
@@ -66,7 +66,7 @@ function Content({ className, title, description, type }: Content) {
       </h2>
 
       <div
-        className={` text-gray-500 md:mt-8 md:block ${
+        className={` text-gray-500 md:block ${
           type === "dark" ? "dark:text-gray-300" : ""
         }`}
       >
