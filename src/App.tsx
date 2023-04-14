@@ -8,7 +8,7 @@ import About from "./pages/About";
 
 export default function App() {
   return (
-    <div className="m-auto max-w-screen-2xl bg-white">
+    <div className="m-auto max-w-screen-2xl bg-white px-4">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />

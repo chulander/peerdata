@@ -13,7 +13,6 @@ import { Banner } from "../../types/Banner";
 
 export function DataOwner() {
   const dataOwnersPage = useQuery<Page>(dataOwnerPageQuery, "page");
-  console.log("page", dataOwnersPage);
 
   let i = 0;
   return !dataOwnersPage ? null : (

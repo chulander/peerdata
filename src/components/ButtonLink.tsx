@@ -8,7 +8,6 @@ const buttonTheme = {
   ALTERNATE: "bg-alternate hover:bg-alternate",
 };
 export function ButtonLink({ id, href, label, theme }: ButtonLink) {
-  console.log('what is theme',theme)
   const colorClass = buttonTheme[theme];
   return (
     <NavLink
