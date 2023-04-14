@@ -19,11 +19,13 @@ export function PersonasContainer({
             {blocks.map(({ name, description, id, image, link }: Persona) => (
               <PersonaCard
                 key={id}
+                id={id}
                 name={name}
                 description={description}
                 alt={name}
-                to={link.href}
+                href={link.href}
                 label={link.label}
+                theme={link.theme}
                 img={image.url}
               />
             ))}

@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 
 import { Hero as HeroType } from "../types/Hero";
+import { ButtonLink } from "../components/ButtonLink";
+
 export type HeroContainer = Pick<
   HeroType,
   "title" | "description" | "image" | "links"
@@ -16,7 +17,7 @@ export function HeroContainer({
   return (
     <section
       style={{ backgroundImage: `url(${image.url})` }}
-      className={`relative  bg-cover bg-center bg-no-repeat`}
+      className={`relative bg-cover bg-center bg-no-repeat`}
     >
       <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
@@ -31,15 +32,15 @@ export function HeroContainer({
           </div>
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
-            {links.map(({ id, label, href }) => {
+            {links.map(({ id, label, href, theme }) => {
               return (
-                <NavLink
+                <ButtonLink
                   key={id}
-                  to={href}
-                  className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
-                >
-                  {label}
-                </NavLink>
+                  id={id}
+                  label={label}
+                  href={href}
+                  theme={theme}
+                />
               );
             })}
           </div>

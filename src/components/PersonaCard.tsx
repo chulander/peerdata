@@ -1,20 +1,22 @@
-import { NavLink } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-export type PersonaCard = {
+import { ButtonLink } from "./ButtonLink";
+import { Link } from "../types/Link";
+export interface PersonaCard
+  extends Pick<Link, "id" | "label" | "href" | "theme"> {
   name: string;
-  label: string;
-  to: string;
   img: string;
   alt: string;
   description: string;
-};
+}
 
 export function PersonaCard({
   name,
   img,
   alt,
-  to,
+  href,
+  id,
   label,
+  theme,
   description,
 }: PersonaCard) {
   return (
@@ -32,13 +34,13 @@ export function PersonaCard({
       </div>
 
       <div className="flex flex-col items-center">
-        <NavLink
+        <ButtonLink
           key={name}
-          to={to}
-          className="block w-full rounded bg-rose-600 px-12 py-3 text-center text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 md:w-fit"
-        >
-          {label}
-        </NavLink>
+          id={id}
+          href={href}
+          theme={theme}
+          label={label}
+        />
       </div>
     </div>
   );

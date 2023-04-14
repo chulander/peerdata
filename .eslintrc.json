@@ -46,7 +46,7 @@
       }
     },
     "tailwindcss": {
-      "whitelist": ["primary"]
+      "whitelist": ["i\\-primary","i\\-secondary","i\\-alternate"]
     }
   }
 }

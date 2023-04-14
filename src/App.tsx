@@ -3,7 +3,7 @@ import Footer from "./containers/Footer";
 import Nav from "./containers/Nav";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import DataOwner from "./pages/DataOwner";
+import DataOwner from "./pages/DataOwner/DataOwner";
 import About from "./pages/About";
 
 export default function App() {

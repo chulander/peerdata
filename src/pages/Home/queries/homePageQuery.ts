@@ -15,6 +15,7 @@ export const homePageQuery = gql`
             id
             label
             href
+            theme
           }
           image {
             id
@@ -38,8 +39,10 @@ export const homePageQuery = gql`
               description
               slug
               link {
+                id
                 href
                 label
+                theme
               }
               image {
                 id
@@ -53,8 +56,10 @@ export const homePageQuery = gql`
               description
               slug
               link {
+                id
                 href
                 label
+                theme
               }
               image {
                 id
