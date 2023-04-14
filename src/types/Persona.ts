@@ -1,14 +1,11 @@
 import { Link } from "./Link";
+import { System } from "./HeadlessCMS";
+import { Image } from "./Image";
 
-export type Persona = {
-  __typename: string;
-  id: string;
-  name: string;
+export interface Persona extends System {
+  title: string;
   description: string;
   slug: string;
-  image: {
-    id: string;
-    url: string;
-  };
+  image: Image;
   link: Link;
-};
+}

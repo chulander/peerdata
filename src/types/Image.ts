@@ -1,5 +1,4 @@
-export type Image = {
-  __typename: string;
-  id: string;
+import { Asset } from "./HeadlessCMS";
+export interface Image extends Asset {
   url: string;
-};
+}

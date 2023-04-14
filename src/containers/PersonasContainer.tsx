@@ -16,7 +16,7 @@ export function PersonasContainer({
           </div>
 
           <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-3">
-            {blocks.map(({ name, description, id, image, link }: Persona) => (
+            {blocks.map(({ title: name, description, id, image, link }: Persona) => (
               <PersonaCard
                 key={id}
                 id={id}

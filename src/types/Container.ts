@@ -1,9 +1,8 @@
+import { System } from "./HeadlessCMS";
 import { Image } from "./Image";
 
-export type Container<T> = {
-  __typename: string;
-  id: string;
+export interface Container<T> extends System {
   title: string;
   blocks: T[];
   image: null | Image;
-};
+}

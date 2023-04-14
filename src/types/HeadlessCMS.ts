@@ -9,6 +9,7 @@ export interface System {
   updateBy?: User;
   publishedAt: string;
   publishedBy: User;
+  __typename: string;
 }
 
 export interface User

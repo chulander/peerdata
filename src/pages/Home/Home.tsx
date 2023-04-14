@@ -1,8 +1,7 @@
 import HeroContainer from "../../containers/HeroContainer";
 import PersonasContainer from "../../containers/PersonasContainer";
-import { Hero, Hero as HeroType } from "../../types/Hero";
+import { Hero } from "../../types/Hero";
 import useQuery from "../../hooks/useQuery";
-import { heroQuery } from "./queries/heroQuery";
 import CategoriesContainer from "../../containers/CategoriesContainer";
 import { ImageContainer } from "../../containers/ImageContainer";
 import { Image } from "../../types/Image";
@@ -19,7 +18,7 @@ export function Home() {
     <div className="space-y-4">
       {homePage.sections.map((section) => {
         if (section.__typename === "Hero") {
-          const sectionType = section as HeroType;
+          const sectionType = section as Hero;
           return (
             <HeroContainer
               key={section["id"]}

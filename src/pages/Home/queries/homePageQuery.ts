@@ -35,7 +35,7 @@ export const homePageQuery = gql`
             ... on Category {
               __typename
               id
-              name
+              title
               description
               slug
               link {
@@ -52,7 +52,7 @@ export const homePageQuery = gql`
             ... on Persona {
               __typename
               id
-              name
+              title
               description
               slug
               link {

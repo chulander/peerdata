@@ -6,7 +6,7 @@ export type About = {
 };
 export default function About({ img }: About) {
   return (
-    <div>
+    <section className="space-y-4 px-4">
       <AboutBanner />
       <section className="space-y-4 p-4">
         <ImageContent
@@ -38,6 +38,6 @@ export default function About({ img }: About) {
           className="h-64 w-full rounded bg-cover bg-center bg-no-repeat"
         ></div>
       </section>
-    </div>
+    </section>
   );
 }

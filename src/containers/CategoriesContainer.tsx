@@ -16,7 +16,7 @@ export function CategoriesContainer({
           </div>
 
           <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-4">
-            {blocks.map(({ name, description, id, image, link }: Category) => (
+            {blocks.map(({ title: name, description, id, image, link }: Category) => (
               <CategoryCard
                 key={id}
                 name={name}

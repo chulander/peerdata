@@ -9,7 +9,7 @@ export const personasContainerQuery = gql`
       __typename
       ... on Persona {
         id
-        name
+        title
         description
         slug
         link {

@@ -9,7 +9,7 @@ export const categoriesContainerQuery = gql`
         __typename
         ... on Category {
           id
-          name
+          title
           description
           slug
           link {

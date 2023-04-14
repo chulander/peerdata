@@ -65,7 +65,7 @@ function Content({ className, name, description, type }: Content) {
       </h2>
 
       <p
-        className={` text-gray-500 md:mt-4 md:block ${
+        className={` text-gray-500 md:mt-8 md:block ${
           type === "dark" ? "dark:text-gray-300" : ""
         }`}
       >
