@@ -1,9 +1,10 @@
-import NavItem from "../components/NavItem";
-
 export default function Footer() {
   return (
-    <footer aria-label="Site Footer" className="bg-gray-100">
-      <div className="relative mx-auto max-w-screen-xl px-4 py-2 sm:px-6 lg:px-8 lg:pt-24">
+    <footer
+      aria-label="Site Footer"
+      className="border border-gray-400 bg-gray-100"
+    >
+      <div className="relative mx-auto max-w-screen-xl p-4 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-end lg:justify-between">
           <div>
             <div className="flex justify-center text-teal-600 lg:justify-start">
@@ -55,11 +56,6 @@ export default function Footer() {
                 />
               </svg>
             </div>
-
-            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
-            </p>
           </div>
 
           <nav aria-label="Footer Nav" className="mt-12 lg:mt-0">
@@ -93,10 +89,6 @@ export default function Footer() {
             </ul>
           </nav>
         </div>
-
-        <p className="mt-12 text-center text-sm text-gray-500 lg:text-right">
-          Copyright &copy; 2022. All rights reserved.
-        </p>
       </div>
     </footer>
   );

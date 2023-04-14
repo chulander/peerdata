@@ -2,7 +2,10 @@ import { NavLink } from "react-router-dom";
 // export type Nav = { type: "light" | "dark" };
 export default function Nav() {
   return (
-    <header aria-label="Site Header" className="bg-white">
+    <header
+      aria-label="Site Header"
+      className="border border-gray-400 bg-gray-100"
+    >
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="md:flex md:items-center md:gap-12">
