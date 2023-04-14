@@ -2,7 +2,7 @@ import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export type ImageContent = {
   name: string;
-  img: string;
+  image: string;
   description: string;
   alt: string;
   type?: "dark" | "light";
@@ -12,7 +12,7 @@ export function ImageContent({
   alt,
   name,
   description = "left",
-  img,
+  image,
   direction,
   type = "light",
 }: ImageContent) {
@@ -30,10 +30,10 @@ export function ImageContent({
           type={type}
         />
       ) : (
-        <Image className="rounded sm:col-span-2" img={img} alt={alt} />
+        <Image className="rounded sm:col-span-2" img={image} alt={alt} />
       )}
       {direction === "left" ? (
-        <Image className="rounded sm:col-span-2" img={img} alt={alt} />
+        <Image className="rounded sm:col-span-2" img={image} alt={alt} />
       ) : (
         <Content
           className="sm:col-span-2"
@@ -55,7 +55,9 @@ type Content = {
 
 function Content({ className, name, description, type }: Content) {
   return (
-    <div className={`flex flex-col justify-center max-w-xl text-center sm:text-left ${className}`}>
+    <div
+      className={`flex max-w-xl flex-col justify-center text-center sm:text-left ${className}`}
+    >
       <h2
         className={`text-2xl font-bold text-gray-900 md:text-3xl ${
           type === "dark" ? "dark:text-white " : ""
@@ -64,13 +66,13 @@ function Content({ className, name, description, type }: Content) {
         {name}
       </h2>
 
-      <p
+      <div
         className={` text-gray-500 md:mt-8 md:block ${
           type === "dark" ? "dark:text-gray-300" : ""
         }`}
       >
         <ReactMarkdown>{description}</ReactMarkdown>
-      </p>
+      </div>
     </div>
   );
 }

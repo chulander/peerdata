@@ -38,38 +38,47 @@ const amplifyCategories: Array<ProductCategoryDetailCard> = [
 import useQuery from "../../hooks/useQuery";
 import { heroQuery } from "./queries/heroQuery";
 import { Hero } from "../../types/Hero";
+import { Page } from "../../types/Page";
+import { dataOwnerPageQuery } from "./queries/dataOwnerPageQuery";
+import { useState } from "react";
+import { Banner } from "../../types/Banner";
 
 export function DataOwner() {
-  const hero = useQuery<Hero>(heroQuery, "hero");
+  // const hero = useQuery<Hero>(heroQuery, "hero");
+  const dataOwnersPage = useQuery<Page>(dataOwnerPageQuery, "page");
+  console.log("page", dataOwnersPage);
 
-  console.log("hero", hero);
-  return !hero ? null : (
+  let i = 0;
+  return !dataOwnersPage ? null : (
     <div className="space-y-4">
-      <HeroContainerWithoutImage
-        title={hero.title}
-        description={hero.description}
-        links={hero.links}
-      />
-      <ImageContent
-        alt="Data Taxonomy"
-        direction="left"
-        name="Data Taxonomy"
-        description="PeerData taxonomy is a framework for organizing and classifying different types of data based on their characteristics and properties. The goal of data taxonomy is to create a consistent and standardized way of categorizing data that can be used across different systems and organizations."
-        img="https://media.istockphoto.com/id/465789195/photo/taxonomy.jpg?s=612x612&w=is&k=20&c=QdPCtZFTj3kUjr2kEjfBDINTBmrqQUz2WDQcFtlWJHQ="
-      />
-      <ImageContent
-        alt="Data Registry"
-        name="Data Registry"
-        description="PeerData registry is a powerful tool that enables organizations to manage their data assets more effectively. With the data registry, users can easily search, discover, and access a wide range of data assets, including structured and unstructured data, time-series data, geospatial data, and more."
-        img="https://media.istockphoto.com/id/641134666/photo/archive-with-folders.jpg?s=612x612&w=is&k=20&c=Qe6NilzFSRK2SrSAHagU9n8YjqrEwCyexkxMtpbyvJI="
-      />
-      <ImageContent
-        alt="Data Ratings"
-        direction="left"
-        name="Data Ratings"
-        description="PeerData ratings can be a valuable tool for organizations that want to ensure the quality and reliability of their data assets. By assigning ratings to different datasets, organizations can quickly identify which data assets are the most trustworthy and accurate, and which ones may require further scrutiny or validation."
-        img="https://media.istockphoto.com/id/1398473177/photo/questionnaire-with-checkboxes-filling-survey-form-online-answer-questions.jpg?s=612x612&w=is&k=20&c=VXK_vEHPzUUnPcj_DbnE_sGZxAVSymchoqJNWt1Mg44="
-      />
+      {dataOwnersPage.sections.map((section) => {
+        if (section.__typename === "Hero") {
+          const sectionType = section as Hero;
+          return (
+            <HeroContainerWithoutImage
+              key={section["id"]}
+              title={sectionType["title"]}
+              description={sectionType["description"]}
+              links={sectionType["links"]}
+            />
+          );
+        }
+        if (section.__typename === "Banner") {
+          const sectionType = section as Banner;
+          const direction = i % 2 === 0 ? "left" : "right";
+          i = i + 1;
+          return (
+            <ImageContent
+              key={sectionType["id"]}
+              alt={sectionType["title"]}
+              direction={direction}
+              description={sectionType["description"]}
+              image={sectionType["image"]["url"]}
+              name={sectionType["title"]}
+            />
+          );
+        }
+      })}
       <section className="mx-10">
         <ProductCategorySection
           name="Discover"
