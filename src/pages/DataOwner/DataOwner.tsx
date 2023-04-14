@@ -1,5 +1,5 @@
 import { HeroContainerWithoutImage } from "../../containers/HeroContainerWithoutImage";
-import ImageContent from "../../components/ImageContent";
+import BannerContainer from "../../containers/BannerContainer";
 import { ProductCategorySection } from "../../layouts/ProductCategorySection";
 import ProductCategoryDetailCard from "../../components/ProductCategoryDetailCard";
 
@@ -36,15 +36,12 @@ const amplifyCategories: Array<ProductCategoryDetailCard> = [
   },
 ];
 import useQuery from "../../hooks/useQuery";
-import { heroQuery } from "./queries/heroQuery";
 import { Hero } from "../../types/Hero";
 import { Page } from "../../types/Page";
 import { dataOwnerPageQuery } from "./queries/dataOwnerPageQuery";
-import { useState } from "react";
 import { Banner } from "../../types/Banner";
 
 export function DataOwner() {
-  // const hero = useQuery<Hero>(heroQuery, "hero");
   const dataOwnersPage = useQuery<Page>(dataOwnerPageQuery, "page");
   console.log("page", dataOwnersPage);
 
@@ -68,13 +65,13 @@ export function DataOwner() {
           const direction = i % 2 === 0 ? "left" : "right";
           i = i + 1;
           return (
-            <ImageContent
+            <BannerContainer
               key={sectionType["id"]}
               alt={sectionType["title"]}
               direction={direction}
               description={sectionType["description"]}
-              image={sectionType["image"]["url"]}
-              name={sectionType["title"]}
+              image={sectionType["image"]}
+              title={sectionType["title"]}
             />
           );
         }

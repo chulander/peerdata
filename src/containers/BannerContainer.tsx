@@ -1,21 +1,22 @@
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
+import { Banner } from "../types/Banner";
 
-export type ImageContent = {
-  name: string;
-  image: string;
+export interface BannerContainer
+  extends Pick<Banner, "title" | "description" | "image"> {
+  title: string;
   description: string;
   alt: string;
   type?: "dark" | "light";
   direction?: "left" | "right";
-};
-export function ImageContent({
+}
+export function BannerContainer({
   alt,
-  name,
+  title,
   description = "left",
   image,
   direction,
   type = "light",
-}: ImageContent) {
+}: BannerContainer) {
   return (
     <section
       className={`grid gap-x-12 overflow-hidden px-8 sm:grid-cols-4 md:p-12 lg:px-16 ${
@@ -25,19 +26,19 @@ export function ImageContent({
       {direction === "left" ? (
         <Content
           className="sm:col-span-2"
-          name={name}
+          title={title}
           description={description}
           type={type}
         />
       ) : (
-        <Image className="rounded sm:col-span-2" img={image} alt={alt} />
+        <Image className="rounded sm:col-span-2" img={image.url} alt={alt} />
       )}
       {direction === "left" ? (
-        <Image className="rounded sm:col-span-2" img={image} alt={alt} />
+        <Image className="rounded sm:col-span-2" img={image.url} alt={alt} />
       ) : (
         <Content
           className="sm:col-span-2"
-          name={name}
+          title={title}
           description={description}
           type={type}
         />
@@ -46,14 +47,12 @@ export function ImageContent({
   );
 }
 
-type Content = {
-  name: string;
-  description: string;
+interface Content extends Pick<BannerContainer, "title" | "description"> {
   className?: string;
-  type?: "dark" | "light";
-};
+  type: "dark" | "light";
+}
 
-function Content({ className, name, description, type }: Content) {
+function Content({ className, title, description, type }: Content) {
   return (
     <div
       className={`flex max-w-xl flex-col justify-center text-center sm:text-left ${className}`}
@@ -63,7 +62,7 @@ function Content({ className, name, description, type }: Content) {
           type === "dark" ? "dark:text-white " : ""
         }`}
       >
-        {name}
+        {title}
       </h2>
 
       <div
@@ -92,4 +91,4 @@ function Image({ className, img, alt }: Image) {
   );
 }
 
-export default ImageContent;
+export default BannerContainer;
