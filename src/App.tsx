@@ -10,7 +10,7 @@ import { ContactUs } from "./pages/Contact/Contact";
 export default function App() {
   return (
     <div className="m-auto max-w-screen-2xl">
-      <Nav />
+      <Nav className="w-full"/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
