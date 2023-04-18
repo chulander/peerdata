@@ -1,16 +1,21 @@
 import { NavLink, NavLinkProps } from "react-router-dom";
 export type NavItemType = {
   to: NavLinkProps["to"];
-  text: string;
+  className?: string;
+  children: React.ReactNode;
 };
 
-export default function NavItem({ to, text }: NavItemType): JSX.Element {
+export default function NavItem({
+  className,
+  to,
+  children,
+}: NavItemType): JSX.Element {
   return (
     <NavLink
+      className={`block text-teal-200 hover:text-white ${className}`}
       to={to}
-      className="mr-4 mt-4 block text-teal-200 hover:text-white lg:mt-0 lg:inline-block"
     >
-      {text}
+      {children}
     </NavLink>
   );
 }

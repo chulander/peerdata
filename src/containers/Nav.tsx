@@ -1,94 +1,69 @@
-import { NavLink } from "react-router-dom";
-// export type Nav = { type: "light" | "dark" };
-import Logo from "../assets/logo.svg";
-export default function Nav() {
+import NavItem from "../components/NavItem";
+export interface Nav {
+  className?: string;
+}
+export default function Nav({ className }: Nav) {
   return (
-    <header
-      aria-label="Site Header"
-      className="border border-gray-400 bg-gray-100"
-    >
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="md:flex md:items-center md:gap-12">
-            <a className="block text-teal-600" href="/">
-              <span className="sr-only">Home</span>
-              <img src={Logo} alt="PeerData Logo" />
-            </a>
-          </div>
-
-          <div className="hidden md:block">
-            <nav aria-label="Site Nav">
-              <ul className="flex items-center gap-6 text-sm">
-                <li>
-                  <NavLink
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    to="/"
-                  >
-                    Home
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    to="/about"
-                  >
-                    About
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    to="/contact"
-                  >
-                    Contact
-                  </NavLink>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <div className="sm:flex sm:gap-4">
-              <a
-                className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-                href="/"
+    <nav className={`border-gray-200 bg-white dark:bg-gray-900 ${className}`}>
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+        <NavItem to="/">
+          <img
+            src="https://media.graphassets.com/ZTEzJmSoRYGwcyShcGQ2"
+            className="mr-3 h-12"
+            alt="PeerData Logo"
+          />
+        </NavItem>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          className="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="h-6 w-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clipRule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="mt-4 flex w-full flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900">
+            <li>
+              <NavItem
+                to="/careers"
+                className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
               >
-                Login
-              </a>
-
-              <div className="hidden sm:flex">
-                <a
-                  className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                  href="/"
-                >
-                  Register
-                </a>
-              </div>
-            </div>
-
-            <div className="block md:hidden">
-              <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
+                Careers
+              </NavItem>
+            </li>
+            <li>
+              <NavItem
+                to="/about"
+                className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              >
+                About
+              </NavItem>
+            </li>
+            <li>
+              <NavItem
+                to="/contact"
+                className="block rounded py-2 pl-3 pr-4 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-blue-500"
+              >
+                Contact
+              </NavItem>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }
