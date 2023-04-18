@@ -1,6 +1,5 @@
 import HeroContainer from "../../containers/HeroContainer";
 import PersonasContainer from "../../containers/PersonasContainer";
-import { Hero } from "../../types/Hero";
 import useQuery from "../../hooks/useQuery";
 import CategoriesContainer from "../../containers/CategoriesContainer";
 import { ImageContainer } from "../../containers/ImageContainer";
@@ -15,15 +14,17 @@ import { Jumbotron } from "../../containers/Jumbotron";
 import { Feature } from "../../containers/Feature";
 import { Content } from "../../containers/Content";
 import { ContentWithHeader } from "../../containers/ContentWithHeader";
+import { Hero } from "../../containers/Hero";
+import FeatureWithColumns from "../../containers/FeatureWithColumns";
 
 export function Home() {
   // const homePage = useQuery<Page>(homePageQuery, "page");
 
   return (
     <section>
-      <Jumbotron />
+      <Hero />
       <Feature />
-      <Content />
+      <FeatureWithColumns />
       <ContentWithHeader />
     </section>
   );
