@@ -1,6 +1,7 @@
 import { gql } from "graphql-request";
 
 export const aboutPageQuery = gql`
+  #gql
   query AboutUsQuery {
     page(where: { slug: "about" }) {
       id
