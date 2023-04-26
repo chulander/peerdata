@@ -1,9 +1,9 @@
-import { ContactForm } from "../../components/ContactForm";
+import { ContactUsForm } from "../../components/ContactUsForm";
 
 export function ContactUs() {
   return (
     <section className="m-auto flex w-full items-center justify-center">
-      <ContactForm />
+      <ContactUsForm />
     </section>
   );
 }
