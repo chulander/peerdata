@@ -6,6 +6,7 @@ import Products from "./pages/Products/Products";
 import DataOwner from "./pages/DataOwner/DataOwner";
 import About from "./pages/About/queries/About";
 import ContactUsForm from "./components/ContactUsForm";
+import { ContactUs } from "./pages/Contact/Contact";
 
 const navItems: NavType[] = [
   {
@@ -31,7 +32,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactUsForm />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
       <Footer />

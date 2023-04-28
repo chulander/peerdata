@@ -3,6 +3,7 @@ import { classNames } from "../utils";
 
 const navigation = [
   {
+    id: "linkedin",
     name: "Linkedin",
     href: "https://linkedin.com",
     icon: ({ className }: { className?: string }) => (
@@ -17,6 +18,7 @@ const navigation = [
     ),
   },
   {
+    id: "twitter",
     name: "Twitter",
     href: "https://twitter.com",
     icon: ({ className }: { className?: string }) => (
@@ -38,6 +40,7 @@ export function Footer() {
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
             <NavItem
+              id={item.id}
               key={item.name}
               to={item.href}
               className="text-brand-700 hover:text-gray-500"
@@ -48,7 +51,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-center text-xs leading-5 text-brand-700">
+          <p className="text-center text-md leading-5 text-brand-700">
             &copy; 2023 PeerData, Inc. All rights reserved.
           </p>
         </div>
