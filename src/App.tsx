@@ -9,7 +9,7 @@ import ContactUsForm from "./components/ContactUsForm";
 
 export default function App() {
   return (
-    <div className="m-auto max-w-screen-2xl">
+    <div className="m-auto">
       <Nav className="w-full" />
       <Routes>
         <Route path="/" element={<Home />} />

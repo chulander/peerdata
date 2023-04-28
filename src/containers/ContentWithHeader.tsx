@@ -22,7 +22,7 @@ export function ContentWithHeader() {
             eliminate toil, and deploy changes with ease.
           </p>
           <NavItem
-            href="/contact"
+            to="/contact"
             className="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
           >
             Learn more

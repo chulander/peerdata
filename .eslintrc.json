@@ -46,7 +46,15 @@
       }
     },
     "tailwindcss": {
-      "whitelist": ["i\\-primary","i\\-secondary","i\\-alternate"]
+      "whitelist": [
+        "i\\-primary",
+        "i\\-secondary",
+        "i\\-alternate",
+        "i\\-brand-100",
+        "i\\-brand-300",
+        "i\\-brand-500",
+        "i\\-brand-700"
+      ]
     }
   }
 }
