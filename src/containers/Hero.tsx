@@ -5,7 +5,6 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
-
 export function Hero() {
   return (
     <div className="bg-white">
@@ -13,12 +12,18 @@ export function Hero() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
             <div className="flex">
-              <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 ring-1 ring-brand-700 hover:ring-brand-500">
+              <div
+                className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ring-1 ring-brand-500 hover:shadow-lg hover:ring-brand-700"
+              >
                 <span className="font-semibold text-brand-blue">
                   We’re hiring
                 </span>
                 <span className="h-4 w-px bg-brand-700" aria-hidden="true" />
-                <a href="#" className="flex items-center gap-x-1">
+                <NavItem
+                  id="careers"
+                  to="/careers"
+                  className="flex items-center gap-x-1"
+                >
                   <span
                     className="absolute inset-0 text-brand-300"
                     aria-hidden="true"
@@ -28,7 +33,7 @@ export function Hero() {
                     className="-mr-2 h-5 w-5 text-brand-700"
                     aria-hidden="true"
                   />
-                </a>
+                </NavItem>
               </div>
             </div>
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">

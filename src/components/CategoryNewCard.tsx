@@ -18,10 +18,11 @@ export function CategoryNewCard({
   return (
     <div
       id={id}
-      className="flex flex-col space-y-4 space-y-4 rounded-3xl p-4 ring-1 ring-brand-blue xl:p-10"
+      className="shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04) flex flex-col space-y-4 rounded-3xl p-4 ring-1 ring-brand-blue xl:p-10
+      "
     >
       <img alt={alt} src={img} className="mx-auto rounded" />
-      <p className="text-brand-700 text-left text-xl font-bold sm:text-2xl">
+      <p className="text-left text-xl font-bold text-brand-700 sm:text-2xl">
         {name}
       </p>
       <p className="text-left text-sm leading-6 text-brand-500">

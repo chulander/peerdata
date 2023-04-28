@@ -22,10 +22,9 @@ const tiers = [
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
   },
   {
-    name: "Enterprise",
-    id: "tier-enterprise",
+    name: "Data Consumer",
+    id: "data-consumer",
     href: "#",
-    price: "Custom",
     description:
       "Lorem ipsum dolor sit amet consectetur adipiscing elit ligula convallis litora, ridiculus sed fringilla bibendum ornare pharetra blandit lacinia turpis,",
     cta: "Connect with us",
