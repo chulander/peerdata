@@ -1,8 +1,6 @@
 import NavItem from "../components/NavItem";
+import { classNames } from "../utils";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
 const navigation = [
   {
     name: "Linkedin",
@@ -35,7 +33,7 @@ const navigation = [
 
 export function Footer() {
   return (
-    <footer className="bg-white mt-10 z-10">
+    <footer className="z-10 mt-10 bg-white">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (

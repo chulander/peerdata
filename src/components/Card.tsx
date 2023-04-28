@@ -1,9 +1,5 @@
 import NavItem from "./NavItem";
 
-// function classNames(...classes: string[]) {
-//   return classes.filter(Boolean).join(" ");
-// }
-
 export interface Card {
   id: string;
   name: string;

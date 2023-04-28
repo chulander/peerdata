@@ -1,11 +1,10 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavItem, { NavItemWithRef } from "../components/NavItem";
+import { classNames } from "../utils";
 
-const defaultClassname =
-  "rounded-md px-3 py-2 text-sm font-medium  text-white hover:bg-gray-700 hover:text-white";
-const activeClassname =
-  "rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white";
+const defaultClassname = "hover:bg-gray-700 hover:text-white";
+const activeClassname = "border-brand-300 border-solid border";
 export interface Nav {
   className?: string;
 }
@@ -37,13 +36,24 @@ export function Nav({ className }: Nav) {
                 <div className="flex space-x-4">
                   {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
 
-                  <NavItem to="/careers" className={defaultClassname}>
+                  <NavItem
+                    to="/careers"
+                    className={({ isActive, isPending }) =>
+                      classNames(
+                        isActive ? activeClassname : defaultClassname,
+                        "rounded-md px-3 py-2 text-sm font-medium text-white"
+                      )
+                    }
+                  >
                     Careers
                   </NavItem>
                   <NavItem
                     to="/about"
                     className={({ isActive, isPending }) =>
-                      isActive ? activeClassname : defaultClassname
+                      classNames(
+                        isActive ? activeClassname : defaultClassname,
+                        "rounded-md px-3 py-2 text-sm font-medium text-white"
+                      )
                     }
                   >
                     About us
@@ -51,7 +61,10 @@ export function Nav({ className }: Nav) {
                   <NavItem
                     to="/contact"
                     className={({ isActive, isPending }) =>
-                      isActive ? activeClassname : defaultClassname
+                      classNames(
+                        isActive ? activeClassname : defaultClassname,
+                        "rounded-md px-3 py-2 text-sm font-medium text-white"
+                      )
                     }
                   >
                     Contact Us

@@ -13,19 +13,19 @@ export function Hero() {
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
             <div className="flex">
-              <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 ring-1 ring-brand-500 hover:ring-brand-700">
+              <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 ring-1 ring-brand-700 hover:ring-brand-500">
                 <span className="font-semibold text-brand-blue">
                   We’re hiring
                 </span>
-                <span className="h-4 w-px bg-brand-500" aria-hidden="true" />
+                <span className="h-4 w-px bg-brand-700" aria-hidden="true" />
                 <a href="#" className="flex items-center gap-x-1">
                   <span
-                    className="absolute inset-0 text-brand-500"
+                    className="absolute inset-0 text-brand-300"
                     aria-hidden="true"
                   />
                   See open positions
                   <ChevronRightIcon
-                    className="-mr-2 h-5 w-5 text-brand-500"
+                    className="-mr-2 h-5 w-5 text-brand-700"
                     aria-hidden="true"
                   />
                 </a>
