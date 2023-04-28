@@ -3,8 +3,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import NavItem, { NavItemWithRef } from "../components/NavItem";
 import { classNames } from "../utils";
 
-const defaultClassname = "hover:bg-gray-700 hover:text-white";
-const activeClassname = "border-brand-300 border-solid border";
+const defaultClassname = "hover:bg-brand-300";
+const activeClassname = defaultClassname;
 export interface Nav {
   className?: string;
 }
