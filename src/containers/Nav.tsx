@@ -11,7 +11,7 @@ export interface Nav {
 }
 export function Nav({ className }: Nav) {
   return (
-    <Disclosure as="nav" className={`bg-gray-800 ${className}`}>
+    <Disclosure as="nav" className={`bg-gradient ${className}`}>
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
