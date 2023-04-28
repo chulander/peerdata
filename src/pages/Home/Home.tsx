@@ -19,6 +19,8 @@ import FeatureWithColumns from "../../containers/FeatureWithColumns";
 import PersonaNewContainer from "../../containers/PersonaNewContainer";
 import { CardImage } from "../../containers/CardImage";
 import CategoryNewContainer from "../../containers/CategoryNewContainer";
+import AboutNewContainer from "../../containers/AboutNewContainer";
+import JoinNewContainer from "../../containers/JoinNewContainer";
 
 export function Home() {
   // const homePage = useQuery<Page>(homePageQuery, "page");
@@ -28,11 +30,8 @@ export function Home() {
       <Hero />
       <PersonaNewContainer />
       <CategoryNewContainer />
-      <CardImage />
-
-      <Feature />
-      <FeatureWithColumns />
-      <ContentWithHeader />
+      <AboutNewContainer />
+      <JoinNewContainer />
     </section>
   );
   // return !homePage ? null : (
