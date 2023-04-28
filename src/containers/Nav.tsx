@@ -52,7 +52,7 @@ export function Nav({ className, items }: Nav) {
                       className={({ isActive, isPending }) =>
                         classNames(
                           isActive ? activeClassname : defaultClassname,
-                          "text-md rounded-md px-3 py-2 font-medium text-white"
+                          "text-md rounded-md px-3 py-2 font-medium text-white focus-visible:border-none focus-visible:border-opacity-0"
                         )
                       }
                     />
@@ -61,7 +61,7 @@ export function Nav({ className, items }: Nav) {
               </div>
               <div className="-mr-2 flex sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="text-white-400 inline-flex items-center justify-center rounded-md p-2 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="text-white-400 inline-flex items-center justify-center rounded-md p-2 hover:bg-brand-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon
@@ -81,28 +81,15 @@ export function Nav({ className, items }: Nav) {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-              <Disclosure.Button
-                as={NavItemWithRef}
-                to="/careers"
-                className="block rounded-md px-3 py-2 text-base font-medium text-white"
-              >
-                Careers
-              </Disclosure.Button>
-              <Disclosure.Button
-                as={NavItemWithRef}
-                to="/about"
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >
-                About us
-              </Disclosure.Button>
-              <Disclosure.Button
-                as={NavItemWithRef}
-                to="/contact"
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >
-                Contact us
-              </Disclosure.Button>
+              {items.map(({ id, href, name }) => (
+                <Disclosure.Button
+                  as={NavItemWithRef}
+                  id={id}
+                  to={href}
+                  children={name}
+                  className="text-md block rounded-md px-3 py-2 font-medium text-white"
+                />
+              ))}
             </div>
           </Disclosure.Panel>
         </>
