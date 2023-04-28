@@ -4,7 +4,7 @@ export function JoinNewContainer() {
   return (
     <div className="bg-white">
       <div className="overflow-hidden">
-        <div className="mx-auto max-w-7xl pb-32 sm:pt-60 lg:pt-32">
+        <div className="mx-auto max-w-7xl pb-32 sm:pt-60 lg:px-8">
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="flex w-full max-w-xl flex-col lg:shrink-0 xl:max-w-2xl">
               <h1 className="text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
