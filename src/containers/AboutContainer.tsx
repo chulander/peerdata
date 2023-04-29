@@ -39,4 +39,4 @@ export function AboutContainer() {
   );
 }
 
-export default AboutNewContainer;
+export default AboutContainer;
