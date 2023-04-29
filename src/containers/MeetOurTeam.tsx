@@ -6,40 +6,40 @@ const people = [
     role: "Founder",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    twitterUrl: "https://twitter.com/joe",
+    linkedinUrl: "https://linkedin.com/joe",
   },
   {
     name: "Jack Doe",
     role: "Head of Human Resources",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    twitterUrl: "https://twitter.com/jack",
+    linkedinUrl: "https://linkedin.com/jack",
   },
   {
     name: "John Doe",
     role: "Chief Technology Officer",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    twitterUrl: "https://twitter.com/john",
+    linkedinUrl: "https://linkedin.com/john",
   },
   {
     name: "Jeff Doe",
     role: "Head of Product",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    twitterUrl: "https://twitter.com/jeff",
+    linkedinUrl: "https://linkedin.com/jeff",
   },
   {
-    name: "Joe Doe",
+    name: "James Doe",
     role: "Executive",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "#",
-    linkedinUrl: "#",
+    twitterUrl: "https://twitter.com/james",
+    linkedinUrl: "https://linkedin.com/james",
   },
   // More people...
 ];
