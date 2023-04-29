@@ -1,6 +1,6 @@
 import NavItem from "../components/NavItem";
 
-export function JoinNewContainer() {
+export function JoinContainer() {
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden pt-14">
@@ -55,4 +55,4 @@ export function JoinNewContainer() {
   );
 }
 
-export default JoinNewContainer;
+export default JoinContainer;

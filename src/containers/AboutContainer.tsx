@@ -1,4 +1,4 @@
-export function AboutNewContainer() {
+export function AboutContainer() {
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden pt-14">

@@ -33,7 +33,7 @@ const tiers = [
   },
 ];
 
-export function PersonaNewContainer() {
+export function PersonaContainer() {
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -69,4 +69,4 @@ export function PersonaNewContainer() {
   );
 }
 
-export default PersonaNewContainer;
+export default PersonaContainer;

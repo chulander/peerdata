@@ -1,8 +1,5 @@
 import NavItem from "../components/NavItem";
 
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export function Hero() {

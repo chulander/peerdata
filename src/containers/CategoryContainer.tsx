@@ -1,4 +1,3 @@
-import { Card } from "../components/Card";
 import { CategoryNewCard } from "../components/CategoryNewCard";
 
 const cards: CategoryNewCard[] = [
@@ -36,7 +35,7 @@ const cards: CategoryNewCard[] = [
   },
 ];
 
-export function CategoryNewContainer() {
+export function CategoryContainer() {
   return (
     <div className="mb-12 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -58,4 +57,4 @@ export function CategoryNewContainer() {
   );
 }
 
-export default CategoryNewContainer;
+export default CategoryContainer;
