@@ -13,7 +13,7 @@ export function Card(data: Card) {
   return (
     <div
       key={data.id}
-      className="space-y-4 rounded-3xl p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ring-1 ring-brand-blue hover:ring-brand-700 xl:p-10"
+      className="space-y-4 rounded-3xl p-4 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ring-1 ring-brand-blue hover:ring-brand-700 xl:p-10"
     >
       <div className="flex flex-col">
         <img className="mx-auto rounded" src={data.image} alt="man" />

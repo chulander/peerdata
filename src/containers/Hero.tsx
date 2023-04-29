@@ -6,12 +6,10 @@ export function Hero() {
   return (
     <div className="bg-white">
       <div className="relative isolate pt-14">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
+        <div className="mx-auto max-w-screen-2xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
             <div className="flex">
-              <div
-                className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ring-1 ring-brand-500 hover:shadow-lg hover:ring-brand-700"
-              >
+              <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 ring-1 ring-brand-500 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:ring-brand-700">
                 <span className="font-semibold text-brand-blue">
                   We’re hiring
                 </span>

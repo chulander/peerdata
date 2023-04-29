@@ -38,7 +38,7 @@ const cards: CategoryNewCard[] = [
 export function CategoryContainer() {
   return (
     <div className="mb-12 bg-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-2xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-brand-blue sm:text-4xl">
             D.A.T.A Categories

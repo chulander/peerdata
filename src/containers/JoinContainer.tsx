@@ -4,7 +4,7 @@ export function JoinContainer() {
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden pt-14">
-        <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
+        <div className="mx-auto max-w-screen-2xl px-6 py-32 sm:py-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl lg:col-span-2 xl:col-auto">
               Join Us
@@ -29,14 +29,14 @@ export function JoinContainer() {
                 <NavItem
                   id="careers"
                   to="/careers"
-                  className="rounded-md bg-brand-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-blue/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
+                  className="rounded-md bg-brand-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
                 >
                   Careers at PeerData
                 </NavItem>
                 <NavItem
                   id="contact"
                   to="/contact"
-                  className="text-sm font-semibold leading-6 text-brand-700"
+                  className="text-sm font-semibold leading-6 text-brand-700 hover:text-brand-700/80"
                 >
                   Contact us <span aria-hidden="true">→</span>
                 </NavItem>

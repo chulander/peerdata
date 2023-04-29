@@ -2,7 +2,7 @@ export function ContactFindUs() {
   return (
     <div className="bg-white">
       <div className="relative isolate overflow-hidden pt-14">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-2xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl max-h-4xl space-y-8 lg:mx-0 lg:max-w-none">
             <h1 className="w-full text-center text-4xl font-bold tracking-tight text-brand-blue sm:text-6xl">
               Find us here

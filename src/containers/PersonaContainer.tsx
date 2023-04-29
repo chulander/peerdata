@@ -36,7 +36,7 @@ const tiers = [
 export function PersonaContainer() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-2xl px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mt-2 text-4xl font-bold tracking-tight text-brand-blue sm:text-5xl">
             This is the title for Personas
@@ -64,7 +64,7 @@ export function PersonaContainer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl border-t border-brand-blue px-6 pt-10 sm:mt-16 sm:pt-16 lg:px-8"></div>
+      <div className="mx-auto mt-10 max-w-screen-2xl border-t border-brand-blue px-6 pt-10 sm:mt-16 sm:pt-16 lg:px-8"></div>
     </div>
   );
 }
