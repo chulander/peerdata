@@ -15,15 +15,17 @@ export function AboutPeerData() {
               <polygon points="0,0 90,0 50,100 0,100" />
             </svg>
 
-            <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
+            <div className="relative px-6 sm:py-40 lg:px-8 lg:pr-0">
               <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
                 <h1 className="text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
                   About PeerData
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-brand-500">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua.
+                  Data runs the world, yet data itself is not widely understood.
+                  Organizations still don’t know what data they have, where it
+                  is, or who is using it. Most critically, they have absolutely
+                  no way to measure the health of their data — how well it
+                  supports business objectives.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <NavItem
