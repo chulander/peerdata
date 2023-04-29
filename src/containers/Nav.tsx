@@ -33,9 +33,9 @@ export function Nav({ className, items }: Nav) {
                 <div className="shrink-0">
                   <NavItem id="home" to="/">
                     <img
-                      className="h-12 w-auto rounded-md"
+                      className="h-12 w-auto rounded-md text-white"
                       src="https://media.graphassets.com/ZTEzJmSoRYGwcyShcGQ2"
-                      alt="Your Company"
+                      alt="PeerData"
                     />
                   </NavItem>
                 </div>

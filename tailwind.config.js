@@ -31,7 +31,7 @@ export default {
           300: "#7AE582",
           100: "#9FFFCB",
         },
-        'brand-blue': "#00A5CF",
+        "brand-blue": "#00A5CF",
         // primary: "#247D7D",
         secondary: "#247D7D",
         alternate: "gray",
