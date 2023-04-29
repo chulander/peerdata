@@ -24,7 +24,7 @@ export function AboutContainer() {
                 The mysterious quality which separates us from others & gives
                 rise to our original approach is acknowledged - Additionally,
                 Peer Data provides an atmosphere allowing for honest self
-                expression without shame or inhibition .
+                expression without shame or inhibition.
               </p>
             </div>
             <img
