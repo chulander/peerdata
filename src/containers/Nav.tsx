@@ -83,6 +83,7 @@ export function Nav({ className, items }: Nav) {
             <div className="space-y-1 px-2 pb-3 pt-2">
               {items.map(({ id, href, name }) => (
                 <Disclosure.Button
+                  key={id}
                   as={NavItemWithRef}
                   id={id}
                   to={href}
