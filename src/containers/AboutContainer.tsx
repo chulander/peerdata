@@ -7,7 +7,7 @@ export function AboutContainer() {
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl lg:col-span-2 xl:col-auto">
               About PeerData
             </h1>
-            <div className="mt-6 flex max-w-xl flex flex-col justify-center lg:mt-0 xl:col-end-1 xl:row-start-1">
+            <div className="mt-6 max-w-xl flex flex-col justify-center lg:mt-0 xl:col-end-1 xl:row-start-1">
               <p className="text-md leading-8 text-brand-500">
                 Here at PeerData, we believe only certain types of individuals
                 have what it takes to revolutionize how data operates worldwide.
