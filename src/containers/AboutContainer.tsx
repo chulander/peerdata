@@ -4,10 +4,10 @@ export function AboutContainer() {
       <div className="relative isolate overflow-hidden pt-14">
         <div className="mx-auto max-w-screen-2xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-            <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl lg:col-span-2 xl:col-auto">
+            <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-brand-700 sm:text-center sm:text-6xl lg:col-span-2 lg:text-left xl:col-auto">
               About PeerData
             </h1>
-            <div className="mt-6 max-w-xl flex flex-col justify-center lg:mt-0 xl:col-end-1 xl:row-start-1">
+            <div className="xs:w-full xs:text-center mt-6 flex lg:max-w-xl flex-col justify-center lg:mt-0 lg:text-left xl:col-end-1 xl:row-start-1">
               <p className="text-md leading-8 text-brand-500">
                 Here at PeerData, we believe only certain types of individuals
                 have what it takes to revolutionize how data operates worldwide.
@@ -30,7 +30,7 @@ export function AboutContainer() {
             <img
               src="https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=2048x2048&w=is&k=20&c=nB37AAthL5AINPEz4tK8kiYHGjJm_YtKuSjJZvOiqfA="
               alt=""
-              className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+              className="mt-10 aspect-[6/5] w-full lg:max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
             />
           </div>
         </div>
