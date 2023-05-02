@@ -2,7 +2,7 @@ import { Navigate, Routes, Route } from "react-router-dom";
 import Footer from "./containers/Footer";
 import Nav, { NavType } from "./containers/Nav";
 import Home from "./pages/Home";
-import About from "./pages/About/queries/About";
+import About from "./pages/About/About";
 import { ContactUs } from "./pages/Contact/Contact";
 
 const navItems: NavType[] = [
