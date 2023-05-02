@@ -64,7 +64,7 @@ export function PersonaContainer() {
         </div>
       </div>
 
-      <div className="mx-8 mt-10 max-w-screen-2xl border-0 border-brand-blue px-6 pt-10 sm:mt-16 sm:pt-16 lg:block lg:border-t lg:px-8"></div>
+      <div className="mx-8 mt-10 border-0 border-brand-blue px-6 pt-10 sm:mt-16 sm:pt-16 lg:block lg:border-t lg:px-8"></div>
     </div>
   );
 }
