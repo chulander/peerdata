@@ -48,7 +48,7 @@ export function CategoryContainer() {
               Learn how to grow your business with our expert advice.
             </p>
           </div>
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-4 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+          <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 pt-4 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-4">
             {cards.map((card) => (
               <CategoryNewCard key={card.id} {...card} />
             ))}

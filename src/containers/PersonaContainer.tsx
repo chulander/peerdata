@@ -46,7 +46,7 @@ export function PersonaContainer() {
           Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
           quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.
         </p>
-        <div className="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="isolate mx-auto mt-10 grid grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map(
             ({ id, href, name, description, cta, featured, image }: Card) => (
               <Card
