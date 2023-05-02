@@ -41,13 +41,29 @@ const people = [
     twitterUrl: "https://twitter.com/james",
     linkedinUrl: "https://linkedin.com/james",
   },
+  {
+    name: "Jarret Doe",
+    role: "Director",
+    imageUrl:
+      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
+    twitterUrl: "https://twitter.com/jarret",
+    linkedinUrl: "https://linkedin.com/jarret",
+  },
+  {
+    name: "Jared Doe",
+    role: "Head of Sales",
+    imageUrl:
+      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
+    twitterUrl: "https://twitter.com/jared",
+    linkedinUrl: "https://linkedin.com/jared",
+  },
   // More people...
 ];
 
 export function MeetOurTeam() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
+      <div className="mx-auto px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-brand-700 sm:text-4xl">
             Meet our team
@@ -59,7 +75,7 @@ export function MeetOurTeam() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
         >
           {people.map((person) => (
             <li key={person.name}>
