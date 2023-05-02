@@ -32,7 +32,7 @@ export function ContactFeature() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-screen-2xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-brand-blue">
             Blockchain Technology
           </h2>
@@ -45,7 +45,7 @@ export function ContactFeature() {
             In mi viverra elit nunc.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        <div className="mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">

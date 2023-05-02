@@ -3,7 +3,7 @@ export function JoinOurTeam() {
   return (
     <div className="bg-white">
       <div className="relative isolate pt-14">
-        <div className="mx-auto max-w-7xl px-6 py-8 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
+        <div className="mx-auto px-6 py-8 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
           <div className="mx-auto lg:mx-0 lg:flex-auto">
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               Join Our Team

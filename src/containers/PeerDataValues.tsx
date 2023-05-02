@@ -2,7 +2,7 @@ export function PeerDataValues() {
   return (
     <div className="bg-white">
       <div className="relative isolate pt-14">
-        <div className="mx-auto max-w-7xl px-6 py-8 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
+        <div className="mx-auto px-6 py-8 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
           <div className="mt-16 lg:w-1/2 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
             <img
               alt="image"
