@@ -19,18 +19,18 @@ export function PeerDataValues() {
             <p className="mt-6 text-lg leading-relaxed text-brand-500">Team Spirit</p>
             <p className="mt-6 text-lg leading-relaxed text-brand-500">Integrity</p>
             <p className="mt-6 text-md leading-relaxed text-brand-500">
-              Here at PeerData ,we believe only certain types of individuals
-              have what it takes to revolutionize how data operates worldwide .
-              As part of this culture ,we embrace those within it by
+              Here at PeerData, we believe only certain types of individuals
+              have what it takes to revolutionize how data operates worldwide.
+              As part of this culture, we embrace those within it by
               understanding togetherness leads to amazing accomplishments ! All
               differences & exclusive perspectives are welcomed & encouraged so
-              every employee puts forth their best effort .
+              every employee puts forth their best effort.
             </p>
             <p className="mt-6 text-md leading-relaxed text-brand-500">
               The mysterious quality which separates us from others & gives rise
               to our original approach is acknowledged - Additionally ,Peer Data
               provides an atmosphere allowing for honest self expression without
-              shame or inhibition .
+              shame or inhibition.
             </p>
           </div>
         </div>

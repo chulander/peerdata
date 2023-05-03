@@ -42,10 +42,6 @@ export function PersonaContainer() {
             What is your Role in the Data Economy?
           </h2>
         </div>
-        <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-brand-500">
-          Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et
-          quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.
-        </p>
         <div className="isolate mx-auto mt-10 grid grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map(({ id, href, name, description, cta, image }: Card) =>
             id !== "data-owner" ? (
