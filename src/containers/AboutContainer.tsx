@@ -1,3 +1,4 @@
+import NavItem from "../components/NavItem";
 import { Image, LayoutContainer } from "../layouts/LayoutContainer";
 const image: Image = {
   id: "image",
@@ -34,13 +35,22 @@ export function AboutContainer() {
         Providing expertise, standard, and technology to build infrastructure
         and rails for the data asset class.
       </p>
-      <p className="text-md leading-relaxed relative mt-2 text-brand-500">
+      <p className="text-md relative mt-2 leading-relaxed text-brand-500">
         Enabling digital discovery and monetization of data
       </p>
-      <p className="text-md leading-relaxed relative mt-2 text-brand-500">
+      <p className="text-md relative mt-2 leading-relaxed text-brand-500">
         Connecting data owners, investors, and consumers to trade data as an
         asset.
       </p>
+      <div className="mt-10 flex items-center gap-x-6">
+        <NavItem
+          id="about"
+          to="/about"
+          className="rounded-md bg-brand-blue px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
+        >
+          About Us
+        </NavItem>
+      </div>
     </LayoutContainer>
   );
 }
