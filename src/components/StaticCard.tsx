@@ -1,18 +1,19 @@
+import { ReactNode } from "react";
 import NavItem from "./NavItem";
 
-export interface Card {
+export interface StaticCard {
   id: string;
   name: string;
   href: string;
-  description: string;
+  children: ReactNode;
   cta: string;
   image: string;
 }
-export function Card(data: Card) {
+export function StaticCard(data: StaticCard) {
   return (
     <div
       key={data.id}
-      className="space-y-4 rounded-3xl p-4 ring-1 ring-brand-blue hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:ring-brand-700 xl:p-10 justify-between"
+      className="space-y-4 rounded-3xl p-4 ring-1 ring-brand-blue hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:ring-brand-700 xl:p-10"
     >
       <div className="flex flex-col">
         <img className="mx-auto rounded" src={data.image} alt="man" />
@@ -23,7 +24,7 @@ export function Card(data: Card) {
       >
         {data.name}
       </h3>
-      <p className="text-sm leading-6 text-brand-500">{data.description}</p>
+      {data.children}
       <NavItem
         id={data.id}
         to={data.href}

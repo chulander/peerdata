@@ -14,11 +14,11 @@ export function PeerDataValues() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               PeerData Values
             </h1>
-            <p className="mt-6 text-lg leading-8 text-brand-500">Agile</p>
-            <p className="mt-6 text-lg leading-8 text-brand-500">Passion</p>
-            <p className="mt-6 text-lg leading-8 text-brand-500">Team Spirit</p>
-            <p className="mt-6 text-lg leading-8 text-brand-500">Integrity</p>
-            <p className="mt-6 text-sm leading-8 text-brand-500">
+            <p className="mt-6 text-lg leading-relaxed text-brand-500">Agile</p>
+            <p className="mt-6 text-lg leading-relaxed text-brand-500">Passion</p>
+            <p className="mt-6 text-lg leading-relaxed text-brand-500">Team Spirit</p>
+            <p className="mt-6 text-lg leading-relaxed text-brand-500">Integrity</p>
+            <p className="mt-6 text-md leading-relaxed text-brand-500">
               Here at PeerData ,we believe only certain types of individuals
               have what it takes to revolutionize how data operates worldwide .
               As part of this culture ,we embrace those within it by
@@ -26,7 +26,7 @@ export function PeerDataValues() {
               differences & exclusive perspectives are welcomed & encouraged so
               every employee puts forth their best effort .
             </p>
-            <p className="mt-6 text-sm leading-8 text-brand-500">
+            <p className="mt-6 text-md leading-relaxed text-brand-500">
               The mysterious quality which separates us from others & gives rise
               to our original approach is acknowledged - Additionally ,Peer Data
               provides an atmosphere allowing for honest self expression without

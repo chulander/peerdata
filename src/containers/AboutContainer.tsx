@@ -8,23 +8,38 @@ const image: Image = {
 export function AboutContainer() {
   return (
     <LayoutContainer title="About PeerData" image={image}>
-      <p className="text-md leading-8 text-brand-500">
-        Here at PeerData, we believe only certain types of individuals have what
-        it takes to revolutionize how data operates worldwide.
+      <p className="text-md leading-relaxed text-brand-500">
+        Peer Data is born out of the observation that data and AI are powering
+        nearly everything we do today. We see that data is becoming essential
+        and a commodity.
       </p>
-      <p className="text-md relative mt-2 leading-8 text-brand-500">
-        As part of this culture, we embrace those within it by understanding
-        togetherness leads to amazing accomplishments!
+      <p className="text-md relative mt-2 leading-relaxed text-brand-500">
+        Our team has been working with data for decades and has been there to
+        see how data transitioned from supporting humans, to supporting machines
+        in making decisions in the financial markets. We have seen the need for
+        asset classes to be operationally best in class in order to scale and
+        meet regulatory requirements and have built it.
       </p>
-      <p className="text-md relative mt-2 leading-8 text-brand-500">
-        All differences & exclusive perspectives are welcomed & encouraged so
-        every employee puts forth their best effort.
+      <p className="text-md relative mt-2 leading-relaxed text-brand-500">
+        Data assets growing exponentially, and yet there is not direct way to
+        invest in data. The data discovery process is still largely manual and
+        understanding the quality of data is a time consuming, subjective
+        process.
       </p>
-      <p className="text-md relative mt-2 leading-8 text-brand-500">
-        The mysterious quality which separates us from others & gives rise to
-        our original approach is acknowledged - Additionally, Peer Data provides
-        an atmosphere allowing for honest self expression without shame or
-        inhibition.
+      <p className="text-md relative mt-2 leading-relaxed text-brand-500">
+        Peer Data set out on a mission to help organizations transform their
+        data into assets; unlocking maximum value and amplify reach by:
+      </p>
+      <p className="text-md relative mt-2 leading-relaxed text-brand-500">
+        Providing expertise, standard, and technology to build infrastructure
+        and rails for the data asset class.
+      </p>
+      <p className="text-md leading-relaxed relative mt-2 text-brand-500">
+        Enabling digital discovery and monetization of data
+      </p>
+      <p className="text-md leading-relaxed relative mt-2 text-brand-500">
+        Connecting data owners, investors, and consumers to trade data as an
+        asset.
       </p>
     </LayoutContainer>
   );
