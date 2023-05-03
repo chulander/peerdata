@@ -32,10 +32,10 @@ export function Hero() {
               </div>
             </div>
             <h1 className="mt-10 max-w-2xl text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
-              Powering and digitizing the data economy of the future.
+              Powering and digitizing the data economy of the future
             </h1>
             <p className="text-md mt-2 leading-8 text-brand-500 sm:mt-6 sm:text-2xl">
-              Turning data into assets.
+              Turning data into assets
             </p>
           </div>
         </div>

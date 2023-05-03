@@ -45,7 +45,7 @@ export function CategoryContainer() {
               D.A.T.A Categories
             </h2>
             <p className="mx-auto mt-6 text-lg leading-8 text-brand-500">
-              Learn how to grow your business with our expert advice.
+              Learn how to grow your business with our expert advice
             </p>
           </div>
           <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 pt-4 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-4">

@@ -26,7 +26,7 @@ const tiers = [
     name: "Data Investor",
     id: "data-investor",
     href: "/contact",
-    description: "Invest in the essential commodity powering the data economy",
+    description: "Invest in the essential commodity powering the data economy.",
     cta: "Contact Us",
     image:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
