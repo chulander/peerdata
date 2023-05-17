@@ -20,7 +20,7 @@ export function AboutPeerData() {
                 <h1 className="text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
                   About PeerData
                 </h1>
-                <p className="mt-6 text-lg leading-relaxed text-brand-500">
+                <p className="mt-6 text-lg leading-snug text-brand-500">
                   Data runs the world, yet data itself is not widely understood.
                   Organizations still don’t know what data they have, where it
                   is, or who is using it. Most critically, they have absolutely

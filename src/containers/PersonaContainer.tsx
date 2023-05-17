@@ -66,10 +66,8 @@ export function PersonaContainer() {
                 <p>
                   <span className="text-sm leading-6 text-brand-500">
                     Turn your data into assets. We provide tools to guide you
-                    through your data monetization journey, to{" "}
-                  </span>
-                  <span className="text-sm font-bold leading-6">
-                    unlock maximum value and amplify reach.
+                    through your data monetization journey, to unlock maximum
+                    value and amplify reach.
                   </span>
                 </p>
               </StaticCard>

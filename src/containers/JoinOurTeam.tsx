@@ -8,7 +8,7 @@ export function JoinOurTeam() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               Join Our Team
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-brand-500">
+            <p className="mt-6 text-lg leading-snug text-brand-500">
               Interested in becoming part of PeerData? You must possess
               creativity, innovation as well as be willing to challenge existing
               standards. Our remote-first teams are situated across North
