@@ -21,27 +21,6 @@ export function AboutContainer() {
         asset classes to be operationally best in class in order to scale and
         meet regulatory requirements and have built it.
       </p>
-      <p className="text-md relative mt-2 leading-snug text-brand-500">
-        Data assets growing exponentially, and yet there is not direct way to
-        invest in data. The data discovery process is still largely manual and
-        understanding the quality of data is a time consuming, subjective
-        process.
-      </p>
-      <p className="text-md relative mt-2 leading-snug text-brand-500">
-        Peer Data set out on a mission to help organizations transform their
-        data into assets; unlocking maximum value and amplify reach by:
-      </p>
-      <p className="text-md relative mt-2 leading-snug text-brand-500">
-        Providing expertise, standard, and technology to build infrastructure
-        and rails for the data asset class.
-      </p>
-      <p className="text-md relative mt-2 leading-snug text-brand-500">
-        Enabling digital discovery and monetization of data
-      </p>
-      <p className="text-md relative mt-2 leading-snug text-brand-500">
-        Connecting data owners, investors, and consumers to trade data as an
-        asset.
-      </p>
       <div className="mt-10 flex items-center gap-x-6">
         <NavItem
           id="about"

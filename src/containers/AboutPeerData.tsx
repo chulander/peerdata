@@ -20,12 +20,28 @@ export function AboutPeerData() {
                 <h1 className="text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
                   About PeerData
                 </h1>
-                <p className="mt-6 text-lg leading-snug text-brand-500">
-                  Data runs the world, yet data itself is not widely understood.
-                  Organizations still don’t know what data they have, where it
-                  is, or who is using it. Most critically, they have absolutely
-                  no way to measure the health of their data — how well it
-                  supports business objectives.
+
+                <p className="relative mt-6 text-lg leading-snug text-brand-500">
+                  Data assets growing exponentially, and yet there is not direct
+                  way to invest in data. The data discovery process is still
+                  largely manual and understanding the quality of data is a time
+                  consuming, subjective process.
+                </p>
+                <p className="relative mt-2 text-lg leading-snug text-brand-500">
+                  Peer Data set out on a mission to help organizations transform
+                  their data into assets; unlocking maximum value and amplify
+                  reach by:
+                </p>
+                <p className="relative mt-2 text-lg leading-snug text-brand-500">
+                  Providing expertise, standard, and technology to build
+                  infrastructure and rails for the data asset class.
+                </p>
+                <p className="relative mt-2 text-lg leading-snug text-brand-500">
+                  Enabling digital discovery and monetization of data
+                </p>
+                <p className="relative mt-2 text-lg leading-snug text-brand-500">
+                  Connecting data owners, investors, and consumers to trade data
+                  as an asset.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <NavItem

@@ -44,7 +44,24 @@ export function PersonaContainer() {
         </div>
         <div className="isolate mx-auto mt-10 grid grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {tiers.map(({ id, href, name, description, cta, image }: Card) =>
-            id !== "data-owner" ? (
+            id === "data-investor" ? (
+              <StaticCard
+                key={id}
+                href={href}
+                id={id}
+                name={name}
+                image={image}
+                cta={cta}
+              >
+                <p>
+                  <span className="text-sm leading-6 text-brand-500">
+                    {description}
+                  </span>
+                  <br />
+                  <br />
+                </p>
+              </StaticCard>
+            ) : id === "data-consumer" ? (
               <Card
                 key={id}
                 href={href}
