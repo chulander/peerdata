@@ -35,7 +35,7 @@ export function Nav({ className, items }: Nav) {
                     <img
                       className="h-16 w-auto rounded-md text-white"
                       src="https://media.graphassets.com/ZTEzJmSoRYGwcyShcGQ2"
-                      alt="PeerData"
+                      alt="PEER DATA"
                     />
                   </NavItem>
                 </div>

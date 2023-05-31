@@ -9,7 +9,7 @@ export function JoinOurTeam() {
               Join Our Team
             </h1>
             <p className="mt-6 text-lg leading-snug text-brand-500">
-              Interested in becoming part of PeerData? You must possess
+              Interested in becoming part of PEER DATA? You must possess
               creativity, innovation as well as be willing to challenge existing
               standards. Our remote-first teams are situated across North
               America, Europe and Asia so don't miss this chance! Are you

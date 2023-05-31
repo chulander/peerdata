@@ -10,16 +10,16 @@ const image: Image = {
 export function JoinContainer() {
   return (
     <LayoutContainer title="Join Us" image={image}>
-      <p className="text-md leading-snug text-brand-500">
-        Interested in becoming part of PeerData? You must possess creativity,
+      <p className="text-md leading-snug mt-6 text-brand-500">
+        Interested in becoming part of PEER DATA? You must possess creativity,
         innovation as well as be willing to challenge existing standards.
       </p>
-      <p className="text-md relative mt-2 leading-snug text-brand-500">
+      <p className="text-md relative mt-4 leading-snug text-brand-500">
         Our remote-first teams are situated across North America, Europe and
         Asia so don't miss this chance! Are you someone who loves collaborating
         while having a thirst for knowledge when it comes to data science?
       </p>
-      <p className="text-md relative mt-2 leading-snug text-brand-500">
+      <p className="text-md relative mt-4 leading-snug text-brand-500">
         Then head over to our job listings today!
       </p>
       <div className="mt-10 flex items-center gap-x-6">
@@ -28,7 +28,7 @@ export function JoinContainer() {
           to="/careers"
           className="rounded-md bg-brand-blue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
         >
-          Careers at PeerData
+          Careers at PEER DATA
         </NavItem>
         <NavItem
           id="contact"

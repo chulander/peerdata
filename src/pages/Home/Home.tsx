@@ -1,7 +1,7 @@
 import { Hero } from "../../containers/Hero";
 import PersonaContainer from "../../containers/PersonaContainer";
 import CategoryContainer from "../../containers/CategoryContainer";
-import AboutNewContainer from "../../containers/AboutContainer";
+import HomeAboutPeerData from "../../containers/HomeAboutPeerData";
 import JoinContainer from "../../containers/JoinContainer";
 
 export function Home() {
@@ -10,7 +10,7 @@ export function Home() {
       <Hero />
       <PersonaContainer />
       <CategoryContainer />
-      <AboutNewContainer />
+      <HomeAboutPeerData />
       <JoinContainer />
     </section>
   );

@@ -52,7 +52,7 @@ export function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-md leading-5 text-brand-700">
-            &copy; 2023 PeerData, Inc. All rights reserved.
+            &copy; 2023 PEER DATA, Inc. All rights reserved.
           </p>
         </div>
       </div>
