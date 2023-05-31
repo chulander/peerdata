@@ -7,7 +7,7 @@ export function DataExperts() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               D.A.T.A Experts
             </h1>
-            <p className="mt-6 text-lg leading-snug text-brand-500">
+            <p className="mt-6 text-md leading-snug text-brand-500">
               Data runs the world, yet data itself is not widely understood.
               Organizations still don’t know what data they have, where it is,
               or who is using it. Most critically, they have absolutely no way

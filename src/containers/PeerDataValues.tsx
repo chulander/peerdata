@@ -14,27 +14,27 @@ export function PeerDataValues() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               PEER DATA Values
             </h1>
-            <p className="mt-6 text-lg leading-snug text-brand-500">Agile</p>
-            <p className="mt-6 text-lg leading-snug text-brand-500">Passion</p>
-            <p className="mt-6 text-lg leading-snug text-brand-500">
-              Team Spirit
-            </p>
-            <p className="mt-6 text-lg leading-snug text-brand-500">
-              Integrity
-            </p>
-            <p className="text-md mt-6 leading-snug text-brand-500">
+            <ul className="mt-6 font-bold list-disc text-xl leading-snug text-black">
+              <li className="mt-6">Agile</li>
+              <li className="mt-4">Passion</li>
+              <li className="mt-4">Team Spirit</li>
+              <li className="mt-4">Integrity</li>
+            </ul>
+            <p className="mt-4 text-md leading-snug text-brand-500">
               Here at PEER DATA, we believe only certain types of individuals
               have what it takes to revolutionize how data operates worldwide.
+            </p>
+            <p className="mt-4 text-md leading-snug text-brand-500">
               As part of this culture, we embrace those within it by
-              understanding togetherness leads to amazing accomplishments ! All
+              understanding togetherness leads to amazing accomplishments! All
               differences & exclusive perspectives are welcomed & encouraged so
               every employee puts forth their best effort.
             </p>
-            <p className="text-md mt-6 leading-snug text-brand-500">
+            <p className="mt-4 text-md leading-snug text-brand-500">
               The mysterious quality which separates us from others & gives rise
-              to our original approach is acknowledged - Additionally , PEER
-              DATA provides an atmosphere allowing for honest self expression
-              without shame or inhibition.
+              to our original approach is acknowledged - Additionally, PEER DATA
+              provides an atmosphere allowing for honest self expression without
+              shame or inhibition.
             </p>
           </div>
         </div>

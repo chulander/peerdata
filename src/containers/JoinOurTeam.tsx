@@ -8,12 +8,16 @@ export function JoinOurTeam() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               Join Our Team
             </h1>
-            <p className="mt-6 text-lg leading-snug text-brand-500">
-              Interested in becoming part of PEER DATA? You must possess
-              creativity, innovation as well as be willing to challenge existing
-              standards. Our remote-first teams are situated across North
-              America, Europe and Asia so don't miss this chance! Are you
-              someone who loves collaborating while having a thirst for
+            <p className="mt-6 text-md leading-snug text-brand-500">
+              Interested in becoming part of PEER DATA?
+            </p>
+            <p className="mt-4 text-md leading-snug text-brand-500">
+              You must possess creativity, innovation as well as be willing to
+              challenge existing standards. Our remote-first teams are situated
+              across North America, Europe and Asia so don't miss this chance!
+            </p>
+            <p className="mt-4 text-md leading-snug text-brand-500">
+              Are you someone who loves collaborating while having a thirst for
               knowledge when it comes to data science? Then head over to our job
               listings today!
             </p>
