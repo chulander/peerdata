@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        avenir: ["Avenir", ...defaultTheme.fontFamily.sans],
         sans: ["Avenir", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {

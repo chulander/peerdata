@@ -4,6 +4,18 @@
     url("./assets/fonts/avenir-black.otf") format("truetype");
   font-weight: normal;
 }
+@font-face {
+  font-family: "Avenir";
+  src: local("Avenir-Light"),
+    url("./assets/fonts/avenir-light.tff") format("TrueType");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Avenir";
+  src: local("Avenir-Bold"),
+    url("./assets/fonts/avenir-Bold.otf") format("OpenType");
+  font-weight: bold;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
