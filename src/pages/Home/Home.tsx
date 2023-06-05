@@ -1,6 +1,6 @@
 import { Hero } from "../../containers/Hero";
 import PersonaContainer from "../../containers/PersonaContainer";
-import CategoryContainer from "../../containers/CategoryContainer";
+// import CategoryContainer from "../../containers/CategoryContainer";
 import HomeAboutPeerData from "../../containers/HomeAboutPeerData";
 import JoinContainer from "../../containers/JoinContainer";
 

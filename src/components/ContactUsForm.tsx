@@ -42,21 +42,21 @@ export function ContactUsForm() {
             <h2 className="text-3xl font-bold tracking-tight text-brand-700">
               Get in touch
             </h2>
-            <p className="mt-6 text-lg leading-8 text-black font-light">
+            <p className="mt-6 text-lg font-light leading-8 text-black">
               Proin volutpat consequat porttitor cras nullam gravida at. Orci
               molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
               Arcu sed malesuada et magna.
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-brand-700">
+            <dl className="mt-10 space-y-4 text-base font-light leading-7 text-brand-700">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Address</span>
                   <BuildingOffice2Icon
-                    className="h-7 w-6 text-brand-500"
+                    className="h-7 w-6 text-black"
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>
+                <dd className="text-black hover:text-brand-700">
                   555 Main St.
                   <br />
                   New York, NY 10018
@@ -66,13 +66,13 @@ export function ContactUsForm() {
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
                   <PhoneIcon
-                    className="h-7 w-6 text-brand-500"
+                    className="h-7 w-6 text-black"
                     aria-hidden="true"
                   />
                 </dt>
                 <dd>
                   <a
-                    className="hover:text-brand-700"
+                    className="text-black hover:text-brand-700"
                     href="tel:+1 (555) 234-5678"
                   >
                     +1 (555) 234-5678
@@ -83,13 +83,13 @@ export function ContactUsForm() {
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
                   <EnvelopeIcon
-                    className="h-7 w-6 text-brand-500"
+                    className="h-7 w-6 text-black"
                     aria-hidden="true"
                   />
                 </dt>
                 <dd>
                   <a
-                    className="hover:text-brand-700"
+                    className="text-black hover:text-brand-700"
                     href="mailto:hello@peerdata.tech"
                   >
                     hello@peerdata.tech
@@ -119,7 +119,7 @@ export function ContactUsForm() {
                     name="name"
                     id="name"
                     autoComplete="given-name"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-brand-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -136,7 +136,7 @@ export function ContactUsForm() {
                     name="email"
                     id="email"
                     autoComplete="email"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-brand-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -153,7 +153,7 @@ export function ContactUsForm() {
                     type="text"
                     name="subject"
                     id="subject"
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-brand-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -169,7 +169,7 @@ export function ContactUsForm() {
                     name="message"
                     id="message"
                     rows={4}
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-brand-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
                     defaultValue={""}
                   />
                 </div>
