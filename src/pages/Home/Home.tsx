@@ -9,7 +9,6 @@ export function Home() {
     <section>
       <Hero />
       <PersonaContainer />
-      <CategoryContainer />
       <HomeAboutPeerData />
       <JoinContainer />
     </section>
