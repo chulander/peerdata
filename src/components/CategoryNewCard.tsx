@@ -25,7 +25,7 @@ export function CategoryNewCard({
       <p className="text-left text-xl font-bold text-brand-700 sm:text-2xl">
         {name}
       </p>
-      <p className="text-left text-sm leading-6 text-brand-500">
+      <p className="text-left text-sm leading-6 text-black font-light">
         {description}
       </p>
     </div>

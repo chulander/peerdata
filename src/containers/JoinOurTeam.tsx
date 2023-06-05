@@ -8,15 +8,15 @@ export function JoinOurTeam() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               Join Our Team
             </h1>
-            <p className="mt-6 text-md leading-snug text-brand-500">
+            <p className="mt-6 text-md leading-snug text-black font-light">
               Interested in becoming part of PEER DATA?
             </p>
-            <p className="mt-4 text-md leading-snug text-brand-500">
+            <p className="mt-4 text-md leading-snug text-black font-light">
               You must possess creativity, innovation as well as be willing to
               challenge existing standards. Our remote-first teams are situated
               across North America, Europe and Asia so don't miss this chance!
             </p>
-            <p className="mt-4 text-md leading-snug text-brand-500">
+            <p className="mt-4 text-md leading-snug text-black font-light">
               Are you someone who loves collaborating while having a thirst for
               knowledge when it comes to data science? Then head over to our job
               listings today!
@@ -25,7 +25,7 @@ export function JoinOurTeam() {
               <NavItem
                 id="careers"
                 to="/careers"
-                className="rounded-md bg-brand-blue px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
+                className="rounded-md bg-brand-blue px-8 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
               >
                 Join Us
               </NavItem>

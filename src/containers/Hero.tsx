@@ -10,7 +10,7 @@ export function Hero() {
           <div className=" xs:flex xs:flex-col xs:items-center sm:block md:max-w-2xl lg:mx-0 lg:max-w-7xl lg:flex-auto">
             <div className="flex">
               <div className="relative flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 ring-1 ring-brand-500 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] hover:ring-brand-700">
-                <span className="font-semibold text-brand-blue">
+                <span className="font-bold text-brand-blue">
                   Learn More
                 </span>
                 <span className="h-4 w-px bg-brand-700" aria-hidden="true" />
@@ -36,7 +36,7 @@ export function Hero() {
               <br />
               Data economy of the future
             </h1>
-            <p className="text-md mt-2 leading-8 text-brand-500 sm:mt-6 sm:text-2xl">
+            <p className="text-md mt-2 leading-8 text-brand-500 font-bold sm:mt-6 sm:text-2xl">
               Turning data into assets
             </p>
           </div>

@@ -20,17 +20,17 @@ export function PeerDataValues() {
               <li className="mt-4">Team Spirit</li>
               <li className="mt-4">Integrity</li>
             </ul>
-            <p className="mt-4 text-md leading-snug text-brand-500">
+            <p className="mt-4 text-md leading-snug text-black font-light">
               Here at PEER DATA, we believe only certain types of individuals
               have what it takes to revolutionize how data operates worldwide.
             </p>
-            <p className="mt-4 text-md leading-snug text-brand-500">
+            <p className="mt-4 text-md leading-snug text-black font-light">
               As part of this culture, we embrace those within it by
               understanding togetherness leads to amazing accomplishments! All
               differences & exclusive perspectives are welcomed & encouraged so
               every employee puts forth their best effort.
             </p>
-            <p className="mt-4 text-md leading-snug text-brand-500">
+            <p className="mt-4 text-md leading-snug text-black font-light">
               The mysterious quality which separates us from others & gives rise
               to our original approach is acknowledged - Additionally, PEER DATA
               provides an atmosphere allowing for honest self expression without

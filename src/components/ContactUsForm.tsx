@@ -42,7 +42,7 @@ export function ContactUsForm() {
             <h2 className="text-3xl font-bold tracking-tight text-brand-700">
               Get in touch
             </h2>
-            <p className="mt-6 text-lg leading-8 text-brand-500">
+            <p className="mt-6 text-lg leading-8 text-black font-light">
               Proin volutpat consequat porttitor cras nullam gravida at. Orci
               molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
               Arcu sed malesuada et magna.
@@ -109,7 +109,7 @@ export function ContactUsForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="name"
-                  className="block text-sm font-semibold leading-6 text-brand-700"
+                  className="block text-sm font-bold leading-6 text-brand-700"
                 >
                   Name
                 </label>
@@ -126,7 +126,7 @@ export function ContactUsForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-brand-700"
+                  className="block text-sm font-bold leading-6 text-brand-700"
                 >
                   Email
                 </label>
@@ -144,7 +144,7 @@ export function ContactUsForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-semibold leading-6 text-brand-700"
+                  className="block text-sm font-bold leading-6 text-brand-700"
                 >
                   Subject
                 </label>
@@ -160,7 +160,7 @@ export function ContactUsForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-brand-700"
+                  className="block text-sm font-bold leading-6 text-brand-700"
                 >
                   Message
                 </label>
@@ -178,7 +178,7 @@ export function ContactUsForm() {
             <div className="mt-8 flex">
               <button
                 type="submit"
-                className="rounded-md bg-brand-blue px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-brand-blue/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+                className="rounded-md bg-brand-blue px-3.5 py-2.5 text-center text-sm font-bold text-white shadow-sm hover:bg-brand-blue/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
               >
                 Send message
               </button>

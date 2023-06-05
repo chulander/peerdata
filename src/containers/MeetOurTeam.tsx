@@ -84,7 +84,7 @@ export function MeetOurTeam() {
                 src={person.imageUrl}
                 alt=""
               />
-              <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+              <h3 className="mt-6 text-base font-bold leading-7 tracking-tight text-gray-900">
                 {person.name}
               </h3>
               <p className="text-sm leading-6 text-gray-600">{person.role}</p>

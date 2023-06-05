@@ -54,7 +54,7 @@ export function PersonaContainer() {
                 cta={cta}
               >
                 <p>
-                  <span className="text-sm leading-6 text-brand-500">
+                  <span className="text-sm font-light leading-6 text-black">
                     {description}
                   </span>
                   <br />
@@ -62,15 +62,23 @@ export function PersonaContainer() {
                 </p>
               </StaticCard>
             ) : id === "data-consumer" ? (
-              <Card
+              <StaticCard
                 key={id}
                 href={href}
                 id={id}
                 name={name}
-                description={description}
                 image={image}
                 cta={cta}
-              />
+              >
+                <p>
+                  <span className="text-sm font-light leading-6 text-black">
+                    Reduce time to context, objective assessment of data quality
+                    and improve the data discovery process.
+                    <br />
+                    <br />
+                  </span>
+                </p>
+              </StaticCard>
             ) : (
               <StaticCard
                 key={id}
@@ -81,7 +89,7 @@ export function PersonaContainer() {
                 cta={cta}
               >
                 <p>
-                  <span className="text-sm leading-6 text-brand-500">
+                  <span className="text-sm font-light leading-6 text-black">
                     Turn your data into assets. We provide tools to guide you
                     through your data monetization journey, to unlock maximum
                     value and amplify reach.
