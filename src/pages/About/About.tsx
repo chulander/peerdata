@@ -8,7 +8,6 @@ export function About() {
   return (
     <section className="space-y-8">
       <AboutPeerData />
-      <DataExperts />
       <PeerDataValues />
       <JoinOurTeam />
       <MeetOurTeam />
