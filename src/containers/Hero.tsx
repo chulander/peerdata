@@ -15,15 +15,15 @@ export function Hero() {
                 </span>
                 <span className="h-4 w-px bg-brand-700" aria-hidden="true" />
                 <NavItem
-                  id="about"
-                  to="/about"
+                  id="contact"
+                  to="/contact"
                   className="flex items-center gap-x-1"
                 >
                   <span
                     className="absolute inset-0 text-brand-300"
                     aria-hidden="true"
                   />
-                  About Us
+                  Contact Us
                   <ChevronRightIcon
                     className="-mr-2 h-5 w-5 text-brand-700"
                     aria-hidden="true"
