@@ -3,7 +3,10 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import { Dropdown } from "./Dropdown";
+import { tiers } from "../containers/PersonaContainer";
 
+const items = [...tiers, { id: "other", name: "Other" }];
 export function ContactUsForm() {
   return (
     <div className="relative isolate bg-white">
@@ -39,7 +42,7 @@ export function ContactUsForm() {
                 />
               </svg>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-brand-700">
+            <h2 className="text-4xl font-bold tracking-tight text-brand-700">
               Get in touch
             </h2>
             <p className="mt-6 text-lg font-light leading-8 text-black">
@@ -109,7 +112,7 @@ export function ContactUsForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="name"
-                  className="block text-sm font-bold leading-6 text-brand-700"
+                  className="text-md block font-bold leading-6 text-brand-700"
                 >
                   Name
                 </label>
@@ -125,8 +128,22 @@ export function ContactUsForm() {
               </div>
               <div className="sm:col-span-2">
                 <label
+                  htmlFor="persona"
+                  className="text-md block font-bold leading-6 text-brand-700"
+                >
+                  Your Role in the Data Economy
+                </label>
+                <div className="mt-2.5">
+                  <Dropdown
+                    items={items}
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <label
                   htmlFor="email"
-                  className="block text-sm font-bold leading-6 text-brand-700"
+                  className="text-md block font-bold leading-6 text-brand-700"
                 >
                   Email
                 </label>
@@ -144,7 +161,7 @@ export function ContactUsForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-bold leading-6 text-brand-700"
+                  className="text-md block font-bold leading-6 text-brand-700"
                 >
                   Subject
                 </label>
@@ -160,7 +177,7 @@ export function ContactUsForm() {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-bold leading-6 text-brand-700"
+                  className="text-md block font-bold leading-6 text-brand-700"
                 >
                   Message
                 </label>

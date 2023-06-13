@@ -1,7 +1,7 @@
 import { Card } from "../components/Card";
 import { StaticCard } from "../components/StaticCard";
 
-const tiers = [
+export const tiers = [
   {
     name: "Data Owner",
     id: "data-owner",
@@ -74,7 +74,6 @@ export function PersonaContainer() {
                   <span className="text-sm font-light leading-6 text-black">
                     Reduce time to context, objective assessment of data quality
                     and improve the data discovery process.
-                    <br />
                     <br />
                   </span>
                 </p>

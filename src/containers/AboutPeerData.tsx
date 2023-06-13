@@ -1,6 +1,10 @@
-import NavItem from "../components/NavItem";
+import { useCallback, MouseEvent } from "react";
 
 export function AboutPeerData() {
+  const clickHandler = useCallback((e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    window.scrollTo(0, document.body.scrollHeight);
+  }, []);
   return (
     <div className="bg-white">
       <div className="relative">
@@ -17,17 +21,17 @@ export function AboutPeerData() {
 
             <div className="relative px-6 py-40 lg:px-8 lg:pr-0">
               <div className="mx-auto lg:mx-0 lg:w-[45vw]">
-                <h1 className="text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
+                <h1 className="text-4xl font-bold tracking-tight text-brand-700 sm:text-4xl">
                   About PEER DATA
                 </h1>
 
-                <p className="text-md mt-6 leading-snug text-black font-light">
+                <p className="text-lg mt-6 font-light leading-snug text-black">
                   PEER DATA is borne out of the observation that data and AI are
                   powering nearly everything we do today. Data, as the vital
                   commodity powering the AI and digital world, holds immense
                   value and potential.
                 </p>
-                <p className="text-md relative mt-4 leading-snug text-black font-light">
+                <p className="text-lg relative mt-4 font-light leading-snug text-black">
                   With decades of experience in the field, our team has
                   witnessed the transformative journey of data, from its role in
                   supporting human decision-making to empowering machines to
@@ -38,7 +42,7 @@ export function AboutPeerData() {
                   scalability and fostering transparency among all stakeholders
                   involved.
                 </p>
-                <p className="text-md relative mt-4 leading-snug text-black font-light">
+                <p className="text-lg relative mt-4 font-light leading-snug text-black">
                   Data is experiencing exponential growth, having doubled in
                   just the past two years. Yet, despite the ever-increasing
                   demand for diverse and extensive datasets, there is currently
@@ -55,13 +59,13 @@ export function AboutPeerData() {
                   own data.
                 </p>
                 <div className="relative mt-4 ">
-                  <p className="text-md leading-snug text-black font-light">
+                  <p className="text-lg font-light leading-snug text-black">
                     To address this challenge, PEER DATA has embarked on a
                     mission to assist organizations in transforming their data
                     into valuable assets. We aim to unlock maximum value and
                     amplify reach by:
                   </p>
-                  <ul className="text-md relative ml-4 mt-4 list-outside list-disc leading-snug text-black font-light">
+                  <ul className="text-lg relative ml-4 mt-4 list-outside list-disc font-light leading-snug text-black">
                     <li>
                       Providing expertise, standard, and cutting-edge technology
                       to build infrastructure and rails for the data asset class
@@ -74,13 +78,13 @@ export function AboutPeerData() {
                   </ul>
                 </div>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <NavItem
-                    id="contact"
-                    to="/contact"
+                  <button
+                    id="meetOurTeam"
+                    onClick={clickHandler}
                     className="rounded-md bg-brand-blue px-3.5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-brand-blue/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
                   >
-                    Contact us
-                  </NavItem>
+                    Meet our Team
+                  </button>
                 </div>
               </div>
             </div>

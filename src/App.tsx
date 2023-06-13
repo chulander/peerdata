@@ -21,6 +21,11 @@ const navItems: NavType[] = [
     id: "contact",
     name: "Contact us",
   },
+  {
+    href: "/newsletter",
+    id: "newsletter",
+    name: "Newsletter",
+  },
 ];
 export default function App() {
   return (

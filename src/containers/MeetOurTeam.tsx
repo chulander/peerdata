@@ -2,60 +2,44 @@ import NavItem from "../components/NavItem";
 
 const people = [
   {
-    name: "Joe Doe",
-    role: "Founder",
+    name: "Kiet Tran",
+    role: "Chief Executive Officer",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
     twitterUrl: "https://twitter.com/joe",
     linkedinUrl: "https://linkedin.com/joe",
   },
   {
-    name: "Jack Doe",
-    role: "Head of Human Resources",
+    name: "Cynthia Nadal",
+    role: "Chief Operating Officer",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
     twitterUrl: "https://twitter.com/jack",
     linkedinUrl: "https://linkedin.com/jack",
   },
   {
-    name: "John Doe",
-    role: "Chief Technology Officer",
+    name: "Kat Tatochenko",
+    role: "President and Chief Revenue Officer",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
     twitterUrl: "https://twitter.com/john",
     linkedinUrl: "https://linkedin.com/john",
   },
   {
-    name: "Jeff Doe",
-    role: "Head of Product",
+    name: "Ben Logan",
+    role: "Chief Product Officer",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
     twitterUrl: "https://twitter.com/jeff",
     linkedinUrl: "https://linkedin.com/jeff",
   },
   {
-    name: "James Doe",
-    role: "Executive",
+    name: "Souvik Das",
+    role: "Chief Solutions Architect",
     imageUrl:
       "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
     twitterUrl: "https://twitter.com/james",
     linkedinUrl: "https://linkedin.com/james",
-  },
-  {
-    name: "Jarret Doe",
-    role: "Director",
-    imageUrl:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "https://twitter.com/jarret",
-    linkedinUrl: "https://linkedin.com/jarret",
-  },
-  {
-    name: "Jared Doe",
-    role: "Head of Sales",
-    imageUrl:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "https://twitter.com/jared",
-    linkedinUrl: "https://linkedin.com/jared",
   },
   // More people...
 ];
