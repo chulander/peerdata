@@ -9,8 +9,7 @@ export const tiers = [
     description:
       "Turn your data into assets. We provide tools to guide you through your data monetization journey, to unlock maximum value and amplify reach.",
     cta: "Contact Us",
-    image:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
+    image: "https://media.graphassets.com/ZR4pkoNwRvyFCOVbVpeH",
   },
   {
     name: "Data Consumer",
@@ -19,8 +18,7 @@ export const tiers = [
     description:
       "Reduce time to context, objective assessment of data quality and improve the data discovery process.",
     cta: "Contact Us",
-    image:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
+    image: "https://media.graphassets.com/z6MgBBtHS2rwKEIrAQoQ",
   },
   {
     name: "Data Investor",
@@ -28,14 +26,13 @@ export const tiers = [
     href: "/contact",
     description: "Invest in the essential commodity powering the data economy.",
     cta: "Contact Us",
-    image:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
+    image: "https://media.graphassets.com/DhI5g0FQZug56y6hWcXn",
   },
 ];
 
 export function PersonaContainer() {
   return (
-    <div className="bg-white">
+    <div className="mt-8 bg-white">
       <div className="mx-auto px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="mt-2 text-4xl font-bold tracking-tight text-brand-blue sm:text-5xl">

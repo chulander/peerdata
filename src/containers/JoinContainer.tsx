@@ -3,8 +3,8 @@ import { Image, LayoutContainer } from "../layouts/LayoutContainer";
 
 const image: Image = {
   id: "image",
-  alt: "background image",
-  url: "https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=2048x2048&w=is&k=20&c=nB37AAthL5AINPEz4tK8kiYHGjJm_YtKuSjJZvOiqfA=",
+  alt: "Join Us",
+  url: "https://media.graphassets.com/D51tWbIJRJiILlzYFKmT",
 };
 
 export function JoinContainer() {

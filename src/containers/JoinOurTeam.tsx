@@ -33,9 +33,9 @@ export function JoinOurTeam() {
           </div>
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:w-1/3 lg:flex-shrink-0 lg:flex-grow">
             <img
-              alt="image"
-              src="https://media.istockphoto.com/id/1448152453/vector/big-data-technology-and-data-science-illustration-data-flow-concept-querying-analysing.jpg?s=2048x2048&w=is&k=20&c=RJqfVGXDYkWmwIohM7hsaRY5Lz6n_I8UIcftlKMnioM="
-              className="mx-auto rounded"
+              alt="Join Us"
+              src="https://media.graphassets.com/FQ732tLFQ96z8VFPUVFr"
+              className="mx-auto rounded bg-cover w-full h-full"
             />
           </div>
         </div>

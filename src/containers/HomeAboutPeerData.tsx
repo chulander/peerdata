@@ -2,8 +2,8 @@ import NavItem from "../components/NavItem";
 import { Image, LayoutContainer } from "../layouts/LayoutContainer";
 const image: Image = {
   id: "image",
-  alt: "background image",
-  url: "https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=2048x2048&w=is&k=20&c=nB37AAthL5AINPEz4tK8kiYHGjJm_YtKuSjJZvOiqfA=",
+  alt: "About PEER DATA",
+  url: "https://media.graphassets.com/Mn5mQJcqSmig46arfCx7",
 };
 
 export function HomeAboutPeerData() {

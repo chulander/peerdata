@@ -93,8 +93,8 @@ export function AboutPeerData() {
         <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full"
-            src="https://media.istockphoto.com/id/1311598658/photo/businessman-trading-online-stock-market-on-teblet-screen-digital-investment-concept.jpg?s=1024x1024&w=is&k=20&c=JZprgGDQ8xqa6iu0fyKJfKOlAvae0w9U-AdHeCT2kg4="
-            alt=""
+            src="https://media.graphassets.com/osZH2GkWTpax1ngk5BnG"
+            alt="About Us"
           />
         </div>
       </div>

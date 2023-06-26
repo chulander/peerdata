@@ -12,6 +12,8 @@ export default {
       },
       backgroundImage: {
         gradient: "url(./assets/gradient-background.png)",
+        "home-banner":"url(https://media.graphassets.com/F5QFqaQeRAejs31hYZc5)",
+        "home-about":"url(https://media.graphassets.com/Mn5mQJcqSmig46arfCx7)",
       },
       colors: {
         primary: {
