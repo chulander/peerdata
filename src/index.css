@@ -1,21 +1,51 @@
 @font-face {
-  font-family: "Avenir";
-  src: local("Avenir"),
-    url("./assets/fonts/avenir-black.otf") format("truetype");
+  font-family: "Indivisible";
+  src: url("Indivisible-Medium.eot");
+  src: local("Indivisible Medium"), local("Indivisible-Medium"),
+    url("./assets/fonts/Indivisible-Medium.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Indivisible-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Indivisible-Medium.woff") format("woff"),
+    url("./assets/fonts/Indivisible-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Indivisible";
+  src: url("Indivisible-MediumItalic.eot");
+  src: local("Indivisible Medium Italic"), local("Indivisible-MediumItalic"),
+    url("./assets/fonts/Indivisible-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Indivisible-MediumItalic.woff2") format("woff2"),
+    url("./assets/fonts/Indivisible-MediumItalic.woff") format("woff"),
+    url("./assets/fonts/Indivisible-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Indivisible";
+  src: url("Indivisible-RegularItalic.eot");
+  src: local("Indivisible Regular Italic"), local("Indivisible-RegularItalic"),
+    url("./assets/fonts/Indivisible-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Indivisible-RegularItalic.woff2") format("woff2"),
+    url("./assets/fonts/Indivisible-RegularItalic.woff") format("woff"),
+    url("./assets/fonts/Indivisible-RegularItalic.ttf") format("truetype");
   font-weight: normal;
+  font-style: italic;
 }
+
 @font-face {
-  font-family: "Avenir";
-  src: local("Avenir-Light"),
-    url("./assets/fonts/avenir-light.tff") format("TrueType");
-  font-weight: 300;
+  font-family: "Indivisible";
+  src: url("Indivisible-Regular.eot");
+  src: local("Indivisible Regular"), local("Indivisible-Regular"),
+    url("./assets/fonts/Indivisible-Regular.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Indivisible-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Indivisible-Regular.woff") format("woff"),
+    url("./assets/fonts/Indivisible-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
-@font-face {
-  font-family: "Avenir";
-  src: local("Avenir-Bold"),
-    url("./assets/fonts/avenir-Bold.otf") format("OpenType");
-  font-weight: bold;
-}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -21,10 +21,7 @@ export interface NavType {
 
 export function Nav({ className, items }: Nav) {
   return (
-    <Disclosure
-      as="nav"
-      className={`bg-gradient bg-cover bg-center bg-origin-border ${className}`}
-    >
+    <Disclosure as="nav" className={`${className}`}>
       {({ open }) => (
         <>
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +30,7 @@ export function Nav({ className, items }: Nav) {
                 <div className="shrink-0">
                   <NavItem id="home" to="/">
                     <img
-                      className="h-16 w-auto rounded-md text-white"
+                      className="h-16 w-auto rounded-md text-black"
                       src="https://media.graphassets.com/ZTEzJmSoRYGwcyShcGQ2"
                       alt="PEER DATA"
                     />
@@ -52,7 +49,7 @@ export function Nav({ className, items }: Nav) {
                       className={({ isActive, isPending }) =>
                         classNames(
                           isActive ? activeClassname : defaultClassname,
-                          "text-md rounded-md px-3 py-2 font-medium text-white focus-visible:border-none focus-visible:border-opacity-0"
+                          "text-md rounded-md px-3 py-2 text-black focus-visible:border-none focus-visible:border-opacity-0"
                         )
                       }
                     />
@@ -65,12 +62,12 @@ export function Nav({ className, items }: Nav) {
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon
-                      className="block h-6 w-6 text-white"
+                      className="block h-6 w-6 text-black"
                       aria-hidden="true"
                     />
                   ) : (
                     <Bars3Icon
-                      className="block h-6 w-6 text-white"
+                      className="block h-6 w-6 text-black"
                       aria-hidden="true"
                     />
                   )}

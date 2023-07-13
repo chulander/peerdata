@@ -4,7 +4,7 @@ import { ChevronRightIcon } from "@heroicons/react/20/solid";
 
 export function Hero() {
   return (
-    <div className="bg-home-banner bg-cover bg-center">
+    <div className="">
       <div className="relative isolate pt-14">
         <div className="mx-auto px-6 py-24 sm:py-32 lg:flex lg:items-center lg:gap-x-10 lg:px-8 lg:py-40">
           <div className=" xs:flex xs:flex-col xs:items-center sm:block md:max-w-2xl lg:mx-0 lg:max-w-7xl lg:flex-auto">
@@ -29,13 +29,13 @@ export function Hero() {
                 </NavItem>
               </div>
             </div>
-            <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl md:max-w-2xl lg:max-w-5xl">
+            <h1 className="mt-10 text-8xl font-medium tracking-tighter text-black md:max-w-2xl lg:max-w-6xl ">
               Powering and digitizing
               <br />
-              Data economy of the future
+              data economy of the future
             </h1>
-            <p className="text-md mt-2 font-bold leading-8 text-white sm:mt-6 sm:text-2xl">
-              Turning data into assets
+            <p className="mt-1 text-4xl/11 text-brand-dark-blue font-normal tracking-tighter">
+              Peer Data enables you to turn data into assets.
             </p>
           </div>
         </div>
