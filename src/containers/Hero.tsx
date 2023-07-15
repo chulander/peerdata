@@ -8,7 +8,7 @@ export function Hero({ className }: Hero) {
   return (
     <div
       className={classNames(
-        "tt-14 relative isolate",
+        "relative isolate mt-14",
         !className ? "" : className
       )}
     >

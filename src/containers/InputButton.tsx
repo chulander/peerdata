@@ -23,13 +23,14 @@ export function InputButton({
   return (
     <div id={id} className={classNames("flex", !className ? "" : className)}>
       <Input
-        className="basis-[65%]"
+        className={classNames("basis-[65%]")}
         id={`${id}-input`}
+        isPrimary={isPrimary}
         placeholder={placeholder}
         onChange={onChange}
       />
       <Button
-        className="basis-[35%]"
+        className={classNames("basis-[35%]", isPrimary ? "" : "border-white")}
         id={`${id}-button`}
         onClick={onClick}
         label={label}

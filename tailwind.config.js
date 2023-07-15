@@ -11,6 +11,7 @@ export default {
         sans: ["indivisible", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
+        circular: "url(./assets/background/circular-background.svg)",
         gradient: "url(./assets/gradient-background.png)",
         "home-banner":
           "url(https://media.graphassets.com/F5QFqaQeRAejs31hYZc5)",

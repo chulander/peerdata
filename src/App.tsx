@@ -40,7 +40,7 @@ export default function App() {
           path="/"
           element={
             <Home
-              className="px-12"
+              className=""
               roles={dataEconomyRoles.data as DataEconomyRoles["items"]}
               values={valuePropositionItems.data as ValueProps["items"]}
             />
