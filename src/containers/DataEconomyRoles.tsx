@@ -3,15 +3,17 @@ import { DataEconomyRoleCard } from "../components/DataEconomyRoleCard";
 import { classNames } from "../utils";
 
 export interface DataEconomyRoles {
+  buttonLabel: Button["label"];
   className?: string;
   title: string;
   items: Pick<DataEconomyRoleCard, "id" | "description" | "icon" | "title">[];
   onClick: Button["onClick"];
 }
 export function DataEconomyRoles({
+  buttonLabel,
   className,
-  onClick,
   items,
+  onClick,
   title,
 }: DataEconomyRoles) {
   return (
@@ -31,7 +33,7 @@ export function DataEconomyRoles({
         <Button
           className="mt-10 w-full self-start lg:w-[28%] xl:w-[20%]"
           id="contact-us"
-          label="Contact us"
+          label={buttonLabel}
           isPrimary
           onClick={onClick}
         />

@@ -33,10 +33,11 @@ export function Home({ className, roles, values }: Home) {
         subContent="Peer Data aims to revolutionize how data operates worldwide. By providing expertise, standards, and cutting-edge technology in infrastructure and rails for the data asset class."
       />
       <DataEconomyRoles
-        items={roles}
+        buttonLabel="Contact us"
         className="mt-48"
-        title="What is your role in the data economy?"
+        items={roles}
         onClick={() => console.log("click")}
+        title="What is your role in the data economy?"
       />
       <SplitImages className="mt-20 h-3/4" left={Home3} right={Home4} />
       <LeftText
@@ -58,6 +59,7 @@ export function Home({ className, roles, values }: Home) {
       <ValueProps
         items={values}
         className="mt-48"
+        buttonLabel="Contact us"
         title="We aim to unlock maxium value and amplify reach by:"
         onClick={() => console.log("click")}
       />
