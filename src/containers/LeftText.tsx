@@ -19,7 +19,7 @@ export function LeftText({
         !className ? "" : className
       )}
     >
-      <article className="flex flex-col gap-y-6 lg:basis-1/2">
+      <article className="flex flex-col gap-y-6 lg:basis-2/5">
         <header>
           <h3 className="text-xl/8 font-normal uppercase tracking-tighter text-brand-green">
             {title}

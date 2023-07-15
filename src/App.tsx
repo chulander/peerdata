@@ -37,7 +37,10 @@ export default function App() {
         <Route
           path="/"
           element={
-            <Home roles={dataEconomyRoles.data as DataEconomyRoles["roles"]} />
+            <Home
+              className="px-12"
+              roles={dataEconomyRoles.data as DataEconomyRoles["roles"]}
+            />
           }
         />
         <Route path="/about" element={<About />} />

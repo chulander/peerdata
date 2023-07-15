@@ -14,23 +14,24 @@ import Home2 from "../../assets/images/image-home-2.jpg";
 // };
 
 export interface Home {
+  className?: string;
   roles: DataEconomyRoles["roles"];
 }
-export function Home({ roles }: Home) {
+export function Home({ className, roles }: Home) {
   return (
-    <section>
+    <section className={className}>
       <Hero />
       {/* <PersonaContainer /> */}
-      <Images className="mt-20 h-3/4 px-8" left={Home1} right={Home2} />
+      <Images className="mt-20 h-3/4" left={Home1} right={Home2} />
       <LeftText
-        className="mt-40 px-8"
+        className="mt-40"
         title="Data Revolution"
         mainContent="Data is experiencing exponential growth, having doubled in just the past two years. Yet, despite the ever-increasing demand for diverse and extensive datasets, there is currently no direct avenue for investing in data."
         subContent="Peer Data aims to revolutionize how data operates worldwide. By providing expertise, standards, and cutting-edge technology in infrastructure and rails for the data asset class."
       />
       <DataEconomyRoles
         roles={roles}
-        className="mt-48 px-8"
+        className="mt-48"
         title="What is your role in the data economy?"
       />
       <JoinContainer />

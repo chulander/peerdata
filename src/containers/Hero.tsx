@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <div className="">
       <div className="relative isolate pt-14">
-        <div className="mx-auto my-8 px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
+        <div className="mx-auto my-8 lg:flex lg:items-center lg:gap-x-10">
           <div className=" xs:flex xs:flex-col xs:items-center sm:block md:max-w-2xl lg:mx-0 lg:max-w-7xl lg:flex-auto">
             <h1 className="mt-10 text-8xl font-normal tracking-tighter text-black md:max-w-2xl lg:max-w-6xl ">
               Powering and digitizing
@@ -15,7 +15,7 @@ export function Hero() {
               Peer Data enables you to turn data into assets.
             </p>
             <InputButton
-              className="mt-6 h-20 w-2/3"
+              className="mt-6 h-16 w-2/3"
               id="hero-signup"
               placeholder="Your company email"
               label="Sign up"

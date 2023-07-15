@@ -1,36 +1,26 @@
 import { ReactSVG } from "react-svg";
-// import ConnectingData from "../assets/icons/connecting-data.svg";
-// import ContactAddress from "../assets/icons/contact-address.svg";
-// import ContactEmail from "../assets/icons/contact-email.svg";
-// import ContactPhone from "../assets/icons/contact-phone.svg";
-// import DataConsumer from "../assets/icons/data-consumer.svg";
-// import DataInvestor from "../assets/icons/data-investor.svg";
-// import DataOwner from "../assets/icons/data-owner.svg";
-// import DigitalEconomy from "../assets/icons/digital-economy.svg";
-// import HeaderCalendar from "../assets/icons/header-calendar.svg";
-// import Linkedin from "../assets/icons/linkedin.svg";
+import ConnectingData from "../assets/icons/connecting-data.svg";
+import ContactAddress from "../assets/icons/contact-address.svg";
+import ContactEmail from "../assets/icons/contact-email.svg";
+import ContactPhone from "../assets/icons/contact-phone.svg";
+import DataConsumer from "../assets/icons/data-consumer.svg";
+import DataInvestor from "../assets/icons/data-investor.svg";
+import DataOwner from "../assets/icons/data-owner.svg";
+import DigitalEconomy from "../assets/icons/digital-economy.svg";
+import HeaderCalendar from "../assets/icons/header-calendar.svg";
+import Linkedin from "../assets/icons/linkedin.svg";
 
 const Icons = {
-  // "connecting-data": ConnectingData,
-  // "contact-address": ContactAddress,
-  // "contact-email": ContactEmail,
-  // "contact-phone": ContactPhone,
-  // "data-consumer": DataConsumer,
-  // "data-investor": DataInvestor,
-  // "data-owner": DataOwner,
-  // "digital-economy": DigitalEconomy,
-  // "header-calendar": HeaderCalendar,
-  // linkedin: Linkedin,
-  "connecting-data": "/icons/connecting-data.svg",
-  "contact-address": "/icons/contact-address.svg",
-  "contact-email": "/icons/contact-email.svg",
-  "contact-phone": "/icons/contact-phone.svg",
-  "data-consumer": "/icons/data-consumer.svg",
-  "data-investor": "/icons/data-investor.svg",
-  "data-owner": "/icons/data-owner.svg",
-  "digital-economy": "/icons/digital-economy.svg",
-  "header-calendar": "icons/header-calendar.svg",
-  linkedin: "/icons/linkedin.svg",
+  "connecting-data": ConnectingData,
+  "contact-address": ContactAddress,
+  "contact-email": ContactEmail,
+  "contact-phone": ContactPhone,
+  "data-consumer": DataConsumer,
+  "data-investor": DataInvestor,
+  "data-owner": DataOwner,
+  "digital-economy": DigitalEconomy,
+  "header-calendar": HeaderCalendar,
+  linkedin: Linkedin,
 };
 export interface Icon {
   className?: string;
