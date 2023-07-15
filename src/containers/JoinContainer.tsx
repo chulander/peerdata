@@ -16,7 +16,7 @@ export function JoinContainer() {
       </p>
       <p className="text-md relative mt-4 font-light leading-snug text-black">
         Our remote-first teams are situated across North America, Europe and
-        Asia so don't miss this chance! Are you someone who loves collaborating
+        Asia so don&apos;t miss this chance! Are you someone who loves collaborating
         while having a thirst for knowledge when it comes to data science?
       </p>
       <p className="text-md relative mt-4 font-light leading-snug text-black">

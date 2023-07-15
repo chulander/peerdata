@@ -5,7 +5,7 @@ export function PeerDataValues() {
         <div className="mx-auto px-6 py-8 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
           <div className="mt-16 sm:mt-24 lg:mt-0 lg:w-1/3 lg:flex-shrink-0 lg:flex-grow">
             <img
-              alt="image"
+              alt="Peer Data Values"
               src="https://media.istockphoto.com/id/1448152453/vector/big-data-technology-and-data-science-illustration-data-flow-concept-querying-analysing.jpg?s=2048x2048&w=is&k=20&c=RJqfVGXDYkWmwIohM7hsaRY5Lz6n_I8UIcftlKMnioM="
               className="mx-auto rounded"
             ></img>

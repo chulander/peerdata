@@ -14,7 +14,7 @@ export function JoinOurTeam() {
             <p className="mt-4 text-lg leading-snug text-black font-light">
               You must possess creativity, innovation as well as be willing to
               challenge existing standards. Our remote-first teams are situated
-              across North America, Europe and Asia so don't miss this chance!
+              across North America, Europe and Asia so don&apos;t miss this chance!
             </p>
             <p className="mt-4 text-lg leading-snug text-black font-light">
               Are you someone who loves collaborating while having a thirst for

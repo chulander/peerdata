@@ -7,7 +7,7 @@ export function DataExperts() {
             <h1 className="mt-10 max-w-lg text-4xl font-bold tracking-tight text-brand-700 sm:text-6xl">
               D.A.T.A Experts
             </h1>
-            <p className="mt-6 text-md leading-snug text-brand-500">
+            <p className="text-md mt-6 leading-snug text-brand-500">
               Data runs the world, yet data itself is not widely understood.
               Organizations still don’t know what data they have, where it is,
               or who is using it. Most critically, they have absolutely no way
@@ -15,9 +15,9 @@ export function DataExperts() {
               business objectives.
             </p>
           </div>
-          <div className="mt-16 lg:w-1/2 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow">
+          <div className="mt-16 sm:mt-24 lg:mt-0 lg:w-1/2 lg:flex-shrink-0 lg:flex-grow">
             <img
-              alt="image"
+              alt="Data Experts"
               src="https://media.istockphoto.com/id/1448152453/vector/big-data-technology-and-data-science-illustration-data-flow-concept-querying-analysing.jpg?s=2048x2048&w=is&k=20&c=RJqfVGXDYkWmwIohM7hsaRY5Lz6n_I8UIcftlKMnioM="
               className="mx-auto rounded"
             ></img>

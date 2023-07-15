@@ -58,7 +58,6 @@ export function MeetOurTeam() {
           </p>
         </div>
         <ul
-          role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
         >
           {people.map((person) => (
@@ -72,7 +71,7 @@ export function MeetOurTeam() {
                 {person.name}
               </h3>
               <p className="text-sm leading-6 text-gray-600">{person.role}</p>
-              <ul role="list" className="mt-6 flex justify-center gap-x-6">
+              <ul className="mt-6 flex justify-center gap-x-6">
                 <li>
                   <NavItem
                     id={person.twitterUrl}

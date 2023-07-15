@@ -11,10 +11,11 @@ export interface Button {
   label: string;
   onClick: MouseEventHandler<HTMLButtonElement>;
 }
+const test:HTMLButtonElement['type'] = 'button';
 export function Button({
   className,
   hasIcon = true,
-  type = "button",
+  type = test,
   id,
   label,
   isPrimary = true,
@@ -29,7 +30,6 @@ export function Button({
           : "border-2 border-solid border-brand-dark-blue bg-white text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background",
         !className ? "" : className
       )}
-      type={type}
       name={id}
       id={id}
       onClick={onClick}

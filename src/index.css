@@ -1,49 +1,79 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * indivisible:
+ *   - http://typekit.com/eulas/00000000000000007735eeb8
+ *   - http://typekit.com/eulas/00000000000000007735eeba
+ *   - http://typekit.com/eulas/00000000000000007735eebb
+ *   - http://typekit.com/eulas/00000000000000007735eebd
+ *
+ * © 2009-2023 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2023-07-14 10:41:05 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=mbe5lww&ht=tk&f=48821.48822.48827.48828&a=146486323&app=typekit&e=css");
+
 @font-face {
-  font-family: "Indivisible";
-  src: url("Indivisible-Medium.eot");
-  src: local("Indivisible Medium"), local("Indivisible-Medium"),
-    url("./assets/fonts/Indivisible-Medium.eot?#iefix") format("embedded-opentype"),
-    url("./assets/fonts/Indivisible-Medium.woff2") format("woff2"),
-    url("./assets/fonts/Indivisible-Medium.woff") format("woff"),
-    url("./assets/fonts/Indivisible-Medium.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "indivisible";
+  src: url("https://use.typekit.net/af/dc1f1b/00000000000000007735eeb8/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/dc1f1b/00000000000000007735eeb8/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/dc1f1b/00000000000000007735eeb8/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
   font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
 }
 
 @font-face {
-  font-family: "Indivisible";
-  src: url("Indivisible-MediumItalic.eot");
-  src: local("Indivisible Medium Italic"), local("Indivisible-MediumItalic"),
-    url("./assets/fonts/Indivisible-MediumItalic.eot?#iefix") format("embedded-opentype"),
-    url("./assets/fonts/Indivisible-MediumItalic.woff2") format("woff2"),
-    url("./assets/fonts/Indivisible-MediumItalic.woff") format("woff"),
-    url("./assets/fonts/Indivisible-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
+  font-family: "indivisible";
+  src: url("https://use.typekit.net/af/e8de55/00000000000000007735eeba/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/e8de55/00000000000000007735eeba/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/e8de55/00000000000000007735eeba/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+      format("opentype");
+  font-display: auto;
   font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
 }
 
 @font-face {
-  font-family: "Indivisible";
-  src: url("Indivisible-RegularItalic.eot");
-  src: local("Indivisible Regular Italic"), local("Indivisible-RegularItalic"),
-    url("./assets/fonts/Indivisible-RegularItalic.eot?#iefix") format("embedded-opentype"),
-    url("./assets/fonts/Indivisible-RegularItalic.woff2") format("woff2"),
-    url("./assets/fonts/Indivisible-RegularItalic.woff") format("woff"),
-    url("./assets/fonts/Indivisible-RegularItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Indivisible";
-  src: url("Indivisible-Regular.eot");
-  src: local("Indivisible Regular"), local("Indivisible-Regular"),
-    url("./assets/fonts/Indivisible-Regular.eot?#iefix") format("embedded-opentype"),
-    url("./assets/fonts/Indivisible-Regular.woff2") format("woff2"),
-    url("./assets/fonts/Indivisible-Regular.woff") format("woff"),
-    url("./assets/fonts/Indivisible-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "indivisible";
+  src: url("https://use.typekit.net/af/9e7dcb/00000000000000007735eebb/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/9e7dcb/00000000000000007735eebb/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/9e7dcb/00000000000000007735eebb/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
   font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "indivisible";
+  src: url("https://use.typekit.net/af/2c8795/00000000000000007735eebd/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2c8795/00000000000000007735eebd/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2c8795/00000000000000007735eebd/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+.tk-indivisible {
+  font-family: "indivisible", sans-serif;
 }
 
 @tailwind base;

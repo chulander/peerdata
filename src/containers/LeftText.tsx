@@ -3,10 +3,15 @@ import { classNames } from "../utils";
 export interface LeftText {
   className?: string;
   title: string;
-  content: string;
+  mainContent: string;
   subContent: string;
 }
-export function LeftText({ className, title, content, subContent }: LeftText) {
+export function LeftText({
+  className,
+  title,
+  mainContent,
+  subContent,
+}: LeftText) {
   return (
     <section
       className={classNames(
@@ -14,15 +19,19 @@ export function LeftText({ className, title, content, subContent }: LeftText) {
         !className ? "" : className
       )}
     >
-      <article className="flex flex-col lg:basis-1/2 gap-y-6">
+      <article className="flex flex-col gap-y-6 lg:basis-1/2">
         <header>
           <h3 className="text-xl/8 font-normal uppercase tracking-tighter text-brand-green">
             {title}
           </h3>
         </header>
-        <p className="text-4xl/10 font-normal tracking-tighter">{content}</p>
+        <p className="text-4xl/10 font-normal tracking-tighter text-current">
+          {mainContent}
+        </p>
 
-        <p className="text-3xl/9 font-normal tracking-tighter">{subContent}</p>
+        <p className="text-4xl/10 font-normal tracking-tighter text-current">
+          {subContent}
+        </p>
       </article>
     </section>
   );

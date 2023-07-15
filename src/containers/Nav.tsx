@@ -44,6 +44,7 @@ export function Nav({ className, items }: Nav) {
                     <NavItem
                       id={id}
                       key={id}
+                      // eslint-disable-next-line react/no-children-prop
                       children={name}
                       to={href}
                       className={({ isActive, isPending }) =>
@@ -84,8 +85,9 @@ export function Nav({ className, items }: Nav) {
                   as={NavItemWithRef}
                   id={id}
                   to={href}
+                  // eslint-disable-next-line react/no-children-prop
                   children={name}
-                  className="text-md block rounded-md px-3 py-2 font-medium text-white"
+                  className="text-md block rounded-md px-3 py-2 font-bold text-white"
                 />
               ))}
             </div>

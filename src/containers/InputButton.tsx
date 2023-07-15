@@ -22,7 +22,12 @@ export function InputButton({
 }: InputButton) {
   return (
     <div id={id} className={classNames("flex", !className ? "" : className)}>
-      <Input className="basis-7/12" id={`${id}-input`} placeholder={placeholder} onChange={onChange} />
+      <Input
+        className="basis-7/12"
+        id={`${id}-input`}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
       <Button
         className="basis-5/12"
         id={`${id}-button`}

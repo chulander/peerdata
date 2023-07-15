@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        indivisible: ["Indivisible", ...defaultTheme.fontFamily.sans],
-        sans: ["Indivisible", ...defaultTheme.fontFamily.sans],
+        indivisible: ["indivisible", ...defaultTheme.fontFamily.sans],
+        sans: ["indivisible", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
         gradient: "url(./assets/gradient-background.png)",

@@ -32,17 +32,12 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "tailwindcss/no-custom-classname": {
-      "whitelist": [
-        "i\\-primary",
-        "i\\-secondary",
-        "i\\-alternate",
-        "i\\-brand-100",
-        "i\\-brand-300",
-        "i\\-brand-500",
-        "i\\-brand-700"
-      ]
-    }
+    "tailwindcss/no-custom-classname": [
+      "off",
+      {
+        "whitelist": []
+      }
+    ]
   },
   "settings": {
     "react": {

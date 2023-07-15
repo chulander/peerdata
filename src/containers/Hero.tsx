@@ -1,13 +1,12 @@
-import { Button } from "../components/Button";
 import { InputButton } from "./InputButton";
 
 export function Hero() {
   return (
     <div className="">
       <div className="relative isolate pt-14">
-        <div className="mx-auto px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8 my-8">
+        <div className="mx-auto my-8 px-6 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
           <div className=" xs:flex xs:flex-col xs:items-center sm:block md:max-w-2xl lg:mx-0 lg:max-w-7xl lg:flex-auto">
-            <h1 className="mt-10 text-8xl font-medium tracking-tighter text-black md:max-w-2xl lg:max-w-6xl ">
+            <h1 className="mt-10 text-8xl font-normal tracking-tighter text-black md:max-w-2xl lg:max-w-6xl ">
               Powering and digitizing
               <br />
               data economy of the future
@@ -20,8 +19,12 @@ export function Hero() {
               id="hero-signup"
               placeholder="Your company email"
               label="Sign up"
-              onChange={() => {}}
-              onClick={() => {}}
+              onChange={() => {
+                console.log("test");
+              }}
+              onClick={() => {
+                console.log("test");
+              }}
             />
           </div>
         </div>

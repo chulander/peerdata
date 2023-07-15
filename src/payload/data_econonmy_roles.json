@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "data-owner",
+      "title": "Data Owner",
+      "description": "Turn your data into assets. We provide tools to guide you through your data monetization journey, to unlock maxium value and amplify reach",
+      "icon": "data-owner"
+    },
+    {
+      "id": "data-consumer",
+      "title": "Data Consumer",
+      "description": "Reduce time to context, objective assessment of data quality and improve the data recovery process.",
+      "icon": "data-consumer"
+    },
+    {
+      "id": "data-investor",
+      "title": "Data Investor",
+      "description": "Invest the essential commodity powering the data economy.",
+      "icon": "data-investor"
+    }
+  ]
+}
