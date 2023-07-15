@@ -1,26 +1,26 @@
 import { classNames } from "../utils";
 
-export interface Images {
+export interface SplitImages {
   className?: string;
   left: string;
   right: string;
 }
-export function Images({ className, left, right }: Images) {
+export function SplitImages({ className, left, right }: SplitImages) {
   return (
     <section
       className={classNames(
-        "flex w-full items-center justify-between gap-x-12",
+        "flex gap-y-12 flex-col w-full lg:flex-row lg:items-center lg:justify-between lg:gap-x-12",
         !className ? "" : className
       )}
     >
       <img
         alt="home-1"
-        className="mb-36 aspect-square h-full w-10 basis-1/2"
+        className="lg:mb-36 lg:h-full lg:w-10 lg:basis-1/2"
         src={left}
       ></img>
       <img
         alt="home-2"
-        className="mt-48 h-full w-10 basis-1/2"
+        className="lg:mt-48 lg:h-full lg:w-10 lg:basis-1/2"
         src={right}
       ></img>
     </section>

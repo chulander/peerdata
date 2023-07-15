@@ -2,39 +2,36 @@ import { classNames } from "../utils";
 
 export interface LeftText {
   className?: string;
-  title: string;
-  subtitle?:string;
+  category: string;
+  title?: string;
+  children?: React.ReactNode;
   mainContent: string;
   subContent: string;
 }
 export function LeftText({
   className,
+  children,
+  category,
   title,
-  subtitle,
   mainContent,
   subContent,
 }: LeftText) {
   return (
     <section
       className={classNames(
-        "flex w-full max-w-full items-center justify-between gap-x-10",
+        "flex w-full items-center justify-between gap-x-10",
         !className ? "" : className
       )}
     >
-      <article className="flex flex-col gap-y-6 lg:basis-2/5">
+      <article className="flex w-full flex-col gap-y-6 lg:basis-[47%]">
         <header>
-          <h3 className="text-brand-green header-3">
-            {title}
-          </h3>
+          <h3 className="header-3 text-brand-green">{category}</h3>
         </header>
-        {!subtitle ? null :<p className="">{subtitle}</p>}
-        <p className="text-current body-small">
-          {mainContent}
-        </p>
+        {!title ? null : <p className="header-2 text-">{title}</p>}
+        <p className="body-small text-current">{mainContent}</p>
 
-        <p className="text-current body-small">
-          {subContent}
-        </p>
+        <p className="body-small text-current">{subContent}</p>
+        {children}
       </article>
     </section>
   );

@@ -15,26 +15,21 @@ export function DataEconomyRoles({
 // subContent,
 DataEconomyRoles) {
   return (
-    <div
-      className={classNames(
-        "flex w-full max-w-full",
-        !className ? "" : className
-      )}
-    >
+    <div className={classNames("flex w-full", !className ? "" : className)}>
       <section
-        className="flex w-full max-w-full flex-col items-center justify-between border border-solid border-brand-dark-blue px-12 py-14
+        className="flex flex-col items-center justify-between border border-solid border-brand-dark-blue px-12 py-14
       "
       >
         <header className="w-full">
           <h1 className="header-2 text-brand-dark-blue">{title}</h1>
         </header>
-        <section className="mt-12 flex w-full gap-x-12">
+        <section className="mt-12 flex w-full flex-col gap-y-12 lg:flex-row lg:gap-x-12 lg:gap-y-0">
           {roles.map((item) => (
             <DataEconomyRoleCard key={item.id} {...item} />
           ))}
         </section>
         <Button
-          className="mt-8 w-64 self-start"
+          className="xl-w-1/2 mt-8 w-full self-start lg:w-[30%] xl:w-[25%]"
           id="contact-us"
           label="Contact us"
           isPrimary

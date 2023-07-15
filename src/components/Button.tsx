@@ -24,7 +24,7 @@ export function Button({
   return (
     <button
       className={classNames(
-        "flex w-full items-center justify-between px-6 py-3",
+        "flex items-center justify-between px-6 py-3",
         isPrimary ? "button-primary" : "button-secondary",
         !className ? "" : className
       )}
@@ -32,11 +32,21 @@ export function Button({
       id={id}
       onClick={onClick}
     >
-      <span className="block">{label}</span>
+      <span
+        className={classNames(
+          "body-small",
+          isPrimary ? "text-white" : "text-brand-dark-blue"
+        )}
+      >
+        {label}
+      </span>
       {!hasIcon ? null : (
         <span className="block">
           <ArrowLongRightIcon
-            className="-mr-2 w-8 text-current"
+            className={classNames(
+              "-mr-2 w-8",
+              isPrimary ? "text-white" : "text-brand-dark-blue"
+            )}
             aria-hidden="true"
           />
         </span>
