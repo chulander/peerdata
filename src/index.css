@@ -72,6 +72,38 @@
   font-stretch: normal;
 }
 
+.header-1 {
+  @apply text-8xl font-bold leading-12 tracking-tight;
+}
+.header-2 {
+  @apply text-7xl font-normal leading-11 tracking-tight;
+}
+.header-3 {
+  @apply text-xl font-normal uppercase leading-7 tracking-tight;
+}
+.header-4 {
+  @apply text-4xl font-bold leading-8 tracking-tight;
+}
+.body-large {
+  @apply text-4xl font-normal leading-10 tracking-tight;
+}
+.body-small {
+  @apply text-3xl font-normal leading-9 tracking-tight;
+}
+
+.focus {
+  @apply focus:outline-dashed focus:outline-2 focus:outline-offset-4 focus:outline-brand-green;
+}
+.button-primary {
+  @apply focus border-2 border-solid border-transparent bg-brand-dark-blue text-white hover:border-brand-green hover:bg-brand-green;
+}
+.button-secondary {
+  @apply focus border-2 border-solid border-brand-dark-blue bg-white text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background;
+}
+.anchor {
+  @apply body-small focus border-b border-solid border-brand-blue text-brand-blue hover:border-b-0;
+}
+
 .tk-indivisible {
   font-family: "indivisible", sans-serif;
 }

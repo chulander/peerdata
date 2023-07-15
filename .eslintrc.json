@@ -32,6 +32,7 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "tailwindcss/classnames-order": "off",
     "tailwindcss/no-custom-classname": [
       "off",
       {

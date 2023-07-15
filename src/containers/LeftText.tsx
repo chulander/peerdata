@@ -3,12 +3,14 @@ import { classNames } from "../utils";
 export interface LeftText {
   className?: string;
   title: string;
+  subtitle?:string;
   mainContent: string;
   subContent: string;
 }
 export function LeftText({
   className,
   title,
+  subtitle,
   mainContent,
   subContent,
 }: LeftText) {
@@ -21,15 +23,16 @@ export function LeftText({
     >
       <article className="flex flex-col gap-y-6 lg:basis-2/5">
         <header>
-          <h3 className="text-xl/8 font-normal uppercase tracking-tighter text-brand-green">
+          <h3 className="text-brand-green header-3">
             {title}
           </h3>
         </header>
-        <p className="text-4xl/10 font-normal tracking-tighter text-current">
+        {!subtitle ? null :<p className="">{subtitle}</p>}
+        <p className="text-current body-small">
           {mainContent}
         </p>
 
-        <p className="text-4xl/10 font-normal tracking-tighter text-current">
+        <p className="text-current body-small">
           {subContent}
         </p>
       </article>

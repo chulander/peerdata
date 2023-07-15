@@ -22,10 +22,10 @@ export function DataEconomyRoleCard({
       )}
     >
       <Icon name={icon} />
-      <h4 className="mt-20 text-2xl/8 font-bold text-brand-dark-blue">
+      <h4 className="mt-20 text-brand-dark-blue body-large">
         {title}
       </h4>
-      <p className="mb-10 mt-4 text-2xl/8 font-normal tracking-tighter text-brand-dark-blue">
+      <p className="mb-10 mt-4 text-brand-dark-blue body-small">
         {description}
       </p>
     </article>

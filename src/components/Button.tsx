@@ -11,11 +11,11 @@ export interface Button {
   label: string;
   onClick: MouseEventHandler<HTMLButtonElement>;
 }
-const test:HTMLButtonElement['type'] = 'button';
+// const test: HTMLButtonElement["type"] = "button";
 export function Button({
   className,
   hasIcon = true,
-  type = test,
+  // type = test,
   id,
   label,
   isPrimary = true,
@@ -24,10 +24,8 @@ export function Button({
   return (
     <button
       className={classNames(
-        "flex w-full items-center justify-between px-6 py-3 text-xl/7 font-normal tracking-tighter focus:outline-dashed focus:outline-2 focus:outline-offset-4 focus:outline-brand-green",
-        isPrimary
-          ? "border-2 border-solid border-transparent bg-brand-dark-blue text-white hover:border-brand-green hover:bg-brand-green"
-          : "border-2 border-solid border-brand-dark-blue bg-white text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background",
+        "flex w-full items-center justify-between px-6 py-3",
+        isPrimary ? "button-primary" : "button-secondary",
         !className ? "" : className
       )}
       name={id}

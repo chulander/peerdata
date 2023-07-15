@@ -23,13 +23,13 @@ export function InputButton({
   return (
     <div id={id} className={classNames("flex", !className ? "" : className)}>
       <Input
-        className="basis-7/12"
+        className="basis-[65%]"
         id={`${id}-input`}
         placeholder={placeholder}
         onChange={onChange}
       />
       <Button
-        className="basis-5/12"
+        className="basis-[35%]"
         id={`${id}-button`}
         onClick={onClick}
         label={label}

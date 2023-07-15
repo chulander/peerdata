@@ -26,9 +26,7 @@ DataEconomyRoles) {
       "
       >
         <header className="w-full">
-          <h1 className="text-7xl/11 font-normal tracking-tighter text-brand-dark-blue">
-            {title}
-          </h1>
+          <h1 className="header-2 text-brand-dark-blue">{title}</h1>
         </header>
         <section className="mt-12 flex w-full gap-x-12">
           {roles.map((item) => (
