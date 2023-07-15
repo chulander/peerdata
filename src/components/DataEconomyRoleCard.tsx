@@ -25,7 +25,7 @@ export function DataEconomyRoleCard({
       <h4 className="mt-20 text-brand-dark-blue body-large">
         {title}
       </h4>
-      <p className="mb-10 mt-4 text-brand-dark-blue body-small">
+      <p className="mb-10 mt-4 text-black body-small">
         {description}
       </p>
     </article>

@@ -7,6 +7,7 @@ import DataConsumer from "../assets/icons/data-consumer.svg";
 import DataInvestor from "../assets/icons/data-investor.svg";
 import DataOwner from "../assets/icons/data-owner.svg";
 import DigitalEconomy from "../assets/icons/digital-economy.svg";
+import Expertise from "../assets/icons/expertise.svg";
 import HeaderCalendar from "../assets/icons/header-calendar.svg";
 import Linkedin from "../assets/icons/linkedin.svg";
 
@@ -19,6 +20,7 @@ const Icons = {
   "data-investor": DataInvestor,
   "data-owner": DataOwner,
   "digital-economy": DigitalEconomy,
+  expertise: Expertise,
   "header-calendar": HeaderCalendar,
   linkedin: Linkedin,
 };

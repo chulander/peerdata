@@ -1,5 +1,4 @@
 import { Hero } from "../../containers/Hero";
-import PersonaContainer from "../../containers/PersonaContainer";
 // import CategoryContainer from "../../containers/CategoryContainer";
 import HomeAboutPeerData from "../../containers/HomeAboutPeerData";
 import JoinContainer from "../../containers/JoinContainer";
@@ -11,6 +10,7 @@ import Home2 from "../../assets/images/image-home-2.jpg";
 import Home3 from "../../assets/images/image-home-3.jpg";
 import Home4 from "../../assets/images/image-home-4.jpg";
 import { Button } from "../../components/Button";
+import { ValueProps } from "../../containers/ValueProps";
 
 // const Images = {
 //   "home-1": "../../assets/images/image-home-1.jpg",
@@ -18,14 +18,13 @@ import { Button } from "../../components/Button";
 
 export interface Home {
   className?: string;
-  roles: DataEconomyRoles["roles"];
+  roles: DataEconomyRoles["items"];
+  values: ValueProps["items"];
 }
-export function Home({ className, roles }: Home) {
+export function Home({ className, roles, values }: Home) {
   return (
     <section className={className}>
-      {/* eslint-disable-next-line react/no-children-prop */}
       <Hero />
-      {/* <PersonaContainer /> */}
       <SplitImages className="mt-20 h-3/4" left={Home1} right={Home2} />
       <LeftText
         className="mt-40"
@@ -34,9 +33,10 @@ export function Home({ className, roles }: Home) {
         subContent="Peer Data aims to revolutionize how data operates worldwide. By providing expertise, standards, and cutting-edge technology in infrastructure and rails for the data asset class."
       />
       <DataEconomyRoles
-        roles={roles}
+        items={roles}
         className="mt-48"
         title="What is your role in the data economy?"
+        onClick={() => console.log("click")}
       />
       <SplitImages className="mt-20 h-3/4" left={Home3} right={Home4} />
       <LeftText
@@ -44,7 +44,7 @@ export function Home({ className, roles }: Home) {
         category="Mission"
         title="Our mission is to assist organizations in transforming their data into valuable assets"
         mainContent="Peer Data is borne out of the observation that data and AI are powering nearly everything we do today. Data, as the vital commodity powering the AI and digital world, holds immense value and potential"
-        subContent="Our team has witnessed the transformative journey of data, form its role in supporting human decision-making to empowering machines toke informed choices in financial markets and everyday life on a global scale"
+        subContent="Our team has witnessed the transformative journey of data, form its role in supporting human decision-making to empowering machines toke informed choices in financial markets and everyday life on a global scale."
       >
         <Button
           className="w-full lg:w-[65%] xl:w-[45%]"
@@ -54,6 +54,13 @@ export function Home({ className, roles }: Home) {
           onClick={() => console.log("click")}
         />
       </LeftText>
+      <hr className="my-16 h-0.5 bg-brand-dark-blue lg:my-36" />
+      <ValueProps
+        items={values}
+        className="mt-48"
+        title="We aim to unlock maxium value and amplify reach by:"
+        onClick={() => console.log("click")}
+      />
       <JoinContainer />
       <HomeAboutPeerData />
     </section>

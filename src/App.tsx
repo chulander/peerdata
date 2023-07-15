@@ -5,7 +5,9 @@ import Home from "./pages/Home";
 import About from "./pages/About/About";
 import { ContactUs } from "./pages/Contact/Contact";
 import dataEconomyRoles from "./payload/data_econonmy_roles.json";
+import valuePropositionItems from "./payload/value_propositions_items.json";
 import { DataEconomyRoles } from "./containers/DataEconomyRoles";
+import { ValueProps } from "./containers/ValueProps";
 
 const navItems: NavType[] = [
   {
@@ -39,7 +41,8 @@ export default function App() {
           element={
             <Home
               className="px-12"
-              roles={dataEconomyRoles.data as DataEconomyRoles["roles"]}
+              roles={dataEconomyRoles.data as DataEconomyRoles["items"]}
+              values={valuePropositionItems.data as ValueProps["items"]}
             />
           }
         />

@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": "expertise",
+      "description": "Providing expertise, standard, and cutting-edge technology to build infrastructure and rails for the data asset class",
+      "icon": "expertise"
+    },
+    {
+      "id": "digital-economy",
+      "description": "Enabling digital discovery and monetization of data",
+      "icon": "digital-economy"
+    },
+    {
+      "id": "connecting-data",
+      "description": "Connecting data owners, investors, and consumers to trade data as an asset",
+      "icon": "connecting-data"
+    }
+  ]
+}

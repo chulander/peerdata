@@ -5,15 +5,15 @@ import { classNames } from "../utils";
 export interface DataEconomyRoles {
   className?: string;
   title: string;
-  roles: Pick<DataEconomyRoleCard, "id" | "description" | "icon" | "title">[];
+  items: Pick<DataEconomyRoleCard, "id" | "description" | "icon" | "title">[];
+  onClick: Button["onClick"];
 }
 export function DataEconomyRoles({
   className,
+  onClick,
+  items,
   title,
-  roles,
-}: // mainContent,
-// subContent,
-DataEconomyRoles) {
+}: DataEconomyRoles) {
   return (
     <div className={classNames("flex w-full", !className ? "" : className)}>
       <section
@@ -24,18 +24,16 @@ DataEconomyRoles) {
           <h1 className="header-2 text-brand-dark-blue">{title}</h1>
         </header>
         <section className="mt-12 flex w-full flex-col gap-y-12 lg:flex-row lg:gap-x-12 lg:gap-y-0">
-          {roles.map((item) => (
+          {items.map((item) => (
             <DataEconomyRoleCard key={item.id} {...item} />
           ))}
         </section>
         <Button
-          className="xl-w-1/2 mt-8 w-full self-start lg:w-[30%] xl:w-[25%]"
+          className="mt-10 w-full self-start lg:w-[28%] xl:w-[20%]"
           id="contact-us"
           label="Contact us"
           isPrimary
-          onClick={() => {
-            console.log("click");
-          }}
+          onClick={onClick}
         />
       </section>
 
