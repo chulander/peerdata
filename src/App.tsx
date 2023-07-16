@@ -50,7 +50,7 @@ export default function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-      <Footer />
+      <Footer className="lg:mx-12" />
     </div>
   );
 }

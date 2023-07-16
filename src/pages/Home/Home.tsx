@@ -56,17 +56,15 @@ export function Home({ className, roles, values }: Home) {
           onClick={() => console.log("click")}
         />
       </LeftText>
-      <hr className="my-16 h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-36" />
+      <hr className="my-36 h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-52" />
       <ValueProps
         items={values}
-        className="mt-48 px-12"
+        className="px-12"
         buttonLabel="Contact us"
         title="We aim to unlock maxium value and amplify reach by:"
         onClick={() => console.log("click")}
       />
-      <Signup />
-      <JoinContainer />
-      <HomeAboutPeerData />
+      <Signup className="px-12"/>
     </section>
   );
 }

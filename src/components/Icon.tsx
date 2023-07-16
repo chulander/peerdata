@@ -10,6 +10,7 @@ import DigitalEconomy from "../assets/icons/digital-economy.svg";
 import Expertise from "../assets/icons/expertise.svg";
 import HeaderCalendar from "../assets/icons/header-calendar.svg";
 import Linkedin from "../assets/icons/linkedin.svg";
+import PeerDataLogo from "../assets/logo/peer-data-logo.svg";
 
 const Icons = {
   "connecting-data": ConnectingData,
@@ -23,6 +24,7 @@ const Icons = {
   expertise: Expertise,
   "header-calendar": HeaderCalendar,
   linkedin: Linkedin,
+  logo: PeerDataLogo,
 };
 export interface Icon {
   className?: string;
