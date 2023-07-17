@@ -25,7 +25,7 @@ export function Nav({ className, items }: Nav) {
   return (
     <Disclosure
       as="nav"
-      className={classNames("py-4", !className ? "" : className)}
+      className={classNames("py-6", !className ? "" : className)}
     >
       {({ open }) => (
         <>

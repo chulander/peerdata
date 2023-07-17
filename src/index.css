@@ -72,6 +72,30 @@
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: "Indivisible";
+  src: url("./assets/fonts/Indivisible-Medium.eot");
+  src: local("Indivisible Medium"), local("Indivisible-Medium"),
+    url("./assets/fonts/Indivisible-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/Indivisible-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Indivisible-Medium.woff") format("woff"),
+    url("./assets/fonts/Indivisible-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Indivisible";
+  src: url("./assets/fonts/Indivisible-MediumItalic.eot");
+  src: local("Indivisible Medium Italic"), local("Indivisible-MediumItalic"),
+    url("./assets/fonts/Indivisible-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Indivisible-MediumItalic.woff2") format("woff2"),
+    url("./assets/fonts/Indivisible-MediumItalic.woff") format("woff"),
+    url("./assets/fonts/Indivisible-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
 .header-1 {
   @apply text-8xl font-bold leading-12 tracking-tight;
 }

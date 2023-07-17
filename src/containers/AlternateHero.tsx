@@ -1,10 +1,10 @@
 import { classNames } from "../utils";
 import { InputButton } from "./InputButton";
 
-export interface Hero {
+export interface AlternateHero {
   className?: string;
 }
-export function Hero({ className }: Hero) {
+export function AlternateHero({ className }: AlternateHero) {
   return (
     <div className={classNames("relative pt-24", !className ? "" : className)}>
       <div className="mx-auto my-8 lg:flex lg:flex-col lg:gap-x-10">
@@ -14,7 +14,7 @@ export function Hero({ className }: Hero) {
             <br />
             data economy of the future
           </h1>
-          <p className="body-x-small mt-4 text-black">
+          <p className="body-small mt-4 text-black">
             Peer Data enables you to turn data into assets.
           </p>
           <InputButton
@@ -36,4 +36,4 @@ export function Hero({ className }: Hero) {
   );
 }
 
-export default Hero;
+export default AlternateHero;

@@ -56,8 +56,8 @@ const footerItems: NavItem[] = [
 ];
 export default function App() {
   return (
-    <div className="m-auto">
-      <Nav className="w-full px-8" items={navItems} />
+    <div className="relative m-auto">
+      <Nav className="absolute w-full px-6" items={navItems} />
       <Routes>
         <Route
           path="/"
