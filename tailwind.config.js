@@ -31,21 +31,29 @@ export default {
       letterSpacing: {
         tighter: "-0.05em",
       },
+      
+
       fontSize: {
-        xl: ["1.375rem", { lineHeight: "1.75rem" }], // 22px | 28px
-        "3xl": ["1.75rem", { lineHeight: "2.375rem" }], //  28px | 38px
-        "4xl": ["2.125rem", { lineHeight: "2.25rem" }], // 34px | 36px
-        "7xl": ["4rem", { lineHeight: "4rem" }], // 64px | 64px
-        "8xl": ["5.625rem", { lineHeight: "5.9375rem" }], //90px | 28px
+        xl: ["1.83rem", { lineHeight: "1.75rem" }], // 22px | 28px
+        "3xl": ["2.33rem", { lineHeight: "2.33rem" }], // 34px | 36px
+        "4xl": ["", { lineHeight: "2.375rem" }], //  28px | 38px
+        "7xl": ["5.33rem", { lineHeight: "5.33rem" }], // 64px | 64px
+        "8xl": ["7.5rem", { lineHeight: "7.92rem" }], //90px | 28px
+        // xl: ["1.375rem", { lineHeight: "1.75rem" }], // 22px | 28px
+        // "3xl": ["1.75rem", { lineHeight: "2.375rem" }], //  28px | 38px
+        // "4xl": ["2.125rem", { lineHeight: "2.25rem" }], // 34px | 36px
+        // "7xl": ["4rem", { lineHeight: "4rem" }], // 64px | 64px
+        // "8xl": ["5.625rem", { lineHeight: "5.9375rem" }], //90px | 28px
+
       },
       lineHeight: {
         // 7 is the same as default
-        7: "1.75rem", // 28px
-        8: "2.25rem", // 36px
-        9: "2.375rem", // 38px
-        10: "3rem", // 48 px
-        11: "4rem", //64 px
-        12: "5.9375rem", // 95px
+        7: "2.33rem", // 28px
+        8: "3rem", // 36px
+        9: "3.17rem", // 38px
+        10: "4rem", // 48 px
+        11: "5.33rem", //64 px
+        12: "7.92rem", // 95px
       },
     },
   },

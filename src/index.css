@@ -97,7 +97,7 @@
 }
 
 .header-1 {
-  @apply text-8xl font-bold leading-12 tracking-tight;
+  @apply text-8xl font-medium leading-12 tracking-tight;
 }
 .header-2 {
   @apply text-7xl font-normal leading-11 tracking-tight;
