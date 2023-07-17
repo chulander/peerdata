@@ -11,11 +11,14 @@ export interface Footer {
 
 export function Footer({ className, items }: Footer) {
   return (
-    <footer className="flex bg-brand-deep-blue">
+    <footer className="bg-brand-deep-blue">
       <section
-        className={classNames("flex pb-12 pt-24 justify-between w-full", !className ? "" : className)}
+        className={classNames(
+          "flex gap-x-40 w-full pb-12 pt-24",
+          !className ? "" : className
+        )}
       >
-        <article>
+        <article className="flex flex-col lg:basis-3/12">
           <Icon className="text-white" name="logo" />
           <header>
             <p className="body-x-small text-white">
@@ -24,7 +27,7 @@ export function Footer({ className, items }: Footer) {
             </p>
           </header>
         </article>
-        <nav className="">
+        <nav className="flex grow flex-col lg:basis-3/12">
           {items.map(({ id, name, href }) => (
             <NavLink
               id={id}
@@ -32,23 +35,25 @@ export function Footer({ className, items }: Footer) {
               // eslint-disable-next-line react/no-children-prop
               children={name}
               to={href}
-              className={({ isActive, isPending }) =>
-                classNames(
-                  "body-x-small flex items-center text-white",
-                  isActive ? "" : ""
-                )
-              }
+              className="body-x-small flex items-center text-white"
             />
           ))}
         </nav>
-        <section className="flex flex-col">
-          <p className="body-small mt-4 text-white">
-            Peer Data enables you to turn data into assets.
+        <article className="flex flex-col lg:basis-4/12">
+          <header>
+            <h4 className="header-3 text-white">
+              Newsletter Signup
+            </h4>
+          </header>
+          <p className="body-x-small mt-4 text-white">
+            Sign up for updates and a newsletter from Peer Data about trends
+            shaping markets, industries, and the global economy.
           </p>
           <InputButton
             className="mt-6 h-16 w-full"
             id="hero-signup"
             isPrimary={false}
+            hasIcon={false}
             placeholder="Your company email"
             label="Sign up"
             onChange={() => {
@@ -58,8 +63,7 @@ export function Footer({ className, items }: Footer) {
               console.log("test");
             }}
           />
-        </section>
-        <section></section>
+        </article>
       </section>
     </footer>
   );

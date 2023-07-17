@@ -10,11 +10,13 @@ export type InputButton = {
   onChange: Input["onChange"];
   placeholder?: Input["placeholder"];
   label: Button["label"];
+  hasIcon?: Button["hasIcon"];
 };
 export function InputButton({
   className,
   id,
   isPrimary = true,
+  hasIcon,
   onChange,
   onClick,
   placeholder,
@@ -31,6 +33,7 @@ export function InputButton({
       />
       <Button
         className={classNames("basis-[35%]", isPrimary ? "" : "border-white")}
+        hasIcon={hasIcon}
         id={`${id}-button`}
         onClick={onClick}
         label={label}

@@ -23,7 +23,7 @@ export default {
         "brand-green": "#13BFA2",
         "brand-light-background": "#F8F4F2",
         "brand-orange": "#FF5634",
-        "brand-deep-blue": "#001F3F", // this color is made up
+        "brand-deep-blue": "#041C2C", // this color is made up
         // primary: "#247D7D",
         secondary: "#247D7D",
         alternate: "gray",

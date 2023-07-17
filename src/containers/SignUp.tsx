@@ -6,7 +6,7 @@ export interface Signup {
 }
 export function Signup({ className }: Signup) {
   return (
-    <div className="border-b-1 border-solid border-white bg-brand-dark-blue">
+    <div className="border-b border-solid border-white bg-brand-dark-blue">
       <div
         className={classNames(
           "xs:flex xs:flex-col xs:items-center mx-auto bg-circular bg-right bg-no-repeat py-12 sm:block lg:flex lg:flex-col lg:gap-x-10",
@@ -21,7 +21,9 @@ export function Signup({ className }: Signup) {
           className="mb-40 mt-28 h-16 w-full lg:w-[55%] xl:w-[45%]"
           id="hero-signup"
           isPrimary={false}
+          hasIcon={false}
           placeholder="Your company email"
+          
           label="Sign up"
           onChange={() => {
             console.log("test");
