@@ -11,7 +11,7 @@ export function Footer({ className }: Footer) {
       <section
         className={classNames("flex flex-col", !className ? "" : className)}
       >
-        <Icon className="text-white" name="logo" />
+        <Icon className="fill-white" name="logo" />
         <p>
           Our mission is to assist organizations in transforming their data into
           values assets

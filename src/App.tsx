@@ -1,6 +1,6 @@
 import { Navigate, Routes, Route } from "react-router-dom";
 import Footer from "./containers/Footer";
-import Nav, { NavType } from "./containers/Nav";
+import Nav, { NavItem } from "./containers/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About/About";
 import { ContactUs } from "./pages/Contact/Contact";
@@ -9,26 +9,21 @@ import valuePropositionItems from "./payload/value_propositions_items.json";
 import { DataEconomyRoles } from "./containers/DataEconomyRoles";
 import { ValueProps } from "./containers/ValueProps";
 
-const navItems: NavType[] = [
+const navItems: NavItem[] = [
   {
-    href: "/careers",
-    id: "careers",
-    name: "Careers",
+    href: "/company",
+    id: "compant",
+    name: "Company",
   },
   {
-    href: "/about",
-    id: "about",
-    name: "About us",
-  },
-  {
-    href: "/contact",
-    id: "contact",
+    href: "/contact-us",
+    id: "contact-us",
     name: "Contact us",
   },
   {
-    href: "/newsletter",
-    id: "newsletter",
-    name: "Newsletter",
+    href: "/waitlist",
+    id: "waitlist",
+    name: "Join the waitlist",
   },
 ];
 export default function App() {

@@ -4,43 +4,47 @@ import NavItem, { NavItemWithRef } from "../components/NavItem";
 import { classNames } from "../utils";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { Icon } from "../components/Icon";
+import { Anchor } from "../components/Anchor";
 
 const defaultClassname =
   "hover:bg-brand-300 border border-transparent border-solid";
 const activeClassname = `${defaultClassname} border border-white border-solid`;
 export interface Nav {
   className?: string;
-  items: NavType[];
+  items: NavItem[];
 }
 
-export interface NavType {
+export interface NavItem {
   href: string;
   id: string;
   name: string;
+  isCTA?: boolean;
 }
 
 export function Nav({ className, items }: Nav) {
   return (
-    <Disclosure as="nav" className={`${className}`}>
+    <Disclosure as="nav" className="">
       {({ open }) => (
         <>
-          <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className={classNames(
+              "mx-auto px-4 sm:px-6 lg:px-8",
+              !className ? "" : className
+            )}
+          >
             <div className="flex h-16 w-full items-center justify-between">
               <div className="flex items-center">
                 <div className="shrink-0">
                   <NavItem id="home" to="/">
-                    <img
-                      className="h-16 w-auto rounded-md text-black"
-                      src="https://media.graphassets.com/ZTEzJmSoRYGwcyShcGQ2"
-                      alt="PEER DATA"
-                    />
+                    <Icon className="text-brand-green" name="logo" />
                   </NavItem>
                 </div>
               </div>
 
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
-                  {items.map(({ id, name, href }) => (
+                  {items.map(({ id, name, href, isCTA }) => (
                     <NavItem
                       id={id}
                       key={id}
@@ -50,7 +54,7 @@ export function Nav({ className, items }: Nav) {
                       className={({ isActive, isPending }) =>
                         classNames(
                           isActive ? activeClassname : defaultClassname,
-                          "text-md rounded-md px-3 py-2 text-black focus-visible:border-none focus-visible:border-opacity-0"
+                          "body-small"
                         )
                       }
                     />
