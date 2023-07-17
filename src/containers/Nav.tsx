@@ -1,21 +1,20 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import NavItem, { NavItemWithRef } from "../components/NavItem";
+import NavItem, { NavItemType, NavItemWithRef } from "../components/NavItem";
 import { classNames } from "../utils";
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import { useLocation } from "react-router-dom";
 import { Icon } from "../components/Icon";
-import { Anchor } from "../components/Anchor";
 
 // const defaultClassname =
 //   "hover:bg-brand-300 border border-transparent border-solid";
 // const activeClassname = `${defaultClassname} border border-white border-solid`;
 export interface Nav {
   className?: string;
-  items: NavItem[];
+  items: NavItemType[];
 }
 
-export interface NavItem {
+export interface NavRoute {
   href: string;
   id: string;
   name: string;
@@ -59,6 +58,7 @@ export function Nav({ className, items }: Nav) {
                         id={id}
                         key={id}
                         to={href}
+                        target="_blank"
                         className={({ isActive, isPending }) =>
                           classNames(
                             "button-secondary flex items-center justify-between space-x-16 py-2 pl-3 pr-1",
@@ -81,7 +81,7 @@ export function Nav({ className, items }: Nav) {
               </div>
               <div className="-mr-2 flex sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="text-white-400 inline-flex items-center justify-center rounded-md p-2 hover:bg-brand-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="text-white-400 hover:bg-brand-300 inline-flex items-center justify-center rounded-md p-2 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon

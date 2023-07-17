@@ -1,6 +1,6 @@
 import { Navigate, Routes, Route } from "react-router-dom";
 import Footer from "./containers/Footer";
-import Nav, { NavItem } from "./containers/Nav";
+import Nav, { NavRoute } from "./containers/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About/About";
 import { ContactUs } from "./pages/Contact/Contact";
@@ -9,7 +9,7 @@ import valuePropositionItems from "./payload/value_propositions_items.json";
 import { DataEconomyRoles } from "./containers/DataEconomyRoles";
 import { ValueProps } from "./containers/ValueProps";
 
-const navItems: NavItem[] = [
+const navItems: NavRoute[] = [
   {
     href: "/company",
     id: "compant",
@@ -21,10 +21,32 @@ const navItems: NavItem[] = [
     name: "Contact us",
   },
   {
-    href: "/waitlist",
+    href: "https://ziessxud13f.typeform.com/to/O9Jgo0W3",
     id: "waitlist",
     name: "Join the waitlist",
     isCTA: true,
+  },
+];
+const footerItems: NavRoute[] = [
+  {
+    href: "/company",
+    id: "company",
+    name: "Company",
+  },
+  {
+    href: "https://app.jazz.co/app/v2/job",
+    id: "careers",
+    name: "Careers",
+  },
+  {
+    href: "/contact-us",
+    id: "contact-us",
+    name: "Contact Us",
+  },
+  {
+    href: "https://www.linkedin.com/in/kietttran/",
+    id: "linkedin",
+    name: "LinkedIn",
   },
 ];
 export default function App() {
@@ -46,7 +68,7 @@ export default function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-      <Footer className="lg:mx-12" />
+      <Footer className="lg:mx-12" items={footerItems} />
     </div>
   );
 }
