@@ -1,4 +1,4 @@
-import NavItem from "./NavItem";
+import NavLink from "./NavLink";
 
 export interface Card {
   id: string;

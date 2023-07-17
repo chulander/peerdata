@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import NavItem, { NavItemType, NavItemWithRef } from "../components/NavItem";
+import { NavLink, NavLinkWithRef } from "../components/NavLink";
 import { classNames } from "../utils";
 // import { useEffect, useState } from "react";
 // import { useLocation } from "react-router-dom";
@@ -11,10 +11,10 @@ import { Icon } from "../components/Icon";
 // const activeClassname = `${defaultClassname} border border-white border-solid`;
 export interface Nav {
   className?: string;
-  items: NavItemType[];
+  items: NavLink[];
 }
 
-export interface NavRoute {
+export interface NavItem {
   href: string;
   id: string;
   name: string;
@@ -30,9 +30,9 @@ export function Nav({ className, items }: Nav) {
             <div className="flex w-full items-center justify-between">
               <div className="flex items-center">
                 <div className="py-2">
-                  <NavItem id="home" to="/">
+                  <NavLink id="home" to="/">
                     <Icon className="text-brand-green" name="logo" />
-                  </NavItem>
+                  </NavLink>
                 </div>
               </div>
 
@@ -40,7 +40,7 @@ export function Nav({ className, items }: Nav) {
                 <div className="flex sm:space-x-4 md:space-x-8">
                   {items.map(({ id, name, href, isCTA }) =>
                     !isCTA ? (
-                      <NavItem
+                      <NavLink
                         id={id}
                         key={id}
                         // eslint-disable-next-line react/no-children-prop
@@ -54,7 +54,7 @@ export function Nav({ className, items }: Nav) {
                         }
                       />
                     ) : (
-                      <NavItem
+                      <NavLink
                         id={id}
                         key={id}
                         to={href}
@@ -74,7 +74,7 @@ export function Nav({ className, items }: Nav) {
                             aria-hidden="true"
                           />
                         </span>
-                      </NavItem>
+                      </NavLink>
                     )
                   )}
                 </div>
@@ -105,7 +105,7 @@ export function Nav({ className, items }: Nav) {
                 !isCTA ? (
                   <Disclosure.Button
                     key={id}
-                    as={NavItemWithRef}
+                    as={NavLinkWithRef}
                     id={id}
                     to={href}
                     // eslint-disable-next-line react/no-children-prop
@@ -115,7 +115,7 @@ export function Nav({ className, items }: Nav) {
                 ) : (
                   <Disclosure.Button
                     key={id}
-                    as={NavItemWithRef}
+                    as={NavLinkWithRef}
                     id={id}
                     to={href}
                     // eslint-disable-next-line react/no-children-prop

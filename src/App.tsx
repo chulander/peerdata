@@ -1,6 +1,6 @@
 import { Navigate, Routes, Route } from "react-router-dom";
 import Footer from "./containers/Footer";
-import Nav, { NavRoute } from "./containers/Nav";
+import Nav, { NavItem } from "./containers/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About/About";
 import { ContactUs } from "./pages/Contact/Contact";
@@ -9,7 +9,7 @@ import valuePropositionItems from "./payload/value_propositions_items.json";
 import { DataEconomyRoles } from "./containers/DataEconomyRoles";
 import { ValueProps } from "./containers/ValueProps";
 
-const navItems: NavRoute[] = [
+const navItems: NavItem[] = [
   {
     href: "/company",
     id: "compant",
@@ -27,7 +27,7 @@ const navItems: NavRoute[] = [
     isCTA: true,
   },
 ];
-const footerItems: NavRoute[] = [
+const footerItems: NavItem[] = [
   {
     href: "/company",
     id: "company",

@@ -1,4 +1,4 @@
-import NavItem from "../components/NavItem";
+import NavLink from "../components/NavLink";
 import { Image, LayoutContainer } from "../layouts/LayoutContainer";
 const image: Image = {
   id: "image",

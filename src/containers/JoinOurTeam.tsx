@@ -1,4 +1,4 @@
-import { NavItem } from "../components/NavItem";
+import { NavLink } from "../components/NavLink";
 export function JoinOurTeam() {
   return (
     <div className="bg-white">

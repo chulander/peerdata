@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { NavLink as _NavLink, NavLinkProps } from "react-router-dom";
-export type NavItemType = {
+export type NavLink = {
   id: string;
   to: NavLinkProps["to"];
   className?: NavLinkProps["className"];
@@ -9,14 +9,14 @@ export type NavItemType = {
 };
 
 // const defaultClassname = "block text-teal-200 hover:text-white";
-export default NavItem;
-export function NavItem({
+export default NavLink;
+export function NavLink({
   className,
   id,
   to,
   children,
-  target = "self" as NavItemType["target"],
-}: NavItemType): JSX.Element {
+  target = "self" as NavLink["target"],
+}: NavLink): JSX.Element {
   return (
     <_NavLink className={className} id={id} to={to} target={target}>
       {children}
@@ -24,7 +24,7 @@ export function NavItem({
   );
 }
 
-export const NavItemWithRef = forwardRef<HTMLAnchorElement, NavLinkProps>(
+export const NavLinkWithRef = forwardRef<HTMLAnchorElement, NavLinkProps>(
   (props, ref) => {
     const { to, children, className, id, target } = props;
     return (
@@ -35,4 +35,4 @@ export const NavItemWithRef = forwardRef<HTMLAnchorElement, NavLinkProps>(
   }
 );
 
-NavItemWithRef.displayName = "NavItemWithRef";
+NavLinkWithRef.displayName = "NavLinkWithRef";

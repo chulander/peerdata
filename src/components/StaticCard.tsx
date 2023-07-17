@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import NavItem from "./NavItem";
+import NavLink from "./NavLink";
 
 export interface StaticCard {
   id: string;

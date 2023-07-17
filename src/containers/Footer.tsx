@@ -1,6 +1,8 @@
 import { Icon } from "../components/Icon";
-import { NavItem } from "../components/NavItem";
+import { NavLink } from "../components/NavLink";
 import { classNames } from "../utils";
+import { NavItem } from "./Nav";
+import { InputButton } from "./InputButton";
 
 export interface Footer {
   className?: string;
@@ -21,45 +23,38 @@ export function Footer({ className, items }: Footer) {
           </p>
         </section>
         <section>
-          {items.map(({ id, name, href, isCTA }) =>
-            !isCTA ? (
-              <NavItem
-                id={id}
-                key={id}
-                // eslint-disable-next-line react/no-children-prop
-                children={name}
-                to={href}
-                className={({ isActive, isPending }) =>
-                  classNames(
-                    "body-x-small flex items-center ",
-                    isActive ? "" : ""
-                  )
-                }
-              />
-            ) : (
-              <NavItem
-                id={id}
-                key={id}
-                to={href}
-                target="_blank"
-                className={({ isActive, isPending }) =>
-                  classNames(
-                    "button-secondary flex items-center justify-between space-x-16 py-2 pl-3 pr-1",
-                    isActive ? "" : ""
-                  )
-                }
-              >
-                <span className="body-x-small text-black">{name}</span>
-                <span className="block">
-                  <Icon
-                    className="-mr2 w-8"
-                    name="header-calendar"
-                    aria-hidden="true"
-                  />
-                </span>
-              </NavItem>
-            )
-          )}
+          {items.map(({ id, name, href }) => (
+            <NavLink
+              id={id}
+              key={id}
+              // eslint-disable-next-line react/no-children-prop
+              children={name}
+              to={href}
+              className={({ isActive, isPending }) =>
+                classNames(
+                  "body-x-small flex items-center text-white",
+                  isActive ? "" : ""
+                )
+              }
+            />
+          ))}
+        </section>
+        <section>
+          <p className="body-small mt-4 text-black">
+            Peer Data enables you to turn data into assets.
+          </p>
+          <InputButton
+            className="mt-6 h-16 w-full lg:w-[55%] xl:w-[45%]"
+            id="hero-signup"
+            placeholder="Your company email"
+            label="Sign up"
+            onChange={() => {
+              console.log("test");
+            }}
+            onClick={() => {
+              console.log("test");
+            }}
+          />
         </section>
       </div>
     </footer>
