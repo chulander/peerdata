@@ -23,11 +23,14 @@ export interface NavItem {
 
 export function Nav({ className, items }: Nav) {
   return (
-    <Disclosure as="nav" className={className}>
+    <Disclosure
+      as="nav"
+      className={classNames("py-4", !className ? "" : className)}
+    >
       {({ open }) => (
         <>
-          <div className={classNames("", !className ? "" : "")}>
-            <div className="flex w-full items-center justify-between">
+          <div>
+            <div className="flex w-full basis-full items-center justify-between">
               <div className="flex items-center">
                 <div className="py-2">
                   <NavLink id="home" to="/">

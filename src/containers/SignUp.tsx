@@ -21,7 +21,7 @@ export function Signup({ className }: Signup) {
           className="mb-40 mt-28 h-16 w-full lg:w-[55%] xl:w-[45%]"
           id="hero-signup"
           isPrimary={false}
-          hasIcon={false}
+          hasIcon={true}
           placeholder="Your company email"
           
           label="Sign up"

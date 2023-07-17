@@ -23,7 +23,7 @@ export function LeftText({
         !className ? "" : className
       )}
     >
-      <article className="flex w-full flex-col gap-y-6 lg:basis-[47%]">
+      <article className="flex w-full flex-col gap-y-6 xl:basis-[47%]">
         <header>
           <h3 className="header-3 text-brand-green">{category}</h3>
         </header>

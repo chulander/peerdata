@@ -48,11 +48,16 @@ const footerItems: NavItem[] = [
     id: "linkedin",
     name: "LinkedIn",
   },
+  {
+    href: "/privacy-policy",
+    id: "privacy-policy",
+    name: "Privacy Policy",
+  },
 ];
 export default function App() {
   return (
     <div className="m-auto">
-      <Nav className="w-full px-8 py-4" items={navItems} />
+      <Nav className="w-full px-8" items={navItems} />
       <Routes>
         <Route
           path="/"
@@ -68,7 +73,7 @@ export default function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-      <Footer className="px-12 py-14" items={footerItems} />
+      <Footer className="px-12" items={footerItems} />
     </div>
   );
 }

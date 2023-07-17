@@ -88,10 +88,10 @@
   @apply text-4xl font-normal leading-10 tracking-tight;
 }
 .body-small {
-  @apply text-3xl font-normal leading-9 tracking-tight;
+  @apply text-3xl font-normal leading-7 tracking-tight;
 }
 .body-x-small {
-  @apply text-lg font-normal leading-8 tracking-tight;
+  @apply text-lg font-normal leading-6 tracking-tight;
 }
 
 .focus {

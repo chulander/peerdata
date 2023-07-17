@@ -32,7 +32,10 @@ export function InputButton({
         onChange={onChange}
       />
       <Button
-        className={classNames("basis-[35%]", isPrimary ? "" : "border-white")}
+        className={classNames(
+          !hasIcon ? "" : "basis-[35%]",
+          isPrimary ? "" : "border-white"
+        )}
         hasIcon={hasIcon}
         id={`${id}-button`}
         onClick={onClick}

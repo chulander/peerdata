@@ -15,7 +15,7 @@ export function NavLink({
   id,
   to,
   children,
-  target = "self" as NavLink["target"],
+  target = "_self" as NavLink["target"],
 }: NavLink): JSX.Element {
   return (
     <_NavLink className={className} id={id} to={to} target={target}>
