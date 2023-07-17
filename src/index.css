@@ -90,6 +90,9 @@
 .body-small {
   @apply text-3xl font-normal leading-9 tracking-tight;
 }
+.body-x-small {
+  @apply text-lg font-normal leading-8 tracking-tight;
+}
 
 .focus {
   @apply focus:outline-dashed focus:outline-2 focus:outline-offset-4 focus:outline-brand-green;

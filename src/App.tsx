@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
 export default function App() {
   return (
     <div className="m-auto">
-      <Nav className="w-full" items={navItems} />
+      <Nav className="w-full px-8 py-4" items={navItems} />
       <Routes>
         <Route
           path="/"

@@ -29,7 +29,7 @@ export function Nav({ className, items }: Nav) {
         <>
           <div
             className={classNames(
-              "mx-auto px-4 sm:px-6 lg:px-8",
+              "flex",
               !className ? "" : className
             )}
           >
@@ -43,22 +43,38 @@ export function Nav({ className, items }: Nav) {
               </div>
 
               <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
-                  {items.map(({ id, name, href, isCTA }) => (
-                    <NavItem
-                      id={id}
-                      key={id}
-                      // eslint-disable-next-line react/no-children-prop
-                      children={name}
-                      to={href}
-                      className={({ isActive, isPending }) =>
-                        classNames(
-                          isActive ? activeClassname : defaultClassname,
-                          "body-small"
-                        )
-                      }
-                    />
-                  ))}
+                <div className="flex lg:space-x-12">
+                  {items.map(({ id, name, href, isCTA }) =>
+                    !isCTA ? (
+                      <NavItem
+                        id={id}
+                        key={id}
+                        // eslint-disable-next-line react/no-children-prop
+                        children={name}
+                        to={href}
+                        className={({ isActive, isPending }) =>
+                          classNames(
+                            "body-x-small",
+                            isActive ? activeClassname : defaultClassname
+                          )
+                        }
+                      />
+                    ) : (
+                      <NavItem
+                        id={id}
+                        key={id}
+                        // eslint-disable-next-line react/no-children-prop
+                        children={name}
+                        to={href}
+                        className={({ isActive, isPending }) =>
+                          classNames(
+                            "body-x-small border bo",
+                            isActive ? activeClassname : defaultClassname
+                          )
+                        }
+                      />
+                    )
+                  )}
                 </div>
               </div>
               <div className="-mr-2 flex sm:hidden">
