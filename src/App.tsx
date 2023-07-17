@@ -24,6 +24,7 @@ const navItems: NavItem[] = [
     href: "/waitlist",
     id: "waitlist",
     name: "Join the waitlist",
+    isCTA: true,
   },
 ];
 export default function App() {
