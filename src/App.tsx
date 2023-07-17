@@ -68,7 +68,7 @@ export default function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-      <Footer className="lg:mx-12" items={footerItems} />
+      <Footer className="px-12" items={footerItems} />
     </div>
   );
 }

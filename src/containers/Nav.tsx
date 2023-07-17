@@ -11,7 +11,7 @@ import { Icon } from "../components/Icon";
 // const activeClassname = `${defaultClassname} border border-white border-solid`;
 export interface Nav {
   className?: string;
-  items: NavLink[];
+  items: NavItem[];
 }
 
 export interface NavItem {
