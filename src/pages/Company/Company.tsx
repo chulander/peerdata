@@ -26,8 +26,7 @@ export interface Company {
 export function Company({ className, roles, values }: Company) {
   return (
     <section className={className}>
-      <Hero className="px-12" />
-      <AlternateHero />
+      <AlternateHero className="px-12"/>
     </section>
   );
 }

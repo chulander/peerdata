@@ -51,7 +51,7 @@ export function Footer({ className, items }: Footer) {
             company news.
           </p>
           <InputButton
-            className="mt-8 h-16 w-full"
+            className="mt-8 h-16 w-full text-[1.35rem]"
             id="hero-signup"
             isPrimary={false}
             hasIcon={false}
@@ -68,11 +68,11 @@ export function Footer({ className, items }: Footer) {
       </section>
       <section
         className={classNames(
-          "mb-10 flex w-full gap-x-8",
+          "mb-14 flex w-full gap-x-8",
           !className ? "" : className
         )}
       >
-        <p className="text-md font-thin tracking-normal text-brand-light-background">
+        <p className="text-lg font-thin tracking-wide text-brand-light-background">
           ©Peer Data Inc. All rights reserved.
         </p>
       </section>

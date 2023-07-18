@@ -18,7 +18,7 @@ export function Hero({ className }: Hero) {
           Turn data into assets. Monetize and capitalize your data quickly and easily.
           </p>
           <InputButton
-            className="mt-7 h-16 w-full lg:w-[59%] xl:w-[39%]"
+            className="mt-7 h-16 w-full lg:w-[59%] xl:w-[39%] text-[1.35rem]"
             id="hero-signup"
             placeholder="Your company email"
             hasIcon

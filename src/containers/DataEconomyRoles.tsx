@@ -23,7 +23,9 @@ export function DataEconomyRoles({
       "
       >
         <header className="w-full">
-          <h1 className="text-[4.1rem] leading-10 text-brand-dark-blue tracking-tighter">{title}</h1>
+          <h1 className="text-[4.1rem] leading-10 tracking-tighter text-brand-dark-blue">
+            {title}
+          </h1>
         </header>
         <section className="mt-16 flex w-full flex-col gap-y-12 lg:flex-row lg:gap-x-16 lg:gap-y-0">
           {items.map((item) => (
@@ -31,7 +33,7 @@ export function DataEconomyRoles({
           ))}
         </section>
         <Button
-          className="mt-10 w-full self-start lg:w-[28%] xl:w-[19%]"
+          className="mt-10 w-full self-start text-[1.35rem] lg:w-[28%] xl:w-[19%]"
           id="contact-us"
           label={buttonLabel}
           isPrimary

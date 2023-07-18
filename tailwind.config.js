@@ -12,6 +12,7 @@ export default {
       },
       backgroundImage: {
         circular: "url(./assets/background/circular-background.svg)",
+        square: "url(./assets/background/square-background.svg)",
         gradient: "url(./assets/gradient-background.png)",
         // "home-banner":
         //   "url(https://media.graphassets.com/F5QFqaQeRAejs31hYZc5)",

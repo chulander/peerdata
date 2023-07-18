@@ -34,7 +34,7 @@ export function Button({
     >
       <span
         className={classNames(
-          "text-[1.35rem] tracking-normal font-medium",
+          "font-medium tracking-normal",
           isPrimary ? "text-white" : "text-brand-dark-blue"
         )}
       >
@@ -44,7 +44,7 @@ export function Button({
         <span className="block">
           <ArrowLongRightIcon
             className={classNames(
-              "-mr-2 w-8",
+              "-mr-2 ml-20 w-8",
               isPrimary ? "text-white" : "text-brand-dark-blue"
             )}
             aria-hidden="true"

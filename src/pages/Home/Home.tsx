@@ -57,7 +57,7 @@ export function Home({ className, roles, values }: Home) {
         and everyday life on a global scale."
       >
         <Button
-          className="mt-12 w-full lg:w-[65%] xl:w-[41%]"
+          className="mt-12 w-full text-[1.35rem] lg:w-[65%] xl:w-[41%]"
           id="find-out-more"
           isPrimary={false}
           label="Find out more"
