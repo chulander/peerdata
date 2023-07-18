@@ -9,13 +9,13 @@
     {
       "id": "data-consumer",
       "title": "Data Consumer",
-      "description": "Reduce time to context, objective assessment of data quality and improve the data recovery process.",
+      "description": "Reduce time to context, We improve the data discovery process, provide objective assessments of data quality, and reduce friction of the procurement and usage reporting process.",
       "icon": "data-consumer"
     },
     {
       "id": "data-investor",
       "title": "Data Investor",
-      "description": "Invest the essential commodity powering the data economy.",
+      "description": "Join the new data asset class. Invest in the essential fuel powering the digital and AI world of the future",
       "icon": "data-investor"
     }
   ]

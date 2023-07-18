@@ -30,23 +30,31 @@ export function Home({ className, roles, values }: Home) {
       <LeftText
         className="mt-40 px-12"
         category="Data Revolution"
-        mainContent="Data is experiencing exponential growth, having doubled in just the past two years. Yet, despite the ever-increasing demand for diverse and extensive datasets, there is currently no direct avenue for investing in data."
-        subContent="Peer Data aims to revolutionize how data operates worldwide. By providing expertise, standards, and cutting-edge technology in infrastructure and rails for the data asset class."
+        mainContent="Data is experiencing exponential growth, having doubled in the last two years. And
+        despite an ever-increasing demand for diverse and extensive datasets, the industry has
+        no direct way to invest in data."
+        subContent="PEER DATA is building tools to empower organizations to unlock the maximum value of
+        their data, amplify its reach and allow institutions to invest in the data asset class."
       />
       <DataEconomyRoles
         buttonLabel="Contact us"
         className="mt-48 px-12"
         items={roles}
         onClick={() => console.log("click")}
-        title="What is your role in the data economy?"
+        title="What is your Role in the Data Economy?"
       />
       <SplitImages className="mt-20 h-3/4 px-12" left={Home3} right={Home4} />
       <LeftText
         className="mt-40 px-12"
         category="Mission"
-        title="Our mission is to assist organizations in transforming their data into valuable assets"
-        mainContent="Peer Data is borne out of the observation that data and AI are powering nearly everything we do today. Data, as the vital commodity powering the AI and digital world, holds immense value and potential"
-        subContent="Our team has witnessed the transformative journey of data, form its role in supporting human decision-making to empowering machines toke informed choices in financial markets and everyday life on a global scale."
+        title="Our mission is to impower organizations to transform their data into assets to
+        maximize value"
+        mainContent="PEER DATA was born out of the observation that data is powering nearly
+        everything we do today and is becoming an essential commodity for the digital world.
+        Usage of data to power artificial intelligence (AI) is rapidly growing across all industries."
+        subContent="We witnessed the transformative journey of data, from its role in supporting human
+        decision-making to empowering machines to make informed choices in financial markets
+        and everyday life on a global scale."
       >
         <Button
           className="mt-12 w-full lg:w-[65%] xl:w-[41%]"
@@ -64,7 +72,7 @@ export function Home({ className, roles, values }: Home) {
         title="We aim to unlock maxium value and amplify reach by:"
         onClick={() => console.log("click")}
       />
-      <Signup className="px-12"/>
+      <Signup className="px-12" />
     </section>
   );
 }

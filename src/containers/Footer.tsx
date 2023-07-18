@@ -46,8 +46,9 @@ export function Footer({ className, items }: Footer) {
             </h4>
           </header>
           <p className="text-md mt-2 font-thin text-brand-light-background">
-            Sign up for updates and a newsletter from Peer Data about trends
-            shaping markets, industries, and the global economy.
+            Stay up to date with the latest news and trends in data. Sign up to
+            the PEER DATA Newsletter, where we cover datasets, technology, and
+            company news.
           </p>
           <InputButton
             className="mt-8 h-16 w-full"
@@ -71,7 +72,7 @@ export function Footer({ className, items }: Footer) {
           !className ? "" : className
         )}
       >
-        <p className="text-md font-thin text-brand-light-background tracking-normal">
+        <p className="text-md font-thin tracking-normal text-brand-light-background">
           ©Peer Data Inc. All rights reserved.
         </p>
       </section>

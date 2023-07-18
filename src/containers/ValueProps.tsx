@@ -23,7 +23,7 @@ export function ValueProps({
         !className ? "" : className
       )}
     >
-      <header className="w-full self-start xl:w-4/6">
+      <header className="w-full self-start xl:w-5/6">
         <h1 className="text-[3.15rem] text-black tracking-tighter leading-8 font-thin">{title}</h1>
       </header>
       <section className="mt-16 flex w-full flex-col gap-y-12 lg:flex-row lg:gap-x-24 lg:gap-y-0">

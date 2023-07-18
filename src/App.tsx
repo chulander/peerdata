@@ -8,6 +8,7 @@ import dataEconomyRoles from "./payload/data_econonmy_roles.json";
 import valuePropositionItems from "./payload/value_propositions_items.json";
 import { DataEconomyRoles } from "./containers/DataEconomyRoles";
 import { ValueProps } from "./containers/ValueProps";
+import Company from "./pages/Company";
 
 const navItems: NavItem[] = [
   {
@@ -57,7 +58,7 @@ const footerItems: NavItem[] = [
 export default function App() {
   return (
     <div className="relative m-auto">
-      <Nav className="absolute w-full px-6" items={navItems} />
+      <Nav className="absolute z-10 w-full px-6" items={navItems} />
       <Routes>
         <Route
           path="/"
@@ -69,7 +70,7 @@ export default function App() {
             />
           }
         />
-        <Route path="/about" element={<About />} />
+        <Route path="/company" element={<Company />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>

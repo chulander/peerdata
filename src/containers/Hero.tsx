@@ -15,7 +15,7 @@ export function Hero({ className }: Hero) {
             data economy of the future
           </h1>
           <p className="text-[1.4rem] mt-5 text-black font-normal tracking-tighter">
-            Peer Data enables you to turn data into assets.
+          Turn data into assets. Monetize and capitalize your data quickly and easily.
           </p>
           <InputButton
             className="mt-7 h-16 w-full lg:w-[59%] xl:w-[39%]"

@@ -13,9 +13,10 @@ export function Signup({ className }: Signup) {
           !className ? "" : className
         )}
       >
-        <h2 className="text-4xl font-thin mt-8 text-white md:max-w-full lg:max-w-3xl xl:max-w-3xl leading-[2.9rem] tracking-tight">
-          Start your data economy journey with Peer Data today. Sign up below to
-          be the first to know about the launch.
+        <h2 className="mt-8 text-4xl font-thin leading-[2.9rem] tracking-tight text-white md:max-w-full lg:max-w-3xl xl:max-w-4xl">
+          Stay up to date with the latest news and trends in data. Sign up to
+          the PEER DATA Newsletter, where we cover datasets, technology, and
+          company news.
         </h2>
         <InputButton
           className="mb-40 mt-24 h-16 w-full lg:w-[59%] xl:w-[39%]"
