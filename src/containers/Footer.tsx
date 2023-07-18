@@ -19,9 +19,9 @@ export function Footer({ className, items }: Footer) {
         )}
       >
         <article className="lg:flex lg:basis-3/12 lg:flex-col xl:basis-3/12">
-          <Icon className="text-white" name="logo" />
+          <Icon className="text-brand-light-background" name="logo" />
           <header>
-            <p className="body-x-small mt-6 text-white">
+            <p className="text-md mt-6 font-thin tracking-normal text-brand-light-background">
               Our mission is to assist organizations in transforming their data
               into values assets
             </p>
@@ -35,22 +35,22 @@ export function Footer({ className, items }: Footer) {
               // eslint-disable-next-line react/no-children-prop
               children={name}
               to={href}
-              className="body-x-small flex items-center text-white"
+              className="text-md flex items-center font-thin tracking-normal text-brand-light-background"
             />
           ))}
         </nav>
         <article className="block lg:flex lg:grow lg:basis-3/12 lg:flex-col xl:grow-0 xl:basis-5/12">
           <header>
-            <h4 className="body-x-small uppercase text-white">
+            <h4 className="text-md font-thin uppercase tracking-wide text-brand-light-background">
               Newsletter Signup
             </h4>
           </header>
-          <p className="body-x-small mt-4 text-white">
+          <p className="text-md mt-2 font-thin text-brand-light-background">
             Sign up for updates and a newsletter from Peer Data about trends
             shaping markets, industries, and the global economy.
           </p>
           <InputButton
-            className="mt-8 h-16"
+            className="mt-8 h-16 w-full"
             id="hero-signup"
             isPrimary={false}
             hasIcon={false}
@@ -66,12 +66,14 @@ export function Footer({ className, items }: Footer) {
         </article>
       </section>
       <section
-        className={classNames("flex gap-x-8 w-full mb-10", !className ? "" : className)}
+        className={classNames(
+          "mb-10 flex w-full gap-x-8",
+          !className ? "" : className
+        )}
       >
-        <p className="body-x-small text-white">
-          ©Peer Data Technology Copyright 2023
+        <p className="text-md font-thin text-brand-light-background tracking-normal">
+          ©Peer Data Inc. All rights reserved.
         </p>
-        <p className="body-x-small text-white">All rights reserved</p>
       </section>
     </footer>
   );

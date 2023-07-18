@@ -33,7 +33,7 @@ export function InputButton({
       />
       <Button
         className={classNames(
-          !hasIcon ? "" : "basis-[38%]",
+          !hasIcon ? "grow" : "basis-[38%]",
           isPrimary ? "" : "border-white"
         )}
         hasIcon={hasIcon}
