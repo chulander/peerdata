@@ -19,7 +19,8 @@ export function Signup({ className }: Signup) {
           company news.
         </h2>
         <InputButton
-          className="mb-40 mt-36 h-16 w-full lg:w-[59%] xl:w-[39%] text-[1.35rem]"
+          className="mb-40 mt-36 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[39%]"
+          buttonClass="bg-brand-light-background"
           id="hero-signup"
           isPrimary={false}
           hasIcon={true}

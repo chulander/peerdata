@@ -11,10 +11,14 @@ export type InputButton = {
   placeholder?: Input["placeholder"];
   label: Button["label"];
   hasIcon?: Button["hasIcon"];
+  buttonClass?: string;
+  inputClass?: string;
 };
 export function InputButton({
+  buttonClass,
   className,
   id,
+  inputClass,
   isPrimary = true,
   hasIcon,
   onChange,
@@ -25,7 +29,7 @@ export function InputButton({
   return (
     <div id={id} className={classNames("flex", !className ? "" : className)}>
       <Input
-        className={classNames("basis-[62%]")}
+        className={classNames("basis-[62%]", !inputClass ? "" : inputClass)}
         id={`${id}-input`}
         isPrimary={isPrimary}
         placeholder={placeholder}
@@ -34,7 +38,8 @@ export function InputButton({
       <Button
         className={classNames(
           !hasIcon ? "grow" : "basis-[38%]",
-          isPrimary ? "" : "border-white"
+          isPrimary ? "" : "border-white",
+          !buttonClass ? "" : buttonClass
         )}
         hasIcon={hasIcon}
         id={`${id}-button`}

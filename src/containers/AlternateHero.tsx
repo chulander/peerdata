@@ -25,7 +25,7 @@ export function AlternateHero({ className }: AlternateHero) {
           </p>
           <section className="mt-12 flex items-center">
             <Button
-              className="text-4xl"
+              className="text-[1.75rem] font-thin"
               id="learn-more"
               label="Learn more"
               onClick={() => console.log("test")}

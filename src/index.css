@@ -161,7 +161,7 @@
   @apply focus border-[3px] border-solid border-transparent bg-brand-dark-blue text-white hover:border-brand-green hover:bg-brand-green;
 }
 .button-secondary {
-  @apply focus border-[3px] border-solid border-brand-dark-blue bg-white text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background;
+  @apply focus border-[3px] border-solid border-brand-dark-blue bg-transparent text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background;
 }
 .anchor {
   @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-1 underline-offset-4 hover:decoration-transparent;

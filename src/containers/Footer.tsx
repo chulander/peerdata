@@ -52,6 +52,7 @@ export function Footer({ className, items }: Footer) {
           </p>
           <InputButton
             className="mt-8 h-16 w-full text-[1.35rem]"
+            buttonClass="bg-brand-light-background"
             id="hero-signup"
             isPrimary={false}
             hasIcon={false}
