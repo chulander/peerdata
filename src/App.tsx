@@ -4,8 +4,6 @@ import Nav, { NavItem } from "./containers/Nav";
 import Home from "./pages/Home";
 import About from "./pages/About/About";
 import { ContactUs } from "./pages/Contact/Contact";
-import dataEconomyRoles from "./payload/data_econonmy_roles.json";
-import valuePropositionItems from "./payload/value_propositions_items.json";
 import { DataEconomyRoles } from "./containers/DataEconomyRoles";
 import { ValueProps } from "./containers/ValueProps";
 import Company from "./pages/Company";
@@ -60,16 +58,7 @@ export default function App() {
     <div className="relative m-auto">
       <Nav className="absolute z-10 w-full px-6" items={navItems} />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              className=""
-              roles={dataEconomyRoles.data as DataEconomyRoles["items"]}
-              values={valuePropositionItems.data as ValueProps["items"]}
-            />
-          }
-        />
+        <Route path="/" element={<Home className="" />} />
         <Route path="/company" element={<Company />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="*" element={<Navigate replace to="/" />} />

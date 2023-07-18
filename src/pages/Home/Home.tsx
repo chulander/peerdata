@@ -1,7 +1,4 @@
 import { Hero } from "../../containers/Hero";
-// import CategoryContainer from "../../containers/CategoryContainer";
-import HomeAboutPeerData from "../../containers/HomeAboutPeerData";
-import JoinContainer from "../../containers/JoinContainer";
 import { SplitImages } from "../../containers/SplitImages";
 import { LeftText } from "../../containers/LeftText";
 import { DataEconomyRoles } from "../../containers/DataEconomyRoles";
@@ -13,16 +10,17 @@ import { Button } from "../../components/Button";
 import { ValueProps } from "../../containers/ValueProps";
 import Signup from "../../containers/SignUp";
 
+import dataEconomyRoles from "../../payload/data_econonmy_roles.json";
+import valuePropositionItems from "../../payload/value_propositions_items.json";
+
 // const Images = {
 //   "home-1": "../../assets/images/image-home-1.jpg",
 // };
 
 export interface Home {
   className?: string;
-  roles: DataEconomyRoles["items"];
-  values: ValueProps["items"];
 }
-export function Home({ className, roles, values }: Home) {
+export function Home({ className }: Home) {
   return (
     <section className={className}>
       <Hero className="px-12" />
@@ -39,7 +37,7 @@ export function Home({ className, roles, values }: Home) {
       <DataEconomyRoles
         buttonLabel="Contact us"
         className="mt-48 px-12"
-        items={roles}
+        items={dataEconomyRoles.data as DataEconomyRoles["items"]}
         onClick={() => console.log("click")}
         title="What is your Role in the Data Economy?"
       />
@@ -66,7 +64,7 @@ export function Home({ className, roles, values }: Home) {
       </LeftText>
       <hr className="my-36 h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-52" />
       <ValueProps
-        items={values}
+        items={valuePropositionItems.data as ValueProps["items"]}
         className="px-12"
         buttonLabel="Contact us"
         title="We aim to unlock maxium value and amplify reach by:"

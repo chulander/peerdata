@@ -13,6 +13,7 @@ import { Button } from "../../components/Button";
 import { ValueProps } from "../../containers/ValueProps";
 import Signup from "../../containers/SignUp";
 import AlternateHero from "../../containers/AlternateHero";
+import competitiveEdges from "../../payload/competitve_edges.json";
 
 // const Images = {
 //   "home-1": "../../assets/images/image-home-1.jpg",
@@ -26,7 +27,14 @@ export interface Company {
 export function Company({ className, roles, values }: Company) {
   return (
     <section className={className}>
-      <AlternateHero className="px-12"/>
+      <AlternateHero className="px-12" />
+      <ValueProps
+        items={competitiveEdges.data as ValueProps["items"]}
+        className="px-12"
+        buttonLabel="Find out more"
+        title="PEER DATA is helping the participants in the data ecosystem by building tools which:"
+        onClick={() => console.log("click")}
+      />
     </section>
   );
 }

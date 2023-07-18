@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "data-owner",
+      "title": "Data Owner",
+      "description": "Improve discoverability and assessment process and make data machine discoverable",
+      "icon": "data-owner"
+    },
+    {
+      "id": "data-consumer",
+      "title": "Data Consumer",
+      "description": "Facilitate licensing, billing &amp; revenue allocation",
+      "icon": "data-owner"
+    },
+    {
+      "id": "data-investor",
+      "title": "Data Investor",
+      "description": "Allow investing in the Data Asset Class",
+      "icon": "data-owner"
+    }
+  ]
+}

@@ -2,20 +2,20 @@ import { Button } from "../components/Button";
 import { ValuePropCard } from "../components/ValuePropCard";
 import { classNames } from "../utils";
 
-export interface ValueProps {
+export interface CompetitiveEdge {
   buttonLabel: Button["label"];
   className?: string;
   items: Pick<ValuePropCard, "id" | "description" | "icon">[];
   onClick: Button["onClick"];
   title: string;
 }
-export function ValueProps({
+export function CompetitiveEdge({
   buttonLabel,
   className,
   onClick,
   items,
   title,
-}: ValueProps) {
+}: CompetitiveEdge) {
   return (
     <div
       className={classNames(
@@ -23,8 +23,8 @@ export function ValueProps({
         !className ? "" : className
       )}
     >
-      <header className="w-full self-start xl:w-8/12">
-        <h1 className="text-[3.15rem] font-normal leading-10 tracking-tighter text-black">
+      <header className="w-full self-start xl:w-5/6">
+        <h1 className="text-[3.15rem] font-thin leading-8 tracking-tighter text-black">
           {title}
         </h1>
       </header>
