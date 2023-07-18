@@ -14,11 +14,11 @@ export function Hero({ className }: Hero) {
             <br />
             data economy of the future
           </h1>
-          <p className="text-[1.7rem] mt-5 text-black font-normal tracking-tighter">
+          <p className="text-[1.4rem] mt-5 text-black font-normal tracking-tighter">
             Peer Data enables you to turn data into assets.
           </p>
           <InputButton
-            className="mt-7 h-16 w-full lg:w-[55%] xl:w-[45%]"
+            className="mt-7 h-16 w-full lg:w-[59%] xl:w-[39%]"
             id="hero-signup"
             placeholder="Your company email"
             hasIcon

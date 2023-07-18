@@ -25,7 +25,7 @@ export function InputButton({
   return (
     <div id={id} className={classNames("flex", !className ? "" : className)}>
       <Input
-        className={classNames("basis-[65%]")}
+        className={classNames("basis-[62%]")}
         id={`${id}-input`}
         isPrimary={isPrimary}
         placeholder={placeholder}
@@ -33,7 +33,7 @@ export function InputButton({
       />
       <Button
         className={classNames(
-          !hasIcon ? "" : "basis-[35%]",
+          !hasIcon ? "" : "basis-[38%]",
           isPrimary ? "" : "border-white"
         )}
         hasIcon={hasIcon}

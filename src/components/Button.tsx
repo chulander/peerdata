@@ -34,7 +34,7 @@ export function Button({
     >
       <span
         className={classNames(
-          "text-[1.45rem]",
+          "text-[1.35rem] tracking-normal font-medium",
           isPrimary ? "text-white" : "text-brand-dark-blue"
         )}
       >
