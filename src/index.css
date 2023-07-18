@@ -164,7 +164,7 @@
   @apply focus border-[3px] border-solid border-brand-dark-blue bg-transparent text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background;
 }
 .anchor {
-  @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-1 underline-offset-4 hover:decoration-transparent;
+  @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-2 underline-offset-4 hover:decoration-transparent;
 }
 
 .tk-indivisible {

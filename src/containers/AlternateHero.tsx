@@ -14,7 +14,7 @@ export function AlternateHero({ className }: AlternateHero) {
         !className ? "" : className
       )}
     >
-      <div className="mx-auto my-8 lg:flex lg:flex-col lg:gap-x-10">
+      <div className="mx-auto my-8 lg:flex lg:flex-col lg:gap-x-10 pb-36">
         <div className=" xs:flex xs:flex-col xs:items-center sm:block">
           <h1 className="header-2 mt-10 font-medium text-black xl:max-w-[73%]">
             Our mission is to assist organizations in transforming their data
@@ -31,7 +31,7 @@ export function AlternateHero({ className }: AlternateHero) {
               onClick={() => console.log("test")}
             />
             <Anchor
-              className="ml-8 text-[1.5rem] tracking-tight"
+              className="ml-10 text-[1.65rem] tracking-tight"
               to="https://app.jazz.co/app/v2/job"
               id="join-our-team"
             >
