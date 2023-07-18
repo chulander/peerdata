@@ -9,16 +9,16 @@ export function Hero({ className }: Hero) {
     <div className={classNames("relative pt-24", !className ? "" : className)}>
       <div className="mx-auto my-8 lg:flex lg:flex-col lg:gap-x-10">
         <div className=" xs:flex xs:flex-col xs:items-center sm:block">
-          <h1 className="header-2 mt-10 text-black">
+          <h1 className="header-2 font-medium mt-10 text-black">
             Powering and digitizing
             <br />
             data economy of the future
           </h1>
-          <p className="body-x-small mt-4 text-black">
+          <p className="text-[1.7rem] mt-5 text-black font-normal tracking-tighter">
             Peer Data enables you to turn data into assets.
           </p>
           <InputButton
-            className="mt-6 h-16 w-full lg:w-[55%] xl:w-[45%]"
+            className="mt-7 h-16 w-full lg:w-[55%] xl:w-[45%]"
             id="hero-signup"
             placeholder="Your company email"
             hasIcon

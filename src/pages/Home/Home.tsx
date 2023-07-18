@@ -49,7 +49,7 @@ export function Home({ className, roles, values }: Home) {
         subContent="Our team has witnessed the transformative journey of data, form its role in supporting human decision-making to empowering machines toke informed choices in financial markets and everyday life on a global scale."
       >
         <Button
-          className="w-full lg:w-[65%] xl:w-[45%]"
+          className="mt-12 w-full lg:w-[65%] xl:w-[41%]"
           id="find-out-more"
           isPrimary={false}
           label="Find out more"

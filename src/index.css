@@ -7,14 +7,18 @@
  * indivisible:
  *   - http://typekit.com/eulas/00000000000000007735eeb8
  *   - http://typekit.com/eulas/00000000000000007735eeba
+ *   - http://typekit.com/eulas/00000000000000007735eeb5
+ *   - http://typekit.com/eulas/00000000000000007735eeb9
+ *   - http://typekit.com/eulas/00000000000000007735eebc
+ *   - http://typekit.com/eulas/00000000000000007735eeb7
  *   - http://typekit.com/eulas/00000000000000007735eebb
  *   - http://typekit.com/eulas/00000000000000007735eebd
  *
  * © 2009-2023 Adobe Systems Incorporated. All Rights Reserved.
  */
-/*{"last_published":"2023-07-14 10:41:05 UTC"}*/
+/*{"last_published":"2023-07-17 10:07:13 UTC"}*/
 
-@import url("https://p.typekit.net/p.css?s=1&k=mbe5lww&ht=tk&f=48821.48822.48827.48828&a=146486323&app=typekit&e=css");
+@import url("https://p.typekit.net/p.css?s=1&k=mbe5lww&ht=tk&f=48821.48822.48823.48824.48825.48826.48827.48828&a=146486323&app=typekit&e=css");
 
 @font-face {
   font-family: "indivisible";
@@ -46,6 +50,62 @@
 
 @font-face {
   font-family: "indivisible";
+  src: url("https://use.typekit.net/af/4d72c6/00000000000000007735eeb5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/4d72c6/00000000000000007735eeb5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/4d72c6/00000000000000007735eeb5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "indivisible";
+  src: url("https://use.typekit.net/af/2fd66d/00000000000000007735eeb9/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2fd66d/00000000000000007735eeb9/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2fd66d/00000000000000007735eeb9/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "indivisible";
+  src: url("https://use.typekit.net/af/51a05d/00000000000000007735eebc/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/51a05d/00000000000000007735eebc/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/51a05d/00000000000000007735eebc/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "indivisible";
+  src: url("https://use.typekit.net/af/4db0e6/00000000000000007735eeb7/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/4db0e6/00000000000000007735eeb7/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/4db0e6/00000000000000007735eeb7/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "indivisible";
   src: url("https://use.typekit.net/af/9e7dcb/00000000000000007735eebb/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
       format("woff2"),
     url("https://use.typekit.net/af/9e7dcb/00000000000000007735eebb/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
@@ -72,50 +132,26 @@
   font-stretch: normal;
 }
 
-@font-face {
-  font-family: "Indivisible";
-  src: url("./assets/fonts/Indivisible-Medium.eot");
-  src: local("Indivisible Medium"), local("Indivisible-Medium"),
-    url("./assets/fonts/Indivisible-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("./assets/fonts/Indivisible-Medium.woff2") format("woff2"),
-    url("./assets/fonts/Indivisible-Medium.woff") format("woff"),
-    url("./assets/fonts/Indivisible-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Indivisible";
-  src: url("./assets/fonts/Indivisible-MediumItalic.eot");
-  src: local("Indivisible Medium Italic"), local("Indivisible-MediumItalic"),
-    url("./assets/fonts/Indivisible-MediumItalic.eot?#iefix") format("embedded-opentype"),
-    url("./assets/fonts/Indivisible-MediumItalic.woff2") format("woff2"),
-    url("./assets/fonts/Indivisible-MediumItalic.woff") format("woff"),
-    url("./assets/fonts/Indivisible-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
-}
-
 .header-1 {
-  @apply text-8xl font-medium leading-12 tracking-tight;
+  @apply text-8xl font-medium tracking-tight;
 }
 .header-2 {
-  @apply text-7xl font-normal leading-11 tracking-tight;
+  @apply text-7xl font-normal tracking-tight;
 }
 .header-3 {
-  @apply text-xl font-normal uppercase leading-7 tracking-tight;
+  @apply text-xl font-normal uppercase tracking-tight;
 }
 .header-4 {
-  @apply text-4xl font-bold leading-8 tracking-tight;
+  @apply text-4xl font-medium tracking-tight;
 }
 .body-large {
-  @apply text-4xl font-normal leading-10 tracking-tight;
+  @apply text-5xl font-normal tracking-tight;
 }
 .body-small {
-  @apply text-3xl font-normal leading-7 tracking-tight;
+  @apply text-3xl font-normal tracking-tight;
 }
 .body-x-small {
-  @apply text-lg font-normal leading-6 tracking-tight;
+  @apply text-xl font-normal leading-6 tracking-tight;
 }
 
 .focus {

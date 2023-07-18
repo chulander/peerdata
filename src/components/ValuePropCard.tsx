@@ -16,7 +16,9 @@ export function ValuePropCard({ className, description, icon }: ValuePropCard) {
       )}
     >
       <Icon name={icon} />
-      <p className="body-small mb-10 mt-16  text-black">{description}</p>
+      <p className="mb-10 mt-12 text-[1.2rem] tracking-tight  text-black">
+        {description}
+      </p>
     </article>
   );
 }

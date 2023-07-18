@@ -51,7 +51,7 @@ export function Nav({ className, items }: Nav) {
                         to={href}
                         className={({ isActive, isPending }) =>
                           classNames(
-                            "body-x-small flex items-center ",
+                            "text-lg flex items-center ",
                             isActive ? "" : ""
                           )
                         }
@@ -69,7 +69,7 @@ export function Nav({ className, items }: Nav) {
                           )
                         }
                       >
-                        <span className="body-x-small text-black">{name}</span>
+                        <span className="text-lg font-medium text-black">{name}</span>
                         <span className="block">
                           <Icon
                             className="-mr2 w-8"

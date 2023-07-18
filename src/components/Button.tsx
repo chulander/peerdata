@@ -34,7 +34,7 @@ export function Button({
     >
       <span
         className={classNames(
-          "body-small",
+          "text-[1.45rem]",
           isPrimary ? "text-white" : "text-brand-dark-blue"
         )}
       >
