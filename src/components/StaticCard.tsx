@@ -22,14 +22,14 @@ export function StaticCard(data: StaticCard) {
         {data.name}
       </h3>
       {data.children}
-      <NavItem
+      <NavLink
         id={data.id}
         to={data.href}
         aria-describedby={data.id}
         className="block rounded-md bg-brand-blue px-3 py-2 text-center text-sm font-bold leading-6 text-white shadow-sm hover:bg-brand-blue/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
       >
         {data.cta}
-      </NavItem>
+      </NavLink>
     </div>
   );
 }

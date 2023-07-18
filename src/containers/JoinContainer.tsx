@@ -23,13 +23,13 @@ export function JoinContainer() {
         Then head over to our job listings today!
       </p>
       <div className="mt-10 flex items-center gap-x-6">
-        <NavItem
+        <NavLink
           id="careers"
           to="/careers"
           className="rounded-md bg-brand-blue px-3.5 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
         >
           Careers at PEER DATA
-        </NavItem>
+        </NavLink>
       </div>
     </LayoutContainer>
   );

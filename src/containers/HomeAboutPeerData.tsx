@@ -56,13 +56,13 @@ export function HomeAboutPeerData() {
         </ul>
       </div>
       <div className="mt-10 flex items-center gap-x-6">
-        <NavItem
+        <NavLink
           id="about"
           to="/about"
           className="rounded-md bg-brand-blue px-8 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
         >
           About Us
-        </NavItem>
+        </NavLink>
       </div>
     </LayoutContainer>
   );

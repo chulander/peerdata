@@ -21,10 +21,8 @@ import competitiveEdges from "../../payload/competitve_edges.json";
 
 export interface Company {
   className?: string;
-  roles: DataEconomyRoles["items"];
-  values: ValueProps["items"];
 }
-export function Company({ className, roles, values }: Company) {
+export function Company({ className }: Company) {
   return (
     <section className={className}>
       <AlternateHero className="px-12" />
