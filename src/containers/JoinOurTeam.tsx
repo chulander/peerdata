@@ -1,48 +1,42 @@
-import { NavLink } from "../components/NavLink";
-export function JoinOurTeam() {
+import { Button } from "../components/Button";
+import { classNames } from "../utils";
+import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
+
+export interface JoinOurTeam {
+  className?: string;
+  title: string;
+  mainContent: string;
+}
+export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
   return (
-    <div className="bg-white">
-      <div className="relative isolate pt-14">
-        <div className="mx-auto px-6 py-8 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
-          <div className="mx-auto lg:mx-0 lg:flex-auto">
-            <h1 className="text-brand-700 mt-10 max-w-lg text-4xl font-bold tracking-tight sm:text-4xl">
-              Join Our Team
-            </h1>
-            <p className="mt-6 text-lg font-light leading-snug text-black">
-              Interested in becoming part of PEER DATA?
-            </p>
-            <p className="mt-4 text-lg font-light leading-snug text-black">
-              You must possess creativity, innovation as well as be willing to
-              challenge existing standards. Our remote-first teams are situated
-              across North America, Europe and Asia so don&apos;t miss this
-              chance!
-            </p>
-            <p className="mt-4 text-lg font-light leading-snug text-black">
-              Are you someone who loves collaborating while having a thirst for
-              knowledge when it comes to data science? Then head over to our job
-              listings today!
-            </p>
-            <div className="mt-10 flex items-center gap-x-6">
-              <NavLink
-                id="careers"
-                to="/careers"
-                className="rounded-md bg-brand-blue px-8 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-brand-blue/80 hover:shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-blue"
-              >
-                Join Us
-              </NavLink>
-            </div>
-          </div>
-          <div className="mt-16 sm:mt-24 lg:mt-0 lg:w-1/3 lg:flex-shrink-0 lg:flex-grow">
-            <img
-              alt="Join Us"
-              src="https://media.graphassets.com/FQ732tLFQ96z8VFPUVFr"
-              className="mx-auto h-full w-full rounded bg-cover"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+    <section
+      className={classNames(
+        "xl-max-w-1/4 mb-40 flex w-full items-center justify-between",
+        !className ? "" : className
+      )}
+    >
+      <article className="flex w-full flex-col xl:basis-[33%] xl:gap-y-10">
+        <p className="text-[3.4rem] font-normal leading-[3.75rem] tracking-tight text-brand-dark-blue">
+          {title}
+        </p>
+
+        <p className="text-[1.3rem] font-thin leading-[1.5rem] tracking-tighter text-brand-dark-blue ">
+          {mainContent}
+        </p>
+
+        <a
+          className="button-primary flex items-center px-4 py-3 font-medium tracking-normal w-fit"
+          target="_blank"
+          rel="noreferrer"
+          href="https://app.jazz.co/app/v2/job"
+        >
+          <span className="text-[1.4rem]">View all roles</span>
+          <ArrowLongRightIcon
+            className={classNames("-mr-2 ml-20 h-8", "text-white")}
+            aria-hidden="true"
+          />
+        </a>
+      </article>
+    </section>
   );
 }
-
-export default JoinOurTeam;

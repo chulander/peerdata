@@ -24,7 +24,7 @@ export function Button({
   return (
     <button
       className={classNames(
-        "tracking-noraml flex items-center justify-between px-6 py-3 font-medium",
+        "flex items-center justify-between px-4 py-3 font-medium tracking-normal",
         isPrimary ? "button-primary" : "button-secondary",
         isPrimary ? "text-white" : "text-brand-dark-blue",
         !className ? "" : className

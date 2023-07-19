@@ -18,7 +18,7 @@ export function CompanyHistory({
   return (
     <section
       className={classNames(
-        "mb-40 flex h-full w-full items-center justify-between overflow-hidden pb-40",
+        "flex h-full w-full items-center justify-between overflow-hidden pb-40",
         !className ? "" : className
       )}
     >
@@ -38,16 +38,18 @@ export function CompanyHistory({
         </p>
       </article>
       <article className="relative xl:basis-6/12">
-        <img
-          alt="home-1"
-          className="bg-contain bg-no-repeat object-scale-down lg:w-3/5 xl:w-1/2"
-          src={Image1}
-        ></img>
-        <img
-          alt="home-2"
-          className="absolute z-10 lg:right-0 lg:top-1/4 lg:w-3/5 xl:right-20 xl:top-1/2 xl:w-1/2"
-          src={Image2}
-        ></img>
+        <div className="relative h-full w-full">
+          <img
+            alt="home-1"
+            className="bg-contain bg-no-repeat object-scale-down lg:w-3/5 xl:w-1/2"
+            src={Image1}
+          ></img>
+          <img
+            alt="home-2"
+            className="absolute z-10 lg:right-0 lg:top-1/4 lg:w-3/5 xl:right-20 xl:top-1/3 xl:w-1/2"
+            src={Image2}
+          ></img>
+        </div>
       </article>
     </section>
   );
