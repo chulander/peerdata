@@ -2,10 +2,7 @@ import { Navigate, Routes, Route } from "react-router-dom";
 import Footer from "./containers/Footer";
 import Nav, { NavItem } from "./containers/Nav";
 import Home from "./pages/Home";
-import About from "./pages/About/About";
 import { ContactUs } from "./pages/Contact/Contact";
-import { DataEconomyRoles } from "./containers/DataEconomyRoles";
-import { ValueProps } from "./containers/ValueProps";
 import Company from "./pages/Company";
 
 const navItems: NavItem[] = [
