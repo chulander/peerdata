@@ -14,6 +14,8 @@ export default {
         circular: "url(./assets/background/circular-background.svg)",
         square: "url(./assets/background/square-background.svg)",
         gradient: "url(./assets/gradient-background.png)",
+        company1: "url(./assets/images/image-company-1.jpg)",
+        company2: "url(./assets/images/image-company-2.jpg)",
         // "home-banner":
         //   "url(https://media.graphassets.com/F5QFqaQeRAejs31hYZc5)",
         // "home-about": "url(https://media.graphassets.com/Mn5mQJcqSmig46arfCx7)",
@@ -24,7 +26,7 @@ export default {
         "brand-green": "#13BFA2",
         "brand-light-background": "#F8F4F2",
         "brand-orange": "#FF5634",
-        "brand-deep-blue": "#041C2C", // this color is made up
+        "brand-deep-blue": "#0C2238", // this color is made up
         // primary: "#247D7D",
         secondary: "#247D7D",
         alternate: "gray",
