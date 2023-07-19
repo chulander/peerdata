@@ -1,4 +1,5 @@
 import NavLink from "../components/NavLink";
+import { classNames } from "../utils";
 
 const people = [
   {
@@ -44,23 +45,32 @@ const people = [
   // More people...
 ];
 
-export function MeetOurTeam() {
+export interface MeetOurTeam {
+  className?: string;
+}
+export function MeetOurTeam({ className }: MeetOurTeam) {
   return (
-    <div className="bg-white">
-      <div className="mx-auto px-6 text-center lg:px-8">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="text-3xl font-bold tracking-tight text-brand-700 sm:text-4xl">
-            Meet our team
-          </h2>
-          <p className="mt-4 text-lg leading-8 text-brand-500">
-            We’re a dynamic group of individuals who are passionate about what
-            we do.
-          </p>
-        </div>
-        <ul
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-        >
-          {people.map((person) => (
+    <div
+      className={classNames(
+        "xs:flex xs:flex-col xs:items-center mx-auto min-h-screen bg-brand-dark-blue bg-circular bg-cover bg-no-repeat py-12 sm:block lg:flex lg:flex-col lg:gap-x-10",
+        !className ? "" : className
+      )}
+    >
+      <div className="px-6 lg:px-8">
+        <h2 className="text-3xl font-normal tracking-tight text-white sm:text-4xl">
+          Meet our team team of experts
+        </h2>
+        <p className="text-md mt-4 font-thin leading-[1.4rem] tracking-tight text-brand-light-background lg:w-2/5">
+          The PEER DATA founding team has a proven track record of success in
+          the financial data industry. We have built a multi-trillion-dollar
+          asset class (ABX and CMBX), collectively ran $1B+ data businesses, and
+          worked together for over 10 years. We have a strong understanding of
+          the data lifecycle and value journey, from collection and distribution
+          to monetization. The team is experienced in working with regulators
+          and market participants.
+        </p>
+        <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
+          {/* {people.map((person) => (
             <li key={person.name}>
               <img
                 className="mx-auto h-56 w-56 rounded-full"
@@ -112,7 +122,7 @@ export function MeetOurTeam() {
                 </li>
               </ul>
             </li>
-          ))}
+          ))} */}
         </ul>
       </div>
     </div>

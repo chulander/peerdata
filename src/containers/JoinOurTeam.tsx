@@ -11,7 +11,7 @@ export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
   return (
     <section
       className={classNames(
-        "xl-max-w-1/4 mb-40 flex w-full items-center justify-between",
+        "xl:max-w-1/4 mt-52 mb-28 flex w-full items-center justify-between",
         !className ? "" : className
       )}
     >
@@ -20,7 +20,7 @@ export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
           {title}
         </p>
 
-        <p className="text-[1.3rem] font-thin leading-[1.5rem] tracking-tighter text-brand-dark-blue ">
+        <p className="text-[1.3rem] font-normal leading-[1.8rem] tracking-tighter text-brand-dark-blue ">
           {mainContent}
         </p>
 

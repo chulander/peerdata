@@ -24,9 +24,10 @@ export function Button({
   return (
     <button
       className={classNames(
-        "flex items-center justify-between px-4 py-3 font-medium tracking-normal",
+        "flex items-center px-4 py-3 font-medium tracking-normal",
         isPrimary ? "button-primary" : "button-secondary",
         isPrimary ? "text-white" : "text-brand-dark-blue",
+        hasIcon ? "justify-between" : "justify-center",
         !className ? "" : className
       )}
       name={id}
@@ -38,7 +39,7 @@ export function Button({
         <span className="block">
           <ArrowLongRightIcon
             className={classNames(
-              "-mr-2 ml-20 w-8",
+              "-mr-2 h-8 w-full",
               isPrimary ? "text-white" : "text-brand-dark-blue"
             )}
             aria-hidden="true"

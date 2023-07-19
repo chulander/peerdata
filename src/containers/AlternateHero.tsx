@@ -14,24 +14,25 @@ export function AlternateHero({ className }: AlternateHero) {
         !className ? "" : className
       )}
     >
-      <div className="mx-auto my-8 lg:flex lg:flex-col lg:gap-x-10 pb-36">
+      <div className="mx-auto my-8 pb-36 lg:flex lg:flex-col lg:gap-x-10">
         <div className=" xs:flex xs:flex-col xs:items-center sm:block">
           <h1 className="header-2 mt-10 font-medium text-black xl:max-w-[73%]">
-            Our mission is to assist organizations in transforming their data
-            into valuable assets
+            Everyone is in the data business, they just don&apos;t know it yet
           </h1>
           <p className="mt-8 text-[1.6rem] tracking-tighter text-black">
-            We aim to unlock maximum value and amplify reach by
+            At PEER DATA, we are passionate about helping businesses unlock the
+            full value of their data and transform how data operates in the
+            market.
           </p>
           <section className="mt-12 flex items-center">
             <Button
-              className="text-[1.75rem] font-thin"
+              className="w-48 text-[1.15rem] font-normal"
               id="learn-more"
               label="Learn more"
               onClick={() => console.log("test")}
             />
             <Anchor
-              className="ml-10 text-[1.65rem] tracking-tight"
+              className="ml-10 text-[1.15rem] tracking-tight"
               to="https://app.jazz.co/app/v2/job"
               id="join-our-team"
             >
