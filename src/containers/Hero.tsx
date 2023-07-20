@@ -12,7 +12,7 @@ export function Hero({ className }: Hero) {
           <h1 className="header-2 font-medium mt-10 text-black">
             Powering and digitizing
             <br />
-            data economy of the future
+            the data economy of the future
           </h1>
           <p className="text-[1.4rem] mt-5 text-black font-normal tracking-tighter">
           Turn data into assets. Monetize and capitalize your data quickly and easily.

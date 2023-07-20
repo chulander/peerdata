@@ -16,13 +16,10 @@ export function AlternateHero({ className }: AlternateHero) {
     >
       <div className="mx-auto my-8 pb-36 lg:flex lg:flex-col lg:gap-x-10">
         <div className=" xs:flex xs:flex-col xs:items-center sm:block">
-          <h1 className="header-2 mt-10 font-medium text-black lg:w-full xl:max-w-[75%]">
-            Everyone is in the data business
+          <h1 className="header-2 mt-10 font-medium text-black lg:w-full">
+            Everyone is in the data business, they just don&apos;t know it yet
           </h1>
-          <h1 className="header-2 font-medium text-black xl:max-w-[75%]">
-            They just don&apos;t know it yet
-          </h1>
-          <p className="mt-8 text-[1.6rem] tracking-tighter text-black lg:max-w-xl">
+          <p className="mt-8 text-[1.6rem] tracking-tighter text-black lg:max-w-2xl">
             At PEER DATA, we are passionate about helping businesses unlock the
             full value of their data and transform how data operates in the
             market.
