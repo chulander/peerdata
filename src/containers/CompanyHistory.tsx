@@ -1,5 +1,4 @@
 import { classNames } from "../utils";
-import { StackedImages } from "./StackedImages";
 
 import Image1 from "../assets/images/image-company-1.jpg";
 import Image2 from "../assets/images/image-company-2.jpg";

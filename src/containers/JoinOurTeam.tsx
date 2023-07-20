@@ -1,4 +1,3 @@
-import { Button } from "../components/Button";
 import { classNames } from "../utils";
 import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 
@@ -11,7 +10,7 @@ export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
   return (
     <section
       className={classNames(
-        "xl:max-w-1/4 mt-52 mb-28 flex w-full items-center justify-between",
+        "xl:max-w-1/4 mb-28 mt-52 flex w-full items-center justify-between",
         !className ? "" : className
       )}
     >
@@ -25,7 +24,7 @@ export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
         </p>
 
         <a
-          className="button-primary flex items-center px-4 py-3 font-medium tracking-normal w-fit"
+          className="button-primary flex w-fit items-center px-4 py-3 font-medium tracking-normal"
           target="_blank"
           rel="noreferrer"
           href="https://app.jazz.co/app/v2/job"
