@@ -1,55 +1,12 @@
 import NavLink from "../components/NavLink";
 import { classNames } from "../utils";
 
-const people = [
-  {
-    name: "Kiet Tran",
-    role: "Chief Executive Officer",
-    image:'kiet',
-    imageUrl:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "https://twitter.com/joe",
-    linkedinUrl: "https://linkedin.com/joe",
-  },
-  {
-    name: "Cynthia Nadal",
-    role: "Chief Operating Officer",
-    imageUrl:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "https://twitter.com/jack",
-    linkedinUrl: "https://linkedin.com/jack",
-  },
-  {
-    name: "Kat Tatochenko",
-    role: "President and Chief Revenue Officer",
-    imageUrl:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "https://twitter.com/john",
-    linkedinUrl: "https://linkedin.com/john",
-  },
-  {
-    name: "Ben Logan",
-    role: "Chief Product Officer",
-    imageUrl:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "https://twitter.com/jeff",
-    linkedinUrl: "https://linkedin.com/jeff",
-  },
-  {
-    name: "Souvik Das",
-    role: "Chief Solutions Architect",
-    imageUrl:
-      "https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao=",
-    twitterUrl: "https://twitter.com/james",
-    linkedinUrl: "https://linkedin.com/james",
-  },
-  // More people...
-];
-
+import { TeamMember } from "../components/TeamMember";
 export interface MeetOurTeam {
   className?: string;
+  teamMembers: TeamMember[];
 }
-export function MeetOurTeam({ className }: MeetOurTeam) {
+export function MeetOurTeam({ className, teamMembers }: MeetOurTeam) {
   return (
     <div
       className={classNames(
@@ -70,7 +27,10 @@ export function MeetOurTeam({ className }: MeetOurTeam) {
           to monetization. The team is experienced in working with regulators
           and market participants.
         </p>
-        <ul className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
+        <ul className="mx-auto mt-20 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
+          {teamMembers.map((details) => (
+            <TeamMember key={details['name']} {...details} />
+          ))}
           {/* {people.map((person) => (
             <li key={person.name}>
               <img

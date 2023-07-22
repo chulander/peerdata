@@ -166,6 +166,9 @@
 .anchor {
   @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-2 underline-offset-4 hover:decoration-transparent;
 }
+.anchor-border {
+  @apply border-b border-brand-blue text-brand-blue hover:border-transparent;
+}
 
 .tk-indivisible {
   font-family: "indivisible", sans-serif;

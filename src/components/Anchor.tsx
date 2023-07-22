@@ -6,7 +6,7 @@ export type Anchor = {
   to: NavLinkProps["to"];
   // className?: NavLinkProps["className"];
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 // const defaultClassname = "block text-teal-200 hover:text-white";
 export default Anchor;
@@ -26,7 +26,12 @@ export const AnchorWithRef = forwardRef<HTMLAnchorElement, NavLinkProps>(
   (props, ref) => {
     const { to, children, className, id } = props;
     return (
-      <NavLink ref={ref} id={id} to={to} className={className}>
+      <NavLink
+        ref={ref}
+        id={id}
+        to={to}
+        className={`anchor focus ${className}`}
+      >
         {children}
       </NavLink>
     );
