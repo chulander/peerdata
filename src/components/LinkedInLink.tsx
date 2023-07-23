@@ -19,7 +19,7 @@ export function LinkedInLink({ className, to }: LinkedInLink) {
       rel="noreferrer"
     >
       <ReactSVG className={className} src={Linkedin} /> 
-      <span className="text-lg leading-[0.15rem]">LinkedIn</span>
+      <span className="text-[1.3rem] leading-[0.15rem] tracking-tighter">LinkedIn</span>
     </a>
   );
 }

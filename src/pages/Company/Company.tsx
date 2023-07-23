@@ -1,4 +1,3 @@
-// import CategoryContainer from "../../containers/CategoryContainer";
 import { SplitImages } from "../../containers/SplitImages";
 import Home3 from "../../assets/images/image-home-3.jpg";
 import Home4 from "../../assets/images/image-home-4.jpg";
@@ -10,9 +9,6 @@ import { CompanyTransparency } from "../../containers/CompanyTransparency";
 import { JoinOurTeam } from "../../containers/JoinOurTeam";
 import MeetOurTeam from "../../containers/MeetOurTeam";
 
-// const Images = {
-//   "home-1": "../../assets/images/image-home-1.jpg",
-// };
 import teamMembers from "../../payload/team_members.json";
 import { TeamMember } from "../../components/TeamMember";
 
@@ -46,6 +42,7 @@ export function Company({ className }: Company) {
         className="px-12"
         teamMembers={teamMembers["data"] as TeamMember[]}
       />
+
       <JoinOurTeam
         className="px-12"
         title="Join our team"
