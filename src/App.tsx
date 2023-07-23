@@ -12,8 +12,8 @@ const navItems: NavItem[] = [
     name: "Company",
   },
   {
-    href: "/contact-us",
-    id: "contact-us",
+    href: "/contact",
+    id: "contact-us-nav",
     name: "Contact us",
   },
   {
@@ -35,8 +35,8 @@ const footerItems: NavItem[] = [
     name: "Careers",
   },
   {
-    href: "/contact-us",
-    id: "contact-us",
+    href: "/contact",
+    id: "contact-us-footer",
     name: "Contact Us",
   },
   {

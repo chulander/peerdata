@@ -13,10 +13,6 @@ import Signup from "../../containers/SignUp";
 import dataEconomyRoles from "../../payload/data_econonmy_roles.json";
 import valuePropositionItems from "../../payload/value_propositions_items.json";
 
-// const Images = {
-//   "home-1": "../../assets/images/image-home-1.jpg",
-// };
-
 export interface Home {
   className?: string;
 }

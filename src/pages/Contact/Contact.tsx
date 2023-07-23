@@ -1,13 +1,18 @@
-import { ContactFeature } from "../../components/ContactFeature";
 import { ContactUsForm } from "../../components/ContactUsForm";
-import ContactFindUs from "../../containers/ContactFindUs";
+import Contact1 from "../../assets/images/image-contact-1.jpg";
+import Contact2 from "../../assets/images/image-contact-2.jpg";
+import Signup from "../../containers/SignUp";
 
-export function ContactUs() {
+import { SplitImages } from "../../containers/SplitImages";
+export interface Contact {
+  className?: string;
+}
+export function ContactUs({ className }: Contact) {
   return (
-    <section className="m-auto flex w-full flex-col items-center justify-center">
+    <section className={className}>
       <ContactUsForm />
-      <ContactFeature />
-      <ContactFindUs />
+      <SplitImages left={Contact1} right={Contact2} />
+      <Signup className="w-full px-12 mt-60" />
     </section>
   );
 }

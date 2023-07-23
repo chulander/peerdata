@@ -4,6 +4,7 @@ import {
   PhoneIcon,
 } from "@heroicons/react/24/outline";
 import { Dropdown } from "./Dropdown";
+import { classNames } from "../utils";
 export const tiers = [
   {
     name: "Data Owner",
@@ -32,9 +33,18 @@ export const tiers = [
     image: "https://media.graphassets.com/DhI5g0FQZug56y6hWcXn",
   },
 ];
-export function ContactUsForm() {
+const items = tiers.map(({ name, id }) => ({ name, id }));
+export interface ContactUsForm {
+  className?: string;
+}
+export function ContactUsForm({ className }: ContactUsForm) {
   return (
-    <div className="relative isolate bg-white">
+    <div
+      className={classNames(
+        "relative isolate bg-white",
+        !className ? "" : className
+      )}
+    >
       <div className="grid w-screen grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto lg:mx-0">

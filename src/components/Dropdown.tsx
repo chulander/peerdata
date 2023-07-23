@@ -11,7 +11,7 @@ export function Dropdown({ className, items }: DropdownType) {
   const [selected, setSelected] = useState<{ id: string; name: string }>();
 
   return (
-    <Listbox value={selected} by="id" onChange={setSelected}>
+    <Listbox className={className} value={selected} by="id" onChange={setSelected}>
       {({ open }) => (
         <>
           <div className="relative mt-2">
