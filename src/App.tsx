@@ -2,7 +2,7 @@ import { Navigate, Routes, Route } from "react-router-dom";
 import Footer from "./containers/Footer";
 import Nav, { NavItem } from "./containers/Nav";
 import Home from "./pages/Home";
-import { ContactUs } from "./pages/Contact/Contact";
+import { Contact } from "./pages/Contact/Contact";
 import Company from "./pages/Company";
 
 const navItems: NavItem[] = [
@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   {
     href: "https://ziessxud13f.typeform.com/to/O9Jgo0W3",
     id: "waitlist",
-    name: "Join the waitlist",
+    name: "Schedule a demo",
     isCTA: true,
   },
 ];
@@ -57,7 +57,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home className="" />} />
         <Route path="/company" element={<Company />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
       <Footer className="px-12" items={footerItems} />

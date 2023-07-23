@@ -1,4 +1,4 @@
-import { ContactUsForm } from "../../components/ContactUsForm";
+import { ContactUs } from "../../components/ContactUs";
 import Contact1 from "../../assets/images/image-contact-1.jpg";
 import Contact2 from "../../assets/images/image-contact-2.jpg";
 import Signup from "../../containers/SignUp";
@@ -7,12 +7,12 @@ import { SplitImages } from "../../containers/SplitImages";
 export interface Contact {
   className?: string;
 }
-export function ContactUs({ className }: Contact) {
+export function Contact({ className }: Contact) {
   return (
     <section className={className}>
-      <ContactUsForm />
-      <SplitImages left={Contact1} right={Contact2} />
-      <Signup className="w-full px-12 mt-60" />
+      <ContactUs className="px-12" />
+      <SplitImages className="mt-40" left={Contact1} right={Contact2} />
+      <Signup className="mt-60 w-full px-12" />
     </section>
   );
 }

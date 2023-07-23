@@ -11,12 +11,16 @@ export function Dropdown({ className, items }: DropdownType) {
   const [selected, setSelected] = useState<{ id: string; name: string }>();
 
   return (
-    <Listbox className={className} value={selected} by="id" onChange={setSelected}>
+    <Listbox value={selected} by="id" onChange={setSelected}>
       {({ open }) => (
         <>
-          <div className="relative mt-2">
-            <Listbox.Button className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-500 sm:text-sm sm:leading-6">
-              <span className="block truncate text-left">{!selected ? 'Please select your role' : selected.name}</span>
+          <div
+            className={classNames("relative mt-2", !className ? "" : className)}
+          >
+            <Listbox.Button className="focus:ring-brand-500 block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6">
+              <span className="block truncate text-left text-brand-green">
+                {!selected ? "Select one" : selected.name}
+              </span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                 <ChevronUpDownIcon
                   className="h-5 w-5 text-gray-400"
