@@ -23,7 +23,7 @@ export interface Home {
 export function Home({ className }: Home) {
   return (
     <section className={className}>
-      <Hero className="px-12" />
+      <Hero className="px-12 " />
       <SplitImages className="mt-20 h-3/4 px-12" left={Home1} right={Home2} />
       <LeftText
         className="mt-40 px-12"
