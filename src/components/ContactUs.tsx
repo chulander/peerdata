@@ -3,38 +3,10 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
-import { Dropdown } from "./Dropdown";
+
 import { classNames } from "../utils";
 import ContactUsForm from "./ContactUsForm";
-export const tiers = [
-  {
-    name: "Data Owner",
-    id: "data-owner",
-    href: "/contact",
-    description:
-      "Turn your data into assets. We provide tools to guide you through your data monetization journey, to unlock maximum value and amplify reach.",
-    cta: "Contact Us",
-    image: "https://media.graphassets.com/ZR4pkoNwRvyFCOVbVpeH",
-  },
-  {
-    name: "Data Consumer",
-    id: "data-consumer",
-    href: "/contact",
-    description:
-      "Reduce time to context, objective assessment of data quality and improve the data discovery process.",
-    cta: "Contact Us",
-    image: "https://media.graphassets.com/z6MgBBtHS2rwKEIrAQoQ",
-  },
-  {
-    name: "Data Investor",
-    id: "data-investor",
-    href: "/contact",
-    description: "Invest in the essential commodity powering the data economy.",
-    cta: "Contact Us",
-    image: "https://media.graphassets.com/DhI5g0FQZug56y6hWcXn",
-  },
-];
-const items = tiers.map(({ name, id }) => ({ name, id }));
+import { externalRoutes } from "../config";
 export interface ContactUs {
   className?: string;
 }
@@ -68,9 +40,9 @@ export function ContactUs({ className }: ContactUs) {
                 <dd>
                   <a
                     className="hover:text-brand-700 text-black"
-                    href="mailto:contact@peerdata.tech"
+                    href={`mailto:${externalRoutes.mailbox.href}`}
                   >
-                    contact@peerdata.tech
+                    {externalRoutes.mailbox.href}
                   </a>
                 </dd>
               </div>
@@ -108,7 +80,8 @@ export function ContactUs({ className }: ContactUs) {
             </dl>
           </div>
         </div>
-        <ContactUsForm />
+
+        <ContactUsForm title="Get in touch" />
       </div>
     </div>
   );

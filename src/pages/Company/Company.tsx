@@ -11,6 +11,7 @@ import MeetOurTeam from "../../containers/MeetOurTeam";
 
 import teamMembers from "../../payload/team_members.json";
 import { TeamMember } from "../../components/TeamMember";
+import { externalRoutes } from "../../config";
 
 export interface Company {
   className?: string;
@@ -35,8 +36,8 @@ export function Company({ className }: Company) {
         items={competitiveEdges.data as ValueProps["items"]}
         className="px-12"
         buttonLabel="Find out more"
+        externalHref={externalRoutes.waitlist.href}
         title="PEER DATA is helping the participants in the data ecosystem by building tools which:"
-        onClick={() => console.log("click")}
       />
       <MeetOurTeam
         className="px-12"

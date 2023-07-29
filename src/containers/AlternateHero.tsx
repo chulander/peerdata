@@ -1,12 +1,9 @@
 import Anchor from "../components/Anchor";
-import { Button } from "../components/Button";
+// import { Button } from "../components/Button";
 import { LinkButton } from "../components/LinkButton";
 import { classNames } from "../utils";
 
-import { navItems, footerItems } from "../App";
-
-const waitList = navItems.find((item) => item.id === "waitlist");
-const careers = footerItems.find((item) => item.id === "careers");
+import { externalRoutes } from "../config";
 
 export interface AlternateHero {
   className?: string;
@@ -32,13 +29,13 @@ export function AlternateHero({ className }: AlternateHero) {
           <section className="mt-12 flex items-center">
             <LinkButton
               className="w-48 text-[1.15rem] font-normal"
-              to={waitList?.href as string}
+              to={externalRoutes["waitlist"].href}
             >
               Learn more
             </LinkButton>
             <Anchor
               className="ml-10 text-[1.15rem] tracking-tight"
-              to={careers?.href as string}
+              to={externalRoutes["careers"].href}
               target="_blank"
               id="join-our-team"
             >

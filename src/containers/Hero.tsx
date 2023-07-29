@@ -1,5 +1,5 @@
 import { classNames } from "../utils";
-import { InputButton } from "./InputButton";
+// import { InputButton } from "./InputButton";
 
 export interface Hero {
   className?: string;

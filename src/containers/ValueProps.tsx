@@ -6,12 +6,14 @@ import { classNames } from "../utils";
 export interface ValueProps {
   buttonLabel: Button["label"];
   className?: string;
+  externalHref: string;
   items: Pick<ValuePropCard, "id" | "description" | "icon">[];
   title: string;
 }
 export function ValueProps({
   buttonLabel,
   className,
+  externalHref,
   items,
   title,
 }: ValueProps) {
@@ -34,7 +36,7 @@ export function ValueProps({
       </section>
       <LinkButtonInternalRoute
         className="mt-10 w-full self-start text-[1.35rem] lg:w-[28%] xl:w-[19%]"
-        to="/contact"
+        to={externalHref}
       >
         {buttonLabel}
       </LinkButtonInternalRoute>

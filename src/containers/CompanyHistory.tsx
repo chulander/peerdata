@@ -32,7 +32,7 @@ export function CompanyHistory({
             {title}
           </p>
         )}
-        <p className="mt-4 text-[1.7rem]  leading-7 tracking-tighter text-current">
+        <p className="mt-4 text-[1.2rem] leading-[1.8rem] tracking-tighter text-current">
           {mainContent}
         </p>
       </article>
@@ -45,7 +45,7 @@ export function CompanyHistory({
           ></img>
           <img
             alt="home-2"
-            className="absolute z-10 lg:right-0 lg:top-1/4 lg:w-3/5 xl:right-20 xl:top-1/3 xl:w-1/2"
+            className="absolute z-10 lg:right-0 lg:top-1/4 lg:w-3/5 xl:right-20 xl:top-1/2 xl:w-1/2"
             src={Image2}
           ></img>
         </div>

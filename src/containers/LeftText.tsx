@@ -25,7 +25,7 @@ export function LeftText({
     >
       <article className="flex w-full flex-col xl:basis-[47%]">
         <header>
-          <h3 className="text-[1.15rem] uppercase tracking-tighter text-brand-green">
+          <h3 className="text-[1.2rem] uppercase tracking-tighter text-brand-green">
             {category}
           </h3>
         </header>
@@ -33,7 +33,7 @@ export function LeftText({
           !item ? null : (
             <p
               key={item}
-              className="mt-5 text-md  leading-5 text-current"
+              className="mt-5 text-[1.2rem]  leading-6 text-current"
             >
               {item}
             </p>

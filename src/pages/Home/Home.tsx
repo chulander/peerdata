@@ -6,13 +6,13 @@ import Home1 from "../../assets/images/image-home-1.jpg";
 import Home2 from "../../assets/images/image-home-2.jpg";
 import Home3 from "../../assets/images/image-home-3.jpg";
 import Home4 from "../../assets/images/image-home-4.jpg";
-import { Button } from "../../components/Button";
 import { ValueProps } from "../../containers/ValueProps";
 import Signup from "../../containers/SignUp";
 
 import dataEconomyRoles from "../../payload/data_econonmy_roles.json";
 import valuePropositionItems from "../../payload/value_propositions_items.json";
 import { LinkButtonInternalRoute } from "../../components/LinkButton";
+import { externalRoutes, internalRoutes } from "../../config";
 
 export interface Home {
   className?: string;
@@ -51,7 +51,7 @@ export function Home({ className }: Home) {
       >
         <LinkButtonInternalRoute
           className="mt-12 w-full text-[1.35rem] lg:w-[65%] xl:max-w-[38%]"
-          to="/company"
+          to={externalRoutes.waitlist.href}
           isPrimary={false}
         >
           Find out more
@@ -62,6 +62,7 @@ export function Home({ className }: Home) {
         items={valuePropositionItems.data as ValueProps["items"]}
         className="px-12"
         buttonLabel="Contact us"
+        externalHref={internalRoutes.contact.href}
         title="We aim to unlock maxium value and amplify reach by:"
       />
       <Signup className="px-12" />

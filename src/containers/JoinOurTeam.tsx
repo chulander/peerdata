@@ -1,4 +1,5 @@
 import { LinkButton } from "../components/LinkButton";
+import { externalRoutes } from "../config";
 import { classNames } from "../utils";
 
 export interface JoinOurTeam {
@@ -22,7 +23,7 @@ export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
         <p className="text-[1.3rem] font-normal leading-[1.8rem] tracking-tighter text-brand-dark-blue ">
           {mainContent}
         </p>
-        <LinkButton className="text-[1.4rem]" to="https://peerdata.applytojob.com/apply">
+        <LinkButton className="text-[1.4rem]" to={externalRoutes.careers.href}>
           View all roles
         </LinkButton>
       </article>

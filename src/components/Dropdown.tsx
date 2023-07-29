@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { classNames } from "../utils";
@@ -6,12 +6,19 @@ import { classNames } from "../utils";
 export type DropdownType = {
   items: Array<{ id: string; name: string }>;
   className?: string;
+  disabled?: boolean;
+  value?: { id: string; name: string };
+  onChange: (value: { id: string; name: string }) => void;
 };
-export function Dropdown({ className, items }: DropdownType) {
-  const [selected, setSelected] = useState<{ id: string; name: string }>();
-
+export function Dropdown({
+  className,
+  items,
+  disabled = false,
+  onChange,
+  value,
+}: DropdownType) {
   return (
-    <Listbox value={selected} by="id" onChange={setSelected}>
+    <Listbox disabled={disabled} value={value} by="id" onChange={onChange}>
       {({ open }) => (
         <>
           <div
@@ -19,7 +26,7 @@ export function Dropdown({ className, items }: DropdownType) {
           >
             <Listbox.Button className="focus:ring-brand-500 block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6">
               <span className="block truncate text-left text-brand-green">
-                {!selected ? "Select one" : selected.name}
+                {!value ? "Select one" : value.name}
               </span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                 <ChevronUpDownIcon

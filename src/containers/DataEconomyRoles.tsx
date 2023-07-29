@@ -1,6 +1,7 @@
 import { DataEconomyRoleCard } from "../components/DataEconomyRoleCard";
 import { LinkButtonInternalRoute } from "../components/LinkButton";
 import { classNames } from "../utils";
+import { internalRoutes } from "../config";
 
 export interface DataEconomyRoles {
   buttonLabel: string;
@@ -33,7 +34,7 @@ export function DataEconomyRoles({
 
         <LinkButtonInternalRoute
           className="mt-10 w-full self-start text-[1.35rem] lg:w-[28%] xl:w-[19%]"
-          to="/contact"
+          to={internalRoutes.contact.href}
         >
           {buttonLabel}
         </LinkButtonInternalRoute>
