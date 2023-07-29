@@ -5,10 +5,10 @@ import Home from "./pages/Home";
 import { Contact } from "./pages/Contact/Contact";
 import Company from "./pages/Company";
 
-const navItems: NavItem[] = [
+export const navItems: NavItem[] = [
   {
     href: "/company",
-    id: "compant",
+    id: "company-nav",
     name: "Company",
   },
   {
@@ -23,10 +23,10 @@ const navItems: NavItem[] = [
     isCTA: true,
   },
 ];
-const footerItems: NavItem[] = [
+export const footerItems: NavItem[] = [
   {
     href: "/company",
-    id: "company",
+    id: "company-footer",
     name: "Company",
   },
   {
@@ -41,12 +41,12 @@ const footerItems: NavItem[] = [
   },
   {
     href: "https://www.linkedin.com/in/kietttran/",
-    id: "linkedin",
+    id: "linkedin-footer",
     name: "LinkedIn",
   },
   {
     href: "/privacy-policy",
-    id: "privacy-policy",
+    id: "privacy-policy-footer",
     name: "Privacy Policy",
   },
 ];

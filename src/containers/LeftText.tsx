@@ -29,8 +29,21 @@ export function LeftText({
             {category}
           </h3>
         </header>
-        {!title ? null : (
-          <p className="mt-5 mb-4 text-[3.4rem] font-normal leading-[3.75rem] tracking-tight">
+        {[title, mainContent, subContent].map((item) =>
+          !item ? null : (
+            <p
+              key={item}
+              className="mt-5 text-md  leading-5 text-current"
+            >
+              {item}
+            </p>
+          )
+        )}
+        {/* {!title ? null : (
+          // <p className="mt-5 mb-4 text-[3.4rem] font-normal leading-[3.75rem] tracking-tight">
+          //   {title}
+          // </p>
+          <p className="mt-4 text-lg  leading-[1.85rem] tracking-tight text-current">
             {title}
           </p>
         )}
@@ -40,7 +53,7 @@ export function LeftText({
 
         <p className="mt-8 text-[1.4rem] leading-[1.85rem] tracking-tight text-current">
           {subContent}
-        </p>
+        </p> */}
         {children}
       </article>
     </section>

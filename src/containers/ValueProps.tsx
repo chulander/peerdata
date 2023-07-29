@@ -1,18 +1,17 @@
 import { Button } from "../components/Button";
 import { ValuePropCard } from "../components/ValuePropCard";
+import { LinkButtonInternalRoute } from "../components/LinkButton";
 import { classNames } from "../utils";
 
 export interface ValueProps {
   buttonLabel: Button["label"];
   className?: string;
   items: Pick<ValuePropCard, "id" | "description" | "icon">[];
-  onClick: Button["onClick"];
   title: string;
 }
 export function ValueProps({
   buttonLabel,
   className,
-  onClick,
   items,
   title,
 }: ValueProps) {
@@ -24,7 +23,7 @@ export function ValueProps({
       )}
     >
       <header className="w-full self-start xl:w-8/12">
-        <h1 className="text-[3.15rem] font-normal leading-10 tracking-tighter text-black">
+        <h1 className="text-[3.15rem] font-normal leading-10 tracking-tighter text-black lg:max-w-xl xl:max-w-3xl">
           {title}
         </h1>
       </header>
@@ -33,13 +32,12 @@ export function ValueProps({
           <ValuePropCard key={item.id} {...item} />
         ))}
       </section>
-      <Button
+      <LinkButtonInternalRoute
         className="mt-10 w-full self-start text-[1.35rem] lg:w-[28%] xl:w-[19%]"
-        id="contact-us"
-        label={buttonLabel}
-        isPrimary
-        onClick={onClick}
-      />
+        to="/contact"
+      >
+        {buttonLabel}
+      </LinkButtonInternalRoute>
     </div>
   );
 }

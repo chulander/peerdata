@@ -1,7 +1,12 @@
 import Anchor from "../components/Anchor";
 import { Button } from "../components/Button";
+import { LinkButton } from "../components/LinkButton";
 import { classNames } from "../utils";
-import { InputButton } from "./InputButton";
+
+import { navItems, footerItems } from "../App";
+
+const waitList = navItems.find((item) => item.id === "waitlist");
+const careers = footerItems.find((item) => item.id === "careers");
 
 export interface AlternateHero {
   className?: string;
@@ -25,15 +30,16 @@ export function AlternateHero({ className }: AlternateHero) {
             market.
           </p>
           <section className="mt-12 flex items-center">
-            <Button
+            <LinkButton
               className="w-48 text-[1.15rem] font-normal"
-              id="learn-more"
-              label="Learn more"
-              onClick={() => console.log("test")}
-            />
+              to={waitList?.href as string}
+            >
+              Learn more
+            </LinkButton>
             <Anchor
               className="ml-10 text-[1.15rem] tracking-tight"
-              to="https://app.jazz.co/app/v2/job"
+              to={careers?.href as string}
+              target="_blank"
               id="join-our-team"
             >
               <span className="font-thin">Join our team</span>
