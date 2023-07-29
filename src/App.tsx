@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   {
     href: "https://ziessxud13f.typeform.com/to/O9Jgo0W3",
     id: "waitlist",
-    name: "Schedule a demo",
+    name: "Join the waitlist",
     isCTA: true,
   },
 ];
@@ -30,7 +30,7 @@ const footerItems: NavItem[] = [
     name: "Company",
   },
   {
-    href: "https://app.jazz.co/app/v2/job",
+    href: "https://peerdata.applytojob.com/apply",
     id: "careers",
     name: "Careers",
   },

@@ -34,15 +34,13 @@ export function Home({ className }: Home) {
         buttonLabel="Contact us"
         className="mt-48 px-12"
         items={dataEconomyRoles.data as DataEconomyRoles["items"]}
-        onClick={() => console.log("click")}
         title="What is your Role in the Data Economy?"
       />
       <SplitImages className="mt-20 h-3/4 px-12" left={Home3} right={Home4} />
       <LeftText
         className="mt-40 px-12"
         category="Mission"
-        title="Our mission is to impower organizations to transform their data into assets to
-        maximize value"
+        title="Our mission is to empower organizations to transform their data into assets"
         mainContent="PEER DATA was born out of the observation that data is powering nearly
         everything we do today and is becoming an essential commodity for the digital world.
         Usage of data to power artificial intelligence (AI) is rapidly growing across all industries."

@@ -23,7 +23,7 @@ export function Footer({ className, items }: Footer) {
           <header>
             <p className="text-md mt-6 font-thin tracking-normal text-brand-light-background">
               Our mission is to assist organizations in transforming their data
-              into values assets
+              into assets
             </p>
           </header>
         </article>

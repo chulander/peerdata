@@ -1,5 +1,5 @@
+import { LinkButton } from "../components/LinkButton";
 import { classNames } from "../utils";
-import { ArrowLongRightIcon } from "@heroicons/react/20/solid";
 
 export interface JoinOurTeam {
   className?: string;
@@ -22,19 +22,9 @@ export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
         <p className="text-[1.3rem] font-normal leading-[1.8rem] tracking-tighter text-brand-dark-blue ">
           {mainContent}
         </p>
-
-        <a
-          className="button-primary flex w-fit items-center px-4 py-3 font-medium tracking-normal"
-          target="_blank"
-          rel="noreferrer"
-          href="https://app.jazz.co/app/v2/job"
-        >
-          <span className="text-[1.4rem]">View all roles</span>
-          <ArrowLongRightIcon
-            className={classNames("-mr-2 ml-20 h-8", "text-white")}
-            aria-hidden="true"
-          />
-        </a>
+        <LinkButton className="text-[1.4rem]" to="https://peerdata.applytojob.com/apply">
+          View all roles
+        </LinkButton>
       </article>
     </section>
   );

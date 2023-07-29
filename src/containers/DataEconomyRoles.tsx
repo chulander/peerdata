@@ -1,25 +1,23 @@
-import { Button } from "../components/Button";
 import { DataEconomyRoleCard } from "../components/DataEconomyRoleCard";
+import { LinkButtonInternalRoute } from "../components/LinkButton";
 import { classNames } from "../utils";
 
 export interface DataEconomyRoles {
-  buttonLabel: Button["label"];
+  buttonLabel: string;
   className?: string;
   title: string;
   items: Pick<DataEconomyRoleCard, "id" | "description" | "icon" | "title">[];
-  onClick: Button["onClick"];
 }
 export function DataEconomyRoles({
   buttonLabel,
   className,
   items,
-  onClick,
   title,
 }: DataEconomyRoles) {
   return (
     <div className={classNames("flex w-full", !className ? "" : className)}>
       <section
-        className="flex flex-col items-center justify-between border border-solid border-brand-dark-blue px-16 pb-24 pt-16
+        className="flex flex-col items-center justify-between pb-24 pt-16
       "
       >
         <header className="w-full">
@@ -32,13 +30,13 @@ export function DataEconomyRoles({
             <DataEconomyRoleCard key={item.id} {...item} />
           ))}
         </section>
-        <Button
+
+        <LinkButtonInternalRoute
           className="mt-10 w-full self-start text-[1.35rem] lg:w-[28%] xl:w-[19%]"
-          id="contact-us"
-          label={buttonLabel}
-          isPrimary
-          onClick={onClick}
-        />
+          to="/contact"
+        >
+          {buttonLabel}
+        </LinkButtonInternalRoute>
       </section>
     </div>
   );
