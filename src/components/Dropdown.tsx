@@ -7,7 +7,7 @@ export type DropdownType = {
   items: Array<{ id: string; name: string }>;
   className?: string;
   disabled?: boolean;
-  value?: { id: string; name: string };
+  value: null | { id: string; name: string };
   onChange: (value: { id: string; name: string }) => void;
 };
 export function Dropdown({
