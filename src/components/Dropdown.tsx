@@ -24,8 +24,8 @@ export function Dropdown({
           <div
             className={classNames("relative mt-2", !className ? "" : className)}
           >
-            <Listbox.Button className="focus:ring-brand-500 block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6">
-              <span className="block truncate text-left text-brand-green">
+            <Listbox.Button className="block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-gray-400 focus:border-transparent focus:ring-2 focus:ring-inset focus:ring-brand-dark-blue sm:text-sm sm:leading-6">
+              <span className="block truncate text-left text-black">
                 {!value ? "Select one" : value.name}
               </span>
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
@@ -49,7 +49,7 @@ export function Dropdown({
                     key={person.id}
                     className={({ active }) =>
                       classNames(
-                        active ? "bg-brand-500 text-white" : "text-black",
+                        active ? "bg-brand-green text-black" : "text-black",
                         "relative cursor-default select-none py-2 pl-8 pr-4"
                       )
                     }

@@ -46,7 +46,7 @@ export function ContactUsInput({
           autoComplete={name}
           value={value}
           className={classNames(
-            "focus:ring-brand-500 block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-inset focus-visible:outline-none sm:text-sm sm:leading-6",
+            "block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-gray-400 focus:border-transparent focus:ring-2 focus:ring-inset focus:ring-brand-dark-blue sm:text-sm sm:leading-6",
             !disabled ? "" : "cursor-not-allowed"
           )}
         />
