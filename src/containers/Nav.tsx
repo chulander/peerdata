@@ -32,11 +32,11 @@ export function Nav({ className, items }: Nav) {
           <div>
             <div className="flex w-full basis-full items-center justify-between">
               <div className="flex items-center">
-                <div className="py-2">
-                  <NavLink id="home" to="/">
-                    <Icon className="text-brand-green" name="logo" />
-                  </NavLink>
-                </div>
+                {/* <div className="py-2"> */}
+                <NavLink id="home" to="/">
+                  <Icon className="pt-2 h-10 w-48 text-brand-green" name="logo" />
+                </NavLink>
+                {/* </div> */}
               </div>
 
               <div className="hidden sm:ml-6 sm:block">
@@ -51,7 +51,7 @@ export function Nav({ className, items }: Nav) {
                         to={href}
                         className={({ isActive, isPending }) =>
                           classNames(
-                            "text-lg flex items-center ",
+                            "flex items-center text-lg ",
                             isActive ? "" : ""
                           )
                         }
@@ -69,7 +69,9 @@ export function Nav({ className, items }: Nav) {
                           )
                         }
                       >
-                        <span className="text-lg font-medium text-black">{name}</span>
+                        <span className="text-lg font-medium text-black">
+                          {name}
+                        </span>
                         <span className="block">
                           <Icon
                             className="-mr2 w-8"
