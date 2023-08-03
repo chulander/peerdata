@@ -28,10 +28,11 @@ export function Footer({ className, items }: Footer) {
           </header>
         </article>
         <nav className="block lg:flex lg:basis-2/12 lg:flex-col lg:gap-y-4 xl:basis-2/12">
-          {items.map(({ id, name, href }) => (
+          {items.map(({ id, name, href, target }) => (
             <NavLink
               id={id}
               key={id}
+              target={target}
               // eslint-disable-next-line react/no-children-prop
               children={name}
               to={href}

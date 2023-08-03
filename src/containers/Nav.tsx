@@ -19,6 +19,7 @@ export interface NavItem {
   id: string;
   name: string;
   isCTA?: boolean;
+  target?: NavLink["target"];
 }
 
 export function Nav({ className, items }: Nav) {
@@ -32,11 +33,12 @@ export function Nav({ className, items }: Nav) {
           <div>
             <div className="flex w-full basis-full items-center justify-between">
               <div className="flex items-center">
-                {/* <div className="py-2"> */}
                 <NavLink id="home" to="/">
-                  <Icon className="pt-2 h-10 w-48 text-brand-green" name="logo" />
+                  <Icon
+                    className="h-10 w-48 pt-2 text-brand-green"
+                    name="logo"
+                  />
                 </NavLink>
-                {/* </div> */}
               </div>
 
               <div className="hidden sm:ml-6 sm:block">

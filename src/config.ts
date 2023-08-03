@@ -27,7 +27,7 @@ export const internalRoutes: RouteConfigType = {
 
 export const externalRoutes: RouteConfigType = {
   linkedin: {
-    href: "https://www.linkedin.com/in/kietttran/",
+    href: "https://www.linkedin.com/company/peer-data",
     id: "linkedin",
     name: "LinkedIn",
   },
@@ -76,6 +76,7 @@ export const footerItems: NavItem[] = [
     href: externalRoutes["careers"].href,
     id: `${externalRoutes["careers"].id}-footer`,
     name: externalRoutes["careers"].name,
+    target: "_blank",
   },
   {
     href: internalRoutes["contact"].href,
@@ -86,11 +87,13 @@ export const footerItems: NavItem[] = [
     href: externalRoutes["linkedin"].href,
     id: `${externalRoutes["linkedin"].id}-footer`,
     name: externalRoutes["linkedin"].name,
+    target: "_blank",
   },
   {
     href: externalRoutes["waitlist"].href,
     id: `${externalRoutes["waitlist"].id}-footer`,
     name: externalRoutes["waitlist"].name,
+    target: "_blank",
   },
 ];
 
