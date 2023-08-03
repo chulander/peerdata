@@ -35,7 +35,7 @@ export function Nav({ className, items }: Nav) {
               <div className="flex items-center">
                 <NavLink id="home" to="/">
                   <Icon
-                    className="h-10 w-48 pt-2 text-brand-green"
+                    className="h-10 w-52 pt-2 text-brand-green"
                     name="logo"
                   />
                 </NavLink>
@@ -88,7 +88,7 @@ export function Nav({ className, items }: Nav) {
               </div>
               <div className="-mr-2 flex sm:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="text-white-400 hover:bg-brand-300 inline-flex items-center justify-center rounded-md p-2 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="hover:bg-brand-300 inline-flex items-center justify-center rounded-md p-2 text-brand-light-background hover:text-brand-light-background focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon

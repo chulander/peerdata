@@ -19,7 +19,7 @@ export function Footer({ className, items }: Footer) {
         )}
       >
         <article className="lg:flex lg:basis-3/12 lg:flex-col xl:basis-3/12">
-          <Icon className="text-brand-light-background" name="logo" />
+          <Icon className="h-10 w-52 fill-white text-brand-light-background" name="logo" />
           <header>
             <p className="text-md mt-6 font-thin tracking-normal text-brand-light-background">
               Our mission is to assist organizations in transforming their data
