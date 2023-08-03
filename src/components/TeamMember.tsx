@@ -1,11 +1,11 @@
 import { Fragment, useState } from "react";
 
-import Ben from "../assets/team_photos/ben.jpeg";
-import Cynthia from "../assets/team_photos/cynthia.jpeg";
-import Kat from "../assets/team_photos/kat.jpeg";
-import Kiet from "../assets/team_photos/kiet.jpeg";
-import Marissa from "../assets/team_photos/marissa.jpeg";
-import Souvik from "../assets/team_photos/souvik.jpeg";
+import Ben from "../assets/team_photos/ben.jpg";
+import Cynthia from "../assets/team_photos/cynthia.jpg";
+import Kat from "../assets/team_photos/kat.jpg";
+import Kiet from "../assets/team_photos/kiet.jpg";
+import Marissa from "../assets/team_photos/marissa.jpg";
+import Souvik from "../assets/team_photos/souvik.jpg";
 import { classNames } from "../utils";
 import Anchor from "./Anchor";
 import { Icon } from "./Icon";
