@@ -14,10 +14,10 @@ export function MeetOurTeam({ className, teamMembers }: MeetOurTeam) {
       )}
     >
       <div className="px-6 lg:px-8">
-        <h2 className="text-3xl font-normal tracking-tight text-white sm:text-4xl">
+        <h4 className="body-small font-normal text-white">
           Meet our team team of experts
-        </h2>
-        <p className="text-md mt-4 font-thin leading-[1.4rem] tracking-tight text-brand-light-background lg:w-2/5">
+        </h4>
+        <p className="mt-4 text-[1.6rem] font-thin leading-7 tracking-tight text-brand-light-background lg:w-3/5">
           The PEER DATA founding team has a proven track record of success in
           the financial data industry. We have built a multi-trillion-dollar
           asset class (ABX and CMBX), collectively ran $1B+ data businesses, and

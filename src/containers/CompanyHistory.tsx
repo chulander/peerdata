@@ -23,16 +23,14 @@ export function CompanyHistory({
     >
       <article className="flex w-full flex-col lg:pr-20 xl:basis-6/12">
         <header>
-          <h3 className="text-[1.15rem] uppercase tracking-tighter text-brand-green">
-            {category}
-          </h3>
+          <h4 className="body-small uppercase text-brand-green">{category}</h4>
         </header>
         {!title ? null : (
           <p className="mb-4 mt-5 text-[3.4rem] font-normal leading-[3.75rem] tracking-tight">
             {title}
           </p>
         )}
-        <p className="mt-4 text-[1.2rem] leading-[1.8rem] tracking-tighter text-current">
+        <p className="mt-4 text-[1.6rem] leading-7 tracking-tight text-current">
           {mainContent}
         </p>
       </article>

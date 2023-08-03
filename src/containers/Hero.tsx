@@ -14,7 +14,7 @@ export function Hero({ className }: Hero) {
             <br />
             the data economy of the future
           </h1>
-          <p className="mt-5 text-[1.4rem] font-normal tracking-tighter text-black">
+          <p className="mt-5 text-[1.6rem] font-normal leading-7 tracking-tight text-black">
             Turn data into assets. Monetize and capitalize your data quickly and
             easily.
           </p>

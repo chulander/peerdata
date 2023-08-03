@@ -21,7 +21,7 @@ export function AlternateHero({ className }: AlternateHero) {
           <h1 className="header-2 mt-10 font-medium text-black lg:w-full">
             Everyone is in the data business, they just don&apos;t know it yet
           </h1>
-          <p className="mt-8 text-[1.6rem] tracking-tighter text-black lg:max-w-2xl">
+          <p className="mt-8 text-[1.6rem] leading-7 tracking-tight text-black xl:w-3/5">
             At PEER DATA, we are passionate about helping businesses unlock the
             full value of their data and transform how data operates in the
             market.

@@ -24,6 +24,7 @@ export default {
         "brand-blue": "#1DC1F4",
         "brand-dark-blue": "#173654",
         "brand-green": "#13BFA2",
+        "brand-light-green": "#11bfa2", // this color came from the Horizontal Logo
         "brand-light-background": "#F8F4F2",
         "brand-orange": "#FF5634",
         "brand-deep-blue": "#0C2238", // this color is made up
