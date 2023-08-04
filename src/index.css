@@ -155,7 +155,7 @@
 }
 
 .focus {
-  @apply focus:outline-dashed focus:outline-2 focus:outline-offset-4 focus:outline-brand-green;
+  @apply focus:outline-dashed focus:outline-2 focus:outline-offset-4 focus:outline-brand-green focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-green;
 }
 .button-primary {
   @apply focus border-[3px] border-solid border-transparent bg-brand-dark-blue text-white hover:border-brand-green hover:bg-brand-green;

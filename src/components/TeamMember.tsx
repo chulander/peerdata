@@ -77,7 +77,7 @@ export function TeamMember({
         <h2 className="mt-7 text-2xl font-normal text-white">{name}</h2>
       </header>
       <p className="mt-0.5 text-lg text-white">{role}</p>
-      <button className="anchor text-brand-blue self-start mt-3" onClick={openModal}>
+      <button className="focus anchor text-brand-blue self-start mt-3" onClick={openModal}>
         Read Bio
       </button>
       <LinkedInLink className="mt-3" to={linkedin}/>

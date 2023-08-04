@@ -189,7 +189,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
               <Dropdown
                 disabled={isLoading}
                 items={items}
-                className="bg-brand-light-background"
+                className="bg-brand-light-background focus"
                 value={persona}
                 onChange={onPersonaChange}
               />
@@ -216,7 +216,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
                 rows={4}
                 value={message}
                 onChange={onMessageChange}
-                className="focus:ring-brand-dark-blue block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                className="block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-dark-blue sm:text-sm sm:leading-6"
               />
             </div>
           </div>

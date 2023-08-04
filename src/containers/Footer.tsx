@@ -36,7 +36,7 @@ export function Footer({ className, items }: Footer) {
               // eslint-disable-next-line react/no-children-prop
               children={name}
               to={href}
-              className="text-md flex items-center font-thin tracking-normal text-brand-light-background"
+              className="focus text-md flex items-center font-thin tracking-normal text-brand-light-background"
             />
           ))}
         </nav>

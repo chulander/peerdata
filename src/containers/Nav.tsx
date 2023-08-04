@@ -33,7 +33,7 @@ export function Nav({ className, items }: Nav) {
           <div>
             <div className="flex w-full basis-full items-center justify-between">
               <div className="flex items-center">
-                <NavLink id="home" to="/">
+                <NavLink className="focus" id="home" to="/">
                   <Icon
                     className="h-10 w-52 pt-2 text-brand-green"
                     name="logo"
@@ -53,7 +53,7 @@ export function Nav({ className, items }: Nav) {
                         to={href}
                         className={({ isActive, isPending }) =>
                           classNames(
-                            "flex items-center text-lg ",
+                            "focus flex items-center text-lg ",
                             isActive ? "" : ""
                           )
                         }

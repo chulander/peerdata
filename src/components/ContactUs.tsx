@@ -29,7 +29,10 @@ export function ContactUs({ className }: ContactUs) {
               Contact us today to start your data economy journey.
             </p>
             <dl className="mt-10 space-y-4 text-base font-light leading-7 text-black">
-              <div className="flex gap-x-4">
+              <a
+                className="focus hover:text-brand-700 flex gap-x-4 text-black"
+                href={`mailto:${externalRoutes.mailbox.href}`}
+              >
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>
                   <EnvelopeIcon
@@ -37,15 +40,8 @@ export function ContactUs({ className }: ContactUs) {
                     aria-hidden="true"
                   />
                 </dt>
-                <dd>
-                  <a
-                    className="hover:text-brand-700 text-black"
-                    href={`mailto:${externalRoutes.mailbox.href}`}
-                  >
-                    {externalRoutes.mailbox.href}
-                  </a>
-                </dd>
-              </div>
+                <dd>{externalRoutes.mailbox.href}</dd>
+              </a>
               {/* <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>
@@ -64,24 +60,23 @@ export function ContactUs({ className }: ContactUs) {
                 </dd>
               </div> */}
               <a
+                className="focus flex gap-x-4"
                 href="https://goo.gl/maps/gTz7tE3wQihYL76V9"
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Address</span>
-                    <BuildingOffice2Icon
-                      className="h-7 w-6 text-black"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd className="hover:text-brand-700 text-black">
-                    560 Sylvan Ave
-                    <br />
-                    Englewood Cliffs, New Jersey 07632
-                  </dd>
-                </div>
+                <dt className="flex-none">
+                  <span className="sr-only">Address</span>
+                  <BuildingOffice2Icon
+                    className="h-7 w-6 text-black"
+                    aria-hidden="true"
+                  />
+                </dt>
+                <dd className="focus hover:text-brand-700 text-black">
+                  560 Sylvan Ave
+                  <br />
+                  Englewood Cliffs, New Jersey 07632
+                </dd>
               </a>
             </dl>
           </div>
