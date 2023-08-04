@@ -46,7 +46,7 @@ export function ContactUsInput({
           autoComplete={name}
           value={value}
           className={classNames(
-            "block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-gray-400 focus:border-transparent focus:ring-2 focus:ring-inset focus:ring-brand-dark-blue sm:text-sm sm:leading-6",
+            "focus-visible:outline-brand-green; block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-gray-400 focus:border-transparent focus:outline-dashed focus:outline-2 focus:outline-offset-4 focus:outline-brand-green focus:ring-2 focus:ring-inset focus:ring-brand-dark-blue focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 sm:text-sm sm:leading-6",
             !disabled ? "" : "cursor-not-allowed"
           )}
         />
