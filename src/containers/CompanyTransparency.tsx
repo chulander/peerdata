@@ -30,7 +30,7 @@ export function CompanyTransparency({
       </article>
       <article className="flex grow flex-col lg:pr-20 xl:basis-6/12">
         <header>
-          <h4 className="body-x-small lg:body-small uppercase text-brand-green">
+          <h4 className="leading-7 body-x-small lg:body-small uppercase text-brand-green">
             {category}
           </h4>
         </header>

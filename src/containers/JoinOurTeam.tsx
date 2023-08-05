@@ -11,11 +11,11 @@ export function JoinOurTeam({ className, title, mainContent }: JoinOurTeam) {
   return (
     <section
       className={classNames(
-        "xl:max-w-1/4 mb-28 mt-52 flex w-full items-center justify-between",
+        "xl:max-w-1/4 mb-28 mt-24 lg:mt-52 flex w-full items-center justify-between",
         !className ? "" : className
       )}
     >
-      <article className="flex w-full flex-col xl:basis-[66%] xl:gap-y-10">
+      <article className="flex w-full flex-col xl:basis-[66%] gap-y-10">
         <p className="text-[3.4rem] font-normal leading-[3.75rem] tracking-tight text-brand-dark-blue">
           {title}
         </p>

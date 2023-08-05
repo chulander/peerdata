@@ -17,7 +17,7 @@ export function LinkButton({
   return (
     <a
       className={classNames(
-        "flex w-fit items-center justify-between px-4 py-3 font-medium tracking-normal",
+        "flex w-full lg:w-fit items-center justify-between px-4 py-3 font-medium tracking-normal",
         isPrimary
           ? "button-primary text-white"
           : "button-secondary text-brand-dark-blue",

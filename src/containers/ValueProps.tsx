@@ -25,7 +25,7 @@ export function ValueProps({
       )}
     >
       <header className="w-full self-start xl:w-8/12">
-        <h1 className="text-[3.15rem] font-normal leading-10 tracking-tighter text-black lg:max-w-xl xl:max-w-3xl">
+        <h1 className="text-4xl lg:text-[3.15rem] font-normal leading-10 tracking-tighter text-black lg:max-w-xl xl:max-w-3xl">
           {title}
         </h1>
       </header>

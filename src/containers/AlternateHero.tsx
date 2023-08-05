@@ -26,7 +26,7 @@ export function AlternateHero({ className }: AlternateHero) {
             full value of their data and transform how data operates in the
             market.
           </p>
-          <section className="mt-12 flex items-center">
+          <section className="mt-12 flex flex-col items-center gap-y-10 lg:flex-row lg:gap-y-0">
             <LinkButton
               className="w-48 text-[1.15rem] font-normal"
               to={externalRoutes["waitlist"].href}
@@ -34,7 +34,7 @@ export function AlternateHero({ className }: AlternateHero) {
               Learn more
             </LinkButton>
             <Anchor
-              className="ml-10 text-[1.15rem] tracking-tight"
+              className="lg:ml-10 text-xl tracking-tight lg:text-[1.15rem]"
               to={externalRoutes["careers"].href}
               target="_blank"
               id="join-our-team"
