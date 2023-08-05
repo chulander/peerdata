@@ -66,7 +66,10 @@ export function TeamMember({
   }
   return (
     <article
-      className={classNames("flex flex-col", !className ? "" : className)}
+      className={classNames(
+        "flex flex-col items-center lg:items-start",
+        !className ? "" : className
+      )}
     >
       <img
         className="h/48 aspect-square w-48 rounded-full border-4 border-white"
@@ -77,10 +80,15 @@ export function TeamMember({
         <h2 className="mt-7 text-2xl font-normal text-white">{name}</h2>
       </header>
       <p className="mt-0.5 text-lg text-white">{role}</p>
-      <button className="focus anchor text-brand-blue self-start mt-3" onClick={openModal}>
-        Read Bio
-      </button>
-      <LinkedInLink className="mt-3" to={linkedin}/>
+      <div className="flex items-baseline lg:flex-col gap-x-4 lg:gap-x-0">
+        <button
+          className="focus anchor mt-3 text-brand-blue lg:self-start"
+          onClick={openModal}
+        >
+          Read Bio
+        </button>
+        <LinkedInLink className="mt-3 w-5" to={linkedin} />
+      </div>
       <Modal
         isOpen={modalIsOpen}
         className="Modal focus-visible:outline-none"

@@ -10,9 +10,13 @@ export interface Contact {
 export function Contact({ className }: Contact) {
   return (
     <section className={className}>
-      <ContactUs className="px-12" />
-      <SplitImages className="mt-40 px-12" left={Contact1} right={Contact2} />
-      <Signup className="mt-60 w-full px-12" />
+      <ContactUs className="peerdata-container" />
+      <SplitImages
+        className="peerdata-container-assets-only mt-20 lg:mt-40"
+        left={Contact1}
+        right={Contact2}
+      />
+      <Signup className="mt-30 peerdata-container w-full lg:mt-60" />
     </section>
   );
 }

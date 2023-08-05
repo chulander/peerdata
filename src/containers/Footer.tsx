@@ -40,9 +40,9 @@ export function Footer({ className, items }: Footer) {
             />
           ))}
         </nav>
-        <article className="block lg:flex lg:grow lg:basis-3/12 lg:flex-col xl:grow-0 xl:basis-5/12">
+        <article className="lg:mt-0 mt-10 block lg:flex lg:grow lg:basis-3/12 lg:flex-col xl:grow-0 xl:basis-5/12">
           <header>
-            <h4 className="text-md font-thin uppercase tracking-wide text-brand-light-background">
+            <h4 className="lg:text-md font-thin uppercase tracking-wide text-brand-light-background">
               Newsletter Signup
             </h4>
           </header>

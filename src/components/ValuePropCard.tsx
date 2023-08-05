@@ -11,7 +11,7 @@ export function ValuePropCard({ className, description, icon }: ValuePropCard) {
   return (
     <article
       className={classNames(
-        "flex w-full flex-col",
+        "items-center flex w-full flex-col lg:items-start",
         !className ? "" : className
       )}
     >

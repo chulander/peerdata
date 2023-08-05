@@ -136,7 +136,7 @@
   @apply text-8xl font-medium tracking-tight;
 }
 .header-2 {
-  @apply text-7xl font-normal tracking-tight;
+  @apply font-normal tracking-tight text-4xl md:text-6xl lg:text-7xl;
 }
 .header-3 {
   @apply text-xl font-normal uppercase tracking-tight;
@@ -164,7 +164,7 @@
   @apply focus border-2 border-solid border-brand-dark-blue bg-transparent text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background;
 }
 .anchor {
-  @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-2 underline-offset-4 hover:decoration-transparent;
+  @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-1 underline-offset-4 hover:decoration-transparent;
 }
 .anchor-border {
   @apply border-b border-brand-blue text-brand-blue hover:border-transparent;
@@ -172,6 +172,12 @@
 
 .tk-indivisible {
   font-family: "indivisible", sans-serif;
+}
+.peerdata-container {
+  @apply px-5 lg:px-12;
+}
+.peerdata-container-assets-only {
+  @apply lg:px-12;
 }
 
 .Modal {

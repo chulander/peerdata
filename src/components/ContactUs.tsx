@@ -19,7 +19,7 @@ export function ContactUs({ className }: ContactUs) {
       )}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+        <div className="relative lg:pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto lg:mx-0">
             <h2 className="text-6xl font-medium text-black">Contact us</h2>
             <p className="mt-6 text-lg font-light leading-6 text-black">

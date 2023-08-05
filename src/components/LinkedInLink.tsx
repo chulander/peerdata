@@ -11,7 +11,7 @@ export function LinkedInLink({ className, to }: LinkedInLink) {
   return (
     <a
       className={classNames(
-        "focus anchor-border flex w-min items-baseline gap-x-2 pb-1 text-lg text-brand-blue",
+        "focus anchor-border flex w-min items-baseline gap-x-1 pb-1 text-lg text-brand-blue",
         !className ? "" : className
       )}
       href={to}

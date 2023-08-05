@@ -20,10 +20,14 @@ export interface Home {
 export function Home({ className }: Home) {
   return (
     <section className={className}>
-      <Hero className="px-12 " />
-      <SplitImages className="mt-20 h-3/4 px-12" left={Home1} right={Home2} />
+      <Hero className="peerdata-container" />
+      <SplitImages
+        className="peerdata-container-assets-only mt-20 h-3/4"
+        left={Home1}
+        right={Home2}
+      />
       <LeftText
-        className="mt-40 bg-brand-light-background px-12 py-20"
+        className="peerdata-container bg-brand-light-background py-20 lg:mt-40"
         category="Data Revolution"
         mainContent="Data is experiencing exponential growth, having doubled in the last two years. And
         despite an ever-increasing demand for diverse and extensive datasets, the industry has
@@ -33,13 +37,17 @@ export function Home({ className }: Home) {
       />
       <DataEconomyRoles
         buttonLabel="Contact us"
-        className="mt-48 px-12"
+        className="peerdata-container lg:mt-48"
         items={dataEconomyRoles.data as DataEconomyRoles["items"]}
         title="What is your Role in the Data Economy?"
       />
-      <SplitImages className="mt-20 h-3/4 px-12" left={Home3} right={Home4} />
+      <SplitImages
+        className="peerdata-container-assets-only mt-20 h-3/4"
+        left={Home3}
+        right={Home4}
+      />
       <LeftText
-        className="mt-40 bg-brand-light-background px-12 py-20"
+        className="peerdata-container bg-brand-light-background py-20 lg:mt-40"
         category="Mission"
         title="Our mission is to empower organizations to transform their data into assets."
         mainContent="PEER DATA was born out of the observation that data is powering nearly
@@ -57,15 +65,15 @@ export function Home({ className }: Home) {
           Find out more
         </LinkButtonInternalRoute>
       </LeftText>
-      <hr className="my-36 h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-52" />
+      <hr className="my-36 hidden h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-52 lg:block" />
       <ValueProps
         items={valuePropositionItems.data as ValueProps["items"]}
-        className="px-12"
+        className="peerdata-container my-10 lg:my-0"
         buttonLabel="Contact us"
         externalHref={internalRoutes.contact.href}
         title="We aim to unlock maxium value and amplify reach by:"
       />
-      <Signup className="px-12" />
+      <Signup className="peerdata-container" />
     </section>
   );
 }

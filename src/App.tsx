@@ -9,7 +9,10 @@ import { navItems, footerItems, internalRoutes } from "./config";
 export default function App() {
   return (
     <div className="relative m-auto">
-      <Nav className="absolute z-10 w-full px-6" items={navItems} />
+      <Nav
+        className="peerdata-container absolute z-10 w-full"
+        items={navItems}
+      />
       <Routes>
         <Route
           path={internalRoutes["home"].href}
@@ -19,7 +22,7 @@ export default function App() {
         <Route path={internalRoutes["contact"].href} element={<Contact />} />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-      <Footer className="px-12" items={footerItems} />
+      <Footer className="peerdata-container" items={footerItems} />
     </div>
   );
 }

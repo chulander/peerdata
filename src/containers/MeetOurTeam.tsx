@@ -13,7 +13,7 @@ export function MeetOurTeam({ className, teamMembers }: MeetOurTeam) {
         !className ? "" : className
       )}
     >
-      <div className="px-6 lg:px-8">
+      <div className="">
         <h4 className="body-small font-normal text-white">
           Meet our team team of experts
         </h4>

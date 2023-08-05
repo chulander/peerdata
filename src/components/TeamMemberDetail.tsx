@@ -78,7 +78,7 @@ export function TeamMemberDetail({
       </header>
       <p className="mt-1 text-lg tracking-tight text-black">{role}</p>
 
-      <LinkedInLink className="mt-2" to={linkedin} />
+      <LinkedInLink className="w-5 mt-2" to={linkedin} />
       <div className="flex">
         <p className="mt-6 text-lg leading-6 text-black lg:basis-1/2">{bio}</p>
       </div>

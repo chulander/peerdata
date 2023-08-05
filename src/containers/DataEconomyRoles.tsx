@@ -18,15 +18,15 @@ export function DataEconomyRoles({
   return (
     <div className={classNames("flex w-full", !className ? "" : className)}>
       <section
-        className="flex flex-col items-center justify-between pb-24 pt-16
+        className="pt-8 flex flex-col items-center justify-between lg:pb-24 lg:pt-16
       "
       >
         <header className="w-full">
-          <h1 className="text-[4.1rem] leading-10 tracking-tighter text-brand-dark-blue">
+          <h1 className="header-2 text-brand-dark-blue lg:text-[4.1rem] lg:leading-10 lg:tracking-tighter">
             {title}
           </h1>
         </header>
-        <section className="mt-16 flex w-full flex-col gap-y-12 lg:flex-row lg:gap-x-16 lg:gap-y-0">
+        <section className="mt-8 lg:mt-16 flex w-full flex-col gap-y-6 lg:flex-row lg:gap-x-16 lg:gap-y-0">
           {items.map((item) => (
             <DataEconomyRoleCard key={item.id} {...item} />
           ))}

@@ -20,7 +20,7 @@ export function ValueProps({
   return (
     <div
       className={classNames(
-        "flex flex-col items-center justify-between px-16 pb-24 lg:mb-40",
+        "flex flex-col items-center justify-between pb-24 lg:mb-40",
         !className ? "" : className
       )}
     >
