@@ -2,14 +2,9 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink, NavLinkWithRef } from "../components/NavLink";
 import { classNames } from "../utils";
-// import { useEffect, useState } from "react";
-// import { useLocation } from "react-router-dom";
 import { Icon } from "../components/Icon";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { useState } from "react";
 
-// const defaultClassname =
-//   "hover:bg-brand-300 border border-transparent border-solid";
-// const activeClassname = `${defaultClassname} border border-white border-solid`;
 export interface Nav {
   className?: string;
   items: NavItem[];
@@ -100,7 +95,12 @@ export function Nav({ className, items }: Nav) {
                 </div>
                 <div className="focus flex sm:-mr-2 lg:hidden">
                   {/* Mobile menu button */}
-                  <Disclosure.Button className="focus inline-flex items-center justify-center rounded-md border border-brand-light-background p-2 text-brand-light-background hover:bg-brand-light-background hover:text-brand-light-background">
+                  <Disclosure.Button
+                    className={classNames(
+                      "focus inline-flex items-center justify-center rounded-md border-brand-light-background p-2 text-brand-light-background hover:bg-brand-light-background hover:text-brand-light-background",
+                      !open ? "" : "border"
+                    )}
+                  >
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XMarkIcon
