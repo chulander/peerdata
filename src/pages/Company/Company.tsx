@@ -21,12 +21,12 @@ export function Company({ className }: Company) {
     <section className={className}>
       <AlternateHero className="peerdata-container" />
       <CompanyHistory
-        className="peerdata-container min-h-screen"
+        className="peerdata-container"
         category="History"
         mainContent="In the last decade, systematic analysis has gone from a nice to have and a competitive edge, to a must have and a disadvantage if not employed in running a business. With that, data costs are rising, and consumers have no way to hedge against rising costs.  Companies have no simple way to capitalize on their data, while investors have no direct way to invest in an exponentially growing asset."
       />
       <CompanyTransparency
-        className="peerdata-container min-h-screen"
+        className="peerdata-container"
         category="Fostering Transparency"
         mainContent="The data market itself has long standing challenges. The data discovery and procurement processes are still largely manual, licensing rights management is based on honesty statements, and understanding the quality of data is a time-consuming, subjective process."
       />

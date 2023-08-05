@@ -17,29 +17,38 @@ export function CompanyTransparency({
   return (
     <section
       className={classNames(
-        "flex w-full items-center",
+        "mt-10 w-full lg:mt-0 lg:flex lg:items-center",
         !className ? "" : className
       )}
     >
-      <article className="flex w-full grow justify-end lg:pr-20 xl:h-1/2 xl:basis-6/12 xl:p-32">
+      <article className="hidden w-full grow justify-end lg:flex lg:pr-20 xl:h-1/2 xl:basis-6/12">
         <img
           alt="home-1"
-          className="bg-contain bg-no-repeat object-scale-down "
+          className="max-h-screen bg-contain bg-no-repeat object-scale-down"
           src={Image3}
         ></img>
       </article>
       <article className="flex grow flex-col lg:pr-20 xl:basis-6/12">
         <header>
-          <h4 className="body-small uppercase text-brand-green">{category}</h4>
+          <h4 className="body-x-small lg:body-small uppercase text-brand-green">
+            {category}
+          </h4>
         </header>
         {!title ? null : (
           <p className="mb-4 mt-5 text-[3.4rem] font-normal leading-[3.75rem] tracking-tight">
             {title}
           </p>
         )}
-        <p className="mt-4 text-[1.6rem]  leading-7 tracking-tight text-current">
+        <p className="mt-5 text-[1.3rem] leading-[1.8rem] tracking-tight text-current lg:text-[1.6rem] lg:leading-7">
           {mainContent}
         </p>
+      </article>
+      <article className="mt-10 w-full justify-end lg:hidden">
+        <img
+          alt="home-1"
+          className="max-h-screen w-full bg-cover bg-no-repeat"
+          src={Image3}
+        ></img>
       </article>
     </section>
   );
