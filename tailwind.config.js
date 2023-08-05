@@ -21,16 +21,18 @@ export default {
         // "home-about": "url(https://media.graphassets.com/Mn5mQJcqSmig46arfCx7)",
       },
       colors: {
-        "brand-blue": "#1DC1F4",
-        "brand-dark-blue": "#173654",
-        "brand-green": "#13BFA2",
-        "brand-light-green": "#11bfa2", // this color came from the Horizontal Logo
-        "brand-light-background": "#F8F4F2",
-        "brand-orange": "#FF5634",
-        "brand-deep-blue": "#0C2238", // this color is made up
+        brand: {
+          blue: "#1DC1F4",
+          "dark-blue": "#173654",
+          green: "#13BFA2",
+          "light-green": "#11bfa2", // this color came from the Horizontal Logo
+          "light-background": "#F8F4F2",
+          orange: "#FF5634",
+          "deep-blue": "#0C2238", // this color is made up
+        },
         // primary: "#247D7D",
-        secondary: "#247D7D",
-        alternate: "gray",
+        // secondary: "#247D7D",
+        // alternate: "gray",
       },
       letterSpacing: {
         tighter: "-0.05em",
