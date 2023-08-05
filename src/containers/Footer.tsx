@@ -19,15 +19,19 @@ export function Footer({ className, items }: Footer) {
         )}
       >
         <article className="lg:flex lg:basis-3/12 lg:flex-col xl:basis-3/12">
-          <Icon className="h-10 w-52 fill-white text-brand-light-background" name="logo" />
+          <Icon
+            className="h-10 w-52 fill-white text-brand-light-background"
+            name="logo"
+          />
           <header>
             <p className="text-md mt-6 font-thin tracking-normal text-brand-light-background">
-              Our mission is to assist organizations in transforming their data
-              into assets
+              Peer Data is a data capitalization technology firm, founded to
+              enable data owners and providers to transform their data into
+              assets.
             </p>
           </header>
         </article>
-        <nav className="block lg:flex lg:basis-2/12 lg:flex-col lg:gap-y-4 xl:basis-2/12">
+        <nav className="mt-10 block lg:mt-0 lg:flex lg:basis-2/12 lg:flex-col lg:gap-y-4 xl:basis-2/12">
           {items.map(({ id, name, href, target }) => (
             <NavLink
               id={id}
@@ -40,7 +44,7 @@ export function Footer({ className, items }: Footer) {
             />
           ))}
         </nav>
-        <article className="lg:mt-0 mt-10 block lg:flex lg:grow lg:basis-3/12 lg:flex-col xl:grow-0 xl:basis-5/12">
+        <article className="mt-10 block lg:mt-0 lg:flex lg:grow lg:basis-3/12 lg:flex-col xl:grow-0 xl:basis-5/12">
           <header>
             <h4 className="lg:text-md font-thin uppercase tracking-wide text-brand-light-background">
               Newsletter Signup
