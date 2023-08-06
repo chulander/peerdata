@@ -13,7 +13,7 @@ export function Signup({ className }: Signup) {
           !className ? "" : className
         )}
       >
-        <h2 className="mt-8 text-3xl md:text-5xl xl:text-6xl font-thin leading-7 lg:leading-[3.65rem] tracking-tight text-white md:max-w-full lg:max-w-3xl xl:max-w-6xl">
+        <h2 className="mt-8 text-2xl md:text-5xl xl:text-6xl font-thin leading-7 lg:leading-[3.65rem] tracking-tight text-white md:max-w-full lg:max-w-3xl xl:max-w-6xl">
           Stay up to date with the latest news and trends in data. Sign up to
           the PEER DATA Newsletter, where we cover datasets, technology, and
           company news.

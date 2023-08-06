@@ -119,7 +119,7 @@ export function Nav({ className, items }: Nav) {
             </div>
 
             <Disclosure.Panel className="lg:hidden">
-              <div className="mt-10 flex basis-full flex-col space-y-4 pb-3 pt-2">
+              <div className="mt-10 flex basis-full flex-col space-y-3 pb-3 pt-2">
                 {items.map(({ id, href, name, isCTA }) =>
                   !isCTA ? (
                     <Disclosure.Button

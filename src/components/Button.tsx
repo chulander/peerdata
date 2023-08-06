@@ -46,7 +46,7 @@ export function Button({
         <span className="block">
           <ArrowLongRightIcon
             className={classNames(
-              "-mr-2 h-8 w-full",
+              "-mr-2 h-8",
               isPrimary ? "text-white" : "text-brand-dark-blue"
             )}
             aria-hidden="true"

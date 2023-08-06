@@ -33,7 +33,7 @@ export function DataEconomyRoles({
         </section>
 
         <LinkButtonInternalRoute
-          className="mt-10 w-full self-start text-[1.35rem] lg:w-[28%] xl:w-[19%]"
+          className="mt-10 w-full text-[1.35rem] lg:w-[28%] xl:w-[19%]"
           to={internalRoutes.contact.href}
         >
           {buttonLabel}

@@ -19,9 +19,9 @@ export function ContactUs({ className }: ContactUs) {
       )}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative pt-48 lg:px-8 lg:pb-20">
+        <div className="relative my-40 lg:pt-48 lg:px-8 lg:pb-20">
           <div className="mx-auto lg:mx-0">
-            <h2 className="text-6xl font-medium text-black">Contact us</h2>
+            <h2 className="text-4xl lg:text-6xl font-medium text-black">Contact us</h2>
             <p className="mt-6 text-lg font-light leading-6 text-black">
               Let us help you make better business decisions.
             </p>

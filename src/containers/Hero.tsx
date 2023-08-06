@@ -7,7 +7,7 @@ export interface Hero {
 export function Hero({ className }: Hero) {
   return (
     <div className={classNames("relative pt-24", !className ? "" : className)}>
-      <div className="mx-auto my-8 lg:flex lg:flex-col lg:gap-x-10">
+      <div className="mx-auto my-16 lg:my-8 lg:flex lg:flex-col lg:gap-x-10">
         <div className=" xs:flex xs:flex-col xs:items-center sm:block">
           <h1 className="header-2 mt-10 font-medium text-black">
             Powering and digitizing
