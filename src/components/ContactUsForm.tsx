@@ -131,7 +131,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
   return (
     <section
       className={classNames(
-        "pt-10 lg:pb-24 lg:pt-20",
+        "lg:mt-40 pt-10 lg:pb-24",
         !className ? "" : className
       )}
     >
