@@ -1,7 +1,7 @@
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
-  PhoneIcon,
+  // PhoneIcon,
 } from "@heroicons/react/24/outline";
 
 import { classNames } from "../utils";

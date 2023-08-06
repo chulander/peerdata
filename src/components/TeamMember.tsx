@@ -80,7 +80,7 @@ export function TeamMember({
         <h2 className="mt-7 text-2xl font-normal text-white">{name}</h2>
       </header>
       <p className="mt-0.5 text-lg text-white">{role}</p>
-      <div className="flex items-baseline lg:flex-col gap-x-4 lg:gap-x-0">
+      <div className="flex items-baseline gap-x-4 lg:flex-col lg:gap-x-0">
         <button
           className="focus anchor mt-3 text-brand-blue lg:self-start"
           onClick={openModal}

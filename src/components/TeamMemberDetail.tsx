@@ -44,7 +44,7 @@ export function TeamMemberDetail({
   return (
     <article
       className={classNames(
-        "flex flex-col bg-brand-light-background px-12 pt-10 pb-24 w-full focus-visible:outline-none",
+        "flex flex-col bg-brand-light-background peerdata-container pt-40 lg:pt-10 pb-24 w-full focus-visible:outline-none",
         !className ? "" : className
       )}
     >
