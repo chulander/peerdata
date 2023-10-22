@@ -94,7 +94,7 @@ export function TeamMember({
       </div>
       <Modal
         isOpen={modalIsOpen}
-        className="Modal overflow-auto focus-visible:outline-none"
+        className="Modal max-h-screen overflow-y-auto focus-visible:outline-none"
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}

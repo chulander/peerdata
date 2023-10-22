@@ -46,7 +46,7 @@ export function TeamMemberDetail({
   return (
     <article
       className={classNames(
-        "peerdata-container flex w-full flex-col bg-brand-light-background pb-24 pt-40 focus-visible:outline-none lg:pt-10",
+        "peerdata-container flex h-screen max-h-full w-full flex-col overflow-y-auto bg-brand-light-background focus-visible:outline-none",
         !className ? "" : className
       )}
     >
