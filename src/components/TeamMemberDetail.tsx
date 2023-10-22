@@ -69,7 +69,7 @@ export function TeamMemberDetail({
         </button>
       </div>
       <img
-        className="max-h/32 aspect-square max-w-32 rounded-full"
+        className="aspect-square h-48 w-48 rounded-full"
         alt={name}
         src={TeamMembers[image]}
       ></img>

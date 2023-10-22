@@ -8,6 +8,8 @@ import { useState } from "react";
 export interface Nav {
   className?: string;
   items: NavItem[];
+  isOpen: boolean;
+  onChange: (isOpen: boolean) => void;
 }
 
 export interface NavItem {
@@ -18,19 +20,14 @@ export interface NavItem {
   target?: NavLink["target"];
 }
 
-export function Nav({ className, items }: Nav) {
-  const [isOpen, setIsOpen] = useState(false);
+export function Nav({ className, items, onChange }: Nav) {
   return (
     <Disclosure
       as="nav"
-      className={classNames(
-        "py-6",
-        !isOpen ? "" : "bg-brand-dark-blue",
-        !className ? "" : className
-      )}
+      className={classNames("py-6", !className ? "" : className)}
     >
       {({ open }) => {
-        setIsOpen(open);
+        onChange(open);
 
         return (
           <>

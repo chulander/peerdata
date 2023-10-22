@@ -23,7 +23,7 @@ export function DataEconomyRoles({
         <header className="w-full">
           <h2 className="peerdata-header uppercase">{title}</h2>
         </header>
-        <section className="8 flex w-full flex-col gap-y-6 lg:mt-16 lg:flex-row lg:gap-x-16 lg:gap-y-0">
+        <section className="flex w-full flex-col gap-y-6 lg:mt-16 lg:flex-row lg:gap-x-16 lg:gap-y-0">
           {items.map((item) => (
             <DataEconomyRoleCard key={item.id} {...item} />
           ))}

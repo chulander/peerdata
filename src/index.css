@@ -178,10 +178,7 @@
   font-family: "indivisible", sans-serif;
 }
 .peerdata-container {
-  @apply px-5 lg:px-12 py-16;
-}
-.peerdata-container-assets-only {
-  @apply px-5 lg:px-12 gap-y-10;
+  @apply px-5 py-10 md:py-16 lg:px-12;
 }
 
 .Modal {

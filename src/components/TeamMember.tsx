@@ -75,7 +75,7 @@ export function TeamMember({
       )}
     >
       <img
-        className="h/48 aspect-square w-48 rounded-full border-4 border-white"
+        className="aspect-square h-48 w-48 rounded-full border-4 border-white"
         alt={name}
         src={TeamMembers[image]}
       ></img>
@@ -94,7 +94,7 @@ export function TeamMember({
       </div>
       <Modal
         isOpen={modalIsOpen}
-        className="Modal focus-visible:outline-none"
+        className="Modal overflow-auto focus-visible:outline-none"
         onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}

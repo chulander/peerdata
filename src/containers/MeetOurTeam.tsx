@@ -26,7 +26,7 @@ export function MeetOurTeam({ className, teamMembers }: MeetOurTeam) {
           to monetization. The team is experienced in working with regulators
           and market participants.
         </p>
-        <ul className="mx-auto mt-20 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
+        <ul className="mx-auto mt-20 grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4">
           {teamMembers.map((details) => (
             <TeamMember key={details["name"]} {...details} />
           ))}
