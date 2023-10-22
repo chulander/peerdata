@@ -11,6 +11,7 @@ import MeetOurTeam from "../../containers/MeetOurTeam";
 
 import teamMembers from "../../payload/team_members.json";
 import { TeamMember } from "../../components/TeamMember";
+import { HorizontalLine } from "../../components/HorizontalLine";
 import { externalRoutes } from "../../config";
 
 export interface Company {
@@ -26,7 +27,7 @@ export function Company({ className }: Company) {
         mainContent="In the last decade, systematic analysis has gone from a nice to have and a competitive edge, to a must have and a disadvantage if not employed in running a business. With that, data costs are rising, and consumers have no way to hedge against rising costs.  Companies have no simple way to capitalize on their data, while investors have no direct way to invest in an exponentially growing asset."
       />
 
-      <hr className="mx-5 h-0.5 bg-brand-dark-blue px-12 lg:my-0 lg:block" />
+      <HorizontalLine />
       <CompanyTransparency
         className="peerdata-container"
         category="Fostering Transparency"
@@ -50,7 +51,7 @@ export function Company({ className }: Company) {
         title="Join our team"
         mainContent="Are you someone who loves collobration while having a thirst for knowledge when it comes to data science? Then head over to our job listings today!"
       />
-      <hr className="mx-5 h-0.5 bg-brand-dark-blue px-12 lg:my-0 lg:block" />
+      <HorizontalLine />
       <SplitImages
         className="peerdata-container h-3/4"
         left={Home3}

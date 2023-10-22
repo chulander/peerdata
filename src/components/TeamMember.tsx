@@ -4,12 +4,14 @@ import Ben from "../assets/team_photos/ben.jpg";
 import Cynthia from "../assets/team_photos/cynthia.jpg";
 import Kat from "../assets/team_photos/kat.jpg";
 import Kiet from "../assets/team_photos/kiet.jpg";
-import Marissa from "../assets/team_photos/marissa.jpg";
 import Souvik from "../assets/team_photos/souvik.jpg";
+import Gary from "../assets/team_photos/gary.jpg";
+import Ryan from "../assets/team_photos/ryan.jpg";
+
 import { classNames } from "../utils";
-import Anchor from "./Anchor";
-import { Icon } from "./Icon";
-import NavLink from "./NavLink";
+// import Anchor from "./Anchor";
+// import { Icon } from "./Icon";
+// import NavLink from "./NavLink";
 import { LinkedInLink } from "./LinkedInLink";
 import Modal from "react-modal";
 import { TeamMemberDetail } from "./TeamMemberDetail";
@@ -19,8 +21,9 @@ const TeamMembers = {
   cynthia: Cynthia,
   kat: Kat,
   kiet: Kiet,
-  marissa: Marissa,
   souvik: Souvik,
+  gary: Gary,
+  ryan: Ryan,
 };
 export interface TeamMember {
   className?: string;

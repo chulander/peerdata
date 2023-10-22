@@ -4,14 +4,15 @@ import Ben from "../assets/team_photos/ben.jpg";
 import Cynthia from "../assets/team_photos/cynthia.jpg";
 import Kat from "../assets/team_photos/kat.jpg";
 import Kiet from "../assets/team_photos/kiet.jpg";
-import Marissa from "../assets/team_photos/marissa.jpg";
 import Souvik from "../assets/team_photos/souvik.jpg";
+import Ryan from "../assets/team_photos/ryan.jpg";
+import Gary from "../assets/team_photos/gary.jpg";
 import { classNames } from "../utils";
-import Anchor from "./Anchor";
-import { Icon } from "./Icon";
-import NavLink from "./NavLink";
+// import Anchor from "./Anchor";
+// import { Icon } from "./Icon";
+// import NavLink from "./NavLink";
 import { LinkedInLink } from "./LinkedInLink";
-import Modal from "react-modal";
+// import Modal from "react-modal";
 import { ArrowLongLeftIcon } from "@heroicons/react/20/solid";
 
 const TeamMembers = {
@@ -19,8 +20,9 @@ const TeamMembers = {
   cynthia: Cynthia,
   kat: Kat,
   kiet: Kiet,
-  marissa: Marissa,
   souvik: Souvik,
+  gary: Gary,
+  ryan: Ryan,
 };
 export interface TeamMemberDetail {
   className?: string;
@@ -44,7 +46,7 @@ export function TeamMemberDetail({
   return (
     <article
       className={classNames(
-        "flex flex-col bg-brand-light-background peerdata-container pt-40 lg:pt-10 pb-24 w-full focus-visible:outline-none",
+        "peerdata-container flex w-full flex-col bg-brand-light-background pb-24 pt-40 focus-visible:outline-none lg:pt-10",
         !className ? "" : className
       )}
     >
@@ -67,7 +69,7 @@ export function TeamMemberDetail({
         </button>
       </div>
       <img
-        className="h/32 aspect-square w-32 rounded-full"
+        className="max-h/32 aspect-square max-w-32 rounded-full"
         alt={name}
         src={TeamMembers[image]}
       ></img>
@@ -78,7 +80,7 @@ export function TeamMemberDetail({
       </header>
       <p className="mt-1 text-lg tracking-tight text-black">{role}</p>
 
-      <LinkedInLink className="w-5 mt-2" to={linkedin} />
+      <LinkedInLink className="mt-2 w-5" to={linkedin} />
       <div className="flex">
         <p className="mt-6 text-lg leading-6 text-black lg:basis-1/2">{bio}</p>
       </div>

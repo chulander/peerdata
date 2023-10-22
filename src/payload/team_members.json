@@ -12,7 +12,7 @@
       "role": "Chief Operating Officer",
       "image": "cynthia",
       "linkedin": "https://www.linkedin.com/in/cynthia-nadal/",
-      "bio": "Cynthia is the co-founder and COO of Peer Data. Prior to this role she was a Venture Capital Partner in Fintech in Europe; she has also worked with many start-ups as a mentor, board member and personal investor. Like some of her co-founders, she is an alumna of the fintech unicorn Markit (acquired by S&P Global) where she has spent 11+ years working across offices, functions and product areas. She learned all about the good, the bad and the ugly of product development, operations, growth and corporate innovation from Markit's 12-person office in NYC, to the company's IPO on the NASDAQ in 2014, merger with IHS in 2016, and dozens of startups since then."
+      "bio": "Cynthia is the co-founder and COO of Peer Data. Prior to this role she was a Venture Capital Partner in Fintech in Europe; she has also worked with many start-ups as a mentor and board member. Like some of her co-founders, she is an alumna of the fintech unicorn Markit (acquired by S&P Global) where she has spent 11+ years working across offices, functions and product areas. She learned all about the good, the bad and the ugly of product development, operations, growth and corporate innovation from Markit's 12-person office in NYC, to the company's IPO on the NASDAQ in 2014, merger with IHS in 2016, and dozens of startups since then."
     },
     {
       "name": "Kat Tatochenko",
@@ -26,21 +26,28 @@
       "image": "ben",
       "role": "Chief Product Officer",
       "linkedin": "https://www.linkedin.com/in/loganben/",
-      "bio": "Ben Logan has worked in the market data industry for 25 years in a range of product management and product development positions at Reuters-Loan Pricing Corporation, Markit and S&P Global. Ben has launched several new products focused on creating transparency, efficiency and best-practices around operations, valuation, reference data and index management in the fixed income markets. Best known for his work developing and managing synthetic indices in the structured finance space such as ABX.HE and CMBX, he has extensive experience building consortia and interfacing with key stakeholders both inside and outside the industry. Ben graduated from Columbia University with a B.A. in economics."
+      "bio": "Ben is the co-founder and CPO of Peer Data. He has worked in the market data industry for 25 years in a range of product management and product development positions at Reuters-Loan Pricing Corporation, Markit and S&P Global. Ben has launched several new products focused on creating transparency, efficiency and best-practices around operations, valuation, reference data and index management in the fixed income markets. Best known for his work developing and managing synthetic indices in the structured finance space such as ABX.HE and CMBX, he has extensive experience building consortia and interfacing with key stakeholders both inside and outside the industry. Ben graduated from Columbia University with a B.A. in economics."
     },
     {
       "name": "Souvik Das",
       "role": "Chief Solutions Architect",
-      "image":"souvik",
+      "image": "souvik",
       "linkedin": "https://www.linkedin.com/in/souvikdas1978/",
       "bio": "Souvik is the co-founder and Chief Architect of Peer Data. He has over 22 years’ experience in Fixed Income Securities covering Reference Data Management, Service Management, Operations and Customer Service. He contributed to analyzing business processes, determining gaps with desired state of business and suggesting solutions to enhance process efficiency."
     },
     {
-      "name": "Marissa Gross",
-      "image": "marissa",
-      "role": "Business Analyst",
-      "bio": "Marissa Gross studied Applied Math and Business at the University of Akron. Her strong quantitative background has provided a unique perspective, enabling effective cross-functional leadership and data-driven decision-making. Recognizing the crucial role of data protection and security in today's digital landscape, Marissa pursued and obtained a professional certification in Cybersecurity from Case Western Reserve University. This solidifies Marissa's commitment to safeguarding organizational assets, understanding the ever-evolving threat landscape, and implementing proactive security measures.",
-      "linkedin": "https://www.linkedin.com/in/marissangross/"
+      "name": "Ryan Chuch",
+      "role": "Chief Technology Officer",
+      "image": "ryan",
+      "linkedin": "https://www.linkedin.com/in/ryanchurch/",
+      "bio": "Ryan joins us with over 16 years in Financial Services managing development, SaaS platforms, and reference data at WSO (Wall Street Office). Focused on managed SaaS and data platforms for the syndicated and private loans markets, he managed development, architecture, infrastructure, and change through three mergers and acquisitions, with Markit, IHS Markit, and finally S&amp;P Global. As CTO of WSO, Ryan partnered with commercial, operational, and product heads to shift WSO away from traditional licensed software distribution, to SaaS, data as a product, and PaaS service offerings, working with clients and partners to rapidly evolve and continuously deploy platforms to achieve faster adoption and meet the challenges of rapidly changing regulations. In addition to managing teams through change and aligning training programs to meet technical and business objectives, Ryan applies a focus on breaking down processes and systems into measurable datasets to trend, visualize, and optimizing the flow of value produced and helping remove bottlenecks from complex systems, processes and teams."
+    },
+    {
+      "name": "Gary Barnett",
+      "role": "Chief Legal Officer",
+      "image": "gary",
+      "linkedin": "https://www.linkedin.com/in/gary-barnett-649461110/",
+      "bio": "Gary Barnett is the Chief Legal Officer of Peer Data. Gary has over four decades of experience in the financial markets and financial regulatory space. Gary founded Digital Capital Markets, LLC, an SEC registered broker-dealer and FINRA member, and co-founded Fleming Park Global Partners, LLC, a business and regulatory consulting firm.  Prior to that, he was the Deputy Director in the Division of Trading and Markets at the U.S. Securities and Exchange Commission (SEC), where he was responsible for broker-dealer matters, derivatives policy, certain trading practices and Volcker. He was also a member of the SEC’s Cybersecurity and Fintech working groups. Prior to the SEC, Gary was at the Commodity Futures Trading Commission (CFTC) where he was the Director of the Division of Swap Dealer and Intermediary Oversight (now the Market Participants Division). He has advised various types of large financial institutions on financial, compliance, governance, and regulatory matters. He has deep knowledge of, and experience with, a wide variety of financial products, structures and markets, and deep knowledge of US law, regulation and operations relating to securities, derivatives, and commodities activities as well as investment management, asset servicing and trust and custody law and operations."
     }
   ]
 }

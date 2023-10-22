@@ -13,6 +13,7 @@ import dataEconomyRoles from "../../payload/data_econonmy_roles.json";
 import valuePropositionItems from "../../payload/value_propositions_items.json";
 import { LinkButtonInternalRoute } from "../../components/LinkButton";
 import { externalRoutes, internalRoutes } from "../../config";
+import { HorizontalLine } from "../../components/HorizontalLine";
 
 export interface Home {
   className?: string;
@@ -39,7 +40,7 @@ export function Home({ className }: Home) {
         items={dataEconomyRoles.data as DataEconomyRoles["items"]}
         title="What is your Role in the Data Economy?"
       />
-      <hr className="hidden h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-0 lg:block" />
+      <HorizontalLine />
       <SplitImages
         className="peerdata-container h-3/4"
         left={Home3}
