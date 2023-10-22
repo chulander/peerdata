@@ -6,20 +6,20 @@ export interface Signup {
 }
 export function Signup({ className }: Signup) {
   return (
-    <div className="border-b border-solid border-white bg-brand-dark-blue">
-      <div
-        className={classNames(
-          "xs:flex xs:flex-col xs:items-center mx-auto bg-circular bg-no-repeat py-12 sm:block lg:flex lg:flex-col lg:gap-x-10",
-          !className ? "" : className
-        )}
-      >
-        <h2 className="mt-8 text-2xl md:text-5xl xl:text-6xl font-thin leading-7 lg:leading-[3.65rem] tracking-tight text-white md:max-w-full lg:max-w-3xl xl:max-w-6xl">
+    <div
+      className={classNames(
+        "border-b border-solid border-white bg-brand-dark-blue",
+        !className ? "" : className
+      )}
+    >
+      <div className="xs:flex xs:flex-col xs:items-center mx-auto bg-circular bg-no-repeat sm:block lg:flex lg:flex-col lg:gap-x-10">
+        <h2 className="text-2xl font-thin leading-7 tracking-tight text-white md:max-w-full md:text-5xl lg:max-w-3xl lg:leading-[3.65rem] xl:max-w-6xl xl:text-6xl">
           Stay up to date with the latest news and trends in data. Sign up to
           the PEER DATA Newsletter, where we cover datasets, technology, and
           company news.
         </h2>
         <InputButton
-          className="mb-40 mt-36 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[39%]"
+          className="mt-36 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[39%]"
           buttonClass="bg-brand-light-background"
           id="hero-signup"
           isPrimary={false}

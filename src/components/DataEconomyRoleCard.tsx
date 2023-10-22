@@ -17,15 +17,20 @@ export function DataEconomyRoleCard({
   return (
     <article
       className={classNames(
-        "flex w-full max-w-full flex-col border border-brand-dark-blue px-8 pt-8",
+        "flex w-full max-w-full flex-col pt-8",
         !className ? "" : className
       )}
     >
-      <Icon name={icon} />
-      <h4 className="mt-20 text-brand-dark-blue body-small font-medium">
-        {title}
-      </h4>
-      <p className="mb-14 mt-4 text-brand-dark-blue font-light text-[1.6rem] leading-7 tracking-tight">
+      <div className="flex justify-center lg:flex-col">
+        <Icon className="mr-6 self-end lg:mr-0 lg:self-start" name={icon} />
+        <h4
+          className="body-small mt-20 font-medium
+          text-black"
+        >
+          {title}
+        </h4>
+      </div>
+      <p className="mb-14 mt-4 text-[1.6rem] font-light leading-7 tracking-tight text-black">
         {description}
       </p>
     </article>

@@ -31,10 +31,10 @@ export function Company({ className }: Company) {
         mainContent="The data market itself has long standing challenges. The data discovery and procurement processes are still largely manual, licensing rights management is based on honesty statements, and understanding the quality of data is a time-consuming, subjective process."
       />
 
-      <hr className="my-36 hidden h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-52 lg:block" />
+      {/* <hr className="mt-18 hidden h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-24 lg:block" /> */}
       <ValueProps
         items={competitiveEdges.data as ValueProps["items"]}
-        className="peerdata-container my-10 lg:my-0"
+        className="peerdata-container my-10 bg-brand-light-background lg:my-0"
         buttonLabel="Find out more"
         externalHref={externalRoutes.waitlist.href}
         title="PEER DATA is helping the participants in the data ecosystem by building tools which:"
@@ -50,7 +50,7 @@ export function Company({ className }: Company) {
         mainContent="Are you someone who loves collobration while having a thirst for knowledge when it comes to data science? Then head over to our job listings today!"
       />
       <SplitImages
-        className="peerdata-container-assets-only mb-10 lg:mb-60 mt-20 h-3/4"
+        className="peerdata-container-assets-only mb-10 mt-20 h-3/4 lg:mb-60"
         left={Home3}
         right={Home4}
       />

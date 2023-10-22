@@ -22,32 +22,31 @@ export function Home({ className }: Home) {
     <section className={className}>
       <Hero className="peerdata-container" />
       <SplitImages
-        className="peerdata-container-assets-only mt-20 h-3/4"
+        className="peerdata-container h-3/4"
         left={Home1}
         right={Home2}
       />
       <LeftText
-        className="peerdata-container bg-brand-light-background py-20 lg:mt-40"
+        className="peerdata-container bg-brand-light-background"
         category="Data Revolution"
-        mainContent="Data is experiencing exponential growth, having doubled in the last two years. And
-        despite an ever-increasing demand for diverse and extensive datasets, the industry has
-        no direct way to invest in data."
+        mainContent="Data is experiencing exponential growth, having doubled in the last two years. There is an ever-increasing demand for diverse and extensive datasets, and yet the industry has no direct way to invest in data."
         subContent="PEER DATA is building tools to empower organizations to unlock the maximum value of
         their data, amplify its reach and allow institutions to invest in the data asset class."
       />
       <DataEconomyRoles
         buttonLabel="Contact us"
-        className="peerdata-container lg:mt-48"
+        className="peerdata-container"
         items={dataEconomyRoles.data as DataEconomyRoles["items"]}
         title="What is your Role in the Data Economy?"
       />
+      <hr className="hidden h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-0 lg:block" />
       <SplitImages
-        className="peerdata-container-assets-only mt-20 h-3/4"
+        className="peerdata-container h-3/4"
         left={Home3}
         right={Home4}
       />
       <LeftText
-        className="peerdata-container bg-brand-light-background py-20 lg:mt-40"
+        className="peerdata-container bg-brand-light-background"
         category="Mission"
         title="Our mission is to empower organizations to transform their data into assets."
         mainContent="PEER DATA was born out of the observation that data is powering nearly
@@ -65,10 +64,9 @@ export function Home({ className }: Home) {
           Find out more
         </LinkButtonInternalRoute>
       </LeftText>
-      <hr className="my-36 hidden h-0.5 bg-brand-dark-blue px-12 lg:mx-12 lg:my-52 lg:block" />
       <ValueProps
         items={valuePropositionItems.data as ValueProps["items"]}
-        className="peerdata-container my-10 lg:my-0"
+        className="peerdata-container"
         buttonLabel="Contact us"
         externalHref={internalRoutes.contact.href}
         title="We aim to unlock maxium value and amplify reach by:"

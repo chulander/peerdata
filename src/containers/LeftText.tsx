@@ -25,9 +25,9 @@ export function LeftText({
     >
       <article className="flex w-full flex-col xl:basis-[47%]">
         <header>
-          <h4 className="body-x-small lg:body-small uppercase text-brand-green">
+          <h2 className="peerdata-header">
             {category}
-          </h4>
+          </h2>
         </header>
         {[title, mainContent, subContent].map((item) =>
           !item ? null : (

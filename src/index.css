@@ -136,7 +136,7 @@
   @apply text-8xl font-medium tracking-tight;
 }
 .header-2 {
-  @apply font-normal tracking-tight text-4xl md:text-6xl lg:text-7xl;
+  @apply text-4xl font-normal tracking-tight md:text-6xl lg:text-7xl;
 }
 .header-3 {
   @apply text-xl font-normal uppercase tracking-tight;
@@ -152,6 +152,10 @@
 }
 .body-x-small {
   @apply text-xl font-normal leading-6 tracking-tight;
+}
+
+.peerdata-header {
+  @apply text-4xl font-bold tracking-tight text-black md:text-6xl lg:text-[4.1rem] lg:leading-10 lg:tracking-tighter;
 }
 
 .focus {
@@ -174,10 +178,10 @@
   font-family: "indivisible", sans-serif;
 }
 .peerdata-container {
-  @apply px-5 lg:px-12;
+  @apply px-5 lg:px-12 py-16;
 }
 .peerdata-container-assets-only {
-  @apply lg:px-12;
+  @apply px-5 lg:px-12 gap-y-10;
 }
 
 .Modal {

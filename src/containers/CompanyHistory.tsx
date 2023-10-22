@@ -23,7 +23,7 @@ export function CompanyHistory({
     >
       <article className="hidden w-full flex-col lg:flex lg:pr-20 xl:basis-6/12">
         <header>
-          <h4 className="body-small uppercase text-brand-green">{category}</h4>
+          <h2 className="peerdata-header uppercase">{category}</h2>
         </header>
         {!title ? null : (
           <p className="mb-4 mt-5 text-[3.4rem] font-normal leading-[3.75rem] tracking-tight">

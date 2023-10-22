@@ -11,10 +11,10 @@ export interface Footer {
 
 export function Footer({ className, items }: Footer) {
   return (
-    <footer className="flex flex-col bg-brand-deep-blue lg:gap-y-60">
+    <footer className="flex flex-col bg-brand-deep-blue">
       <section
         className={classNames(
-          "block w-full pb-12 pt-24 lg:flex xl:justify-between",
+          "block w-full lg:flex xl:justify-between",
           !className ? "" : className
         )}
       >
@@ -74,7 +74,7 @@ export function Footer({ className, items }: Footer) {
       </section>
       <section
         className={classNames(
-          "mb-14 flex w-full gap-x-8",
+          "flex w-full gap-x-8",
           !className ? "" : className
         )}
       >

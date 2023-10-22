@@ -131,7 +131,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
   return (
     <section
       className={classNames(
-        "lg:mt-40 pt-10 lg:pb-24",
+        "pt-10 lg:mt-40 lg:pb-24",
         !className ? "" : className
       )}
     >
@@ -189,7 +189,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
               <Dropdown
                 disabled={isLoading}
                 items={items}
-                className="focus bg-brand-light-background"
+                className="focus"
                 value={persona}
                 onChange={onPersonaChange}
               />

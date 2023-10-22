@@ -20,14 +20,14 @@ export function ValueProps({
   return (
     <div
       className={classNames(
-        "flex flex-col items-center justify-between pb-24 lg:mb-40",
+        "flex flex-col items-center justify-between",
         !className ? "" : className
       )}
     >
       <header className="w-full self-start xl:w-8/12">
-        <h1 className="text-3xl lg:text-[3.15rem] font-normal leading-9 lg:leading-10 tracking-tighter text-black lg:max-w-xl xl:max-w-3xl">
+        <h2 className="peerdata-header">
           {title}
-        </h1>
+        </h2>
       </header>
       <section className="mt-16 flex w-full flex-col gap-y-12 lg:flex-row lg:gap-x-24 lg:gap-y-0">
         {items.map((item) => (
