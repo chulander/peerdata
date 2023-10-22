@@ -17,7 +17,7 @@ export function DataEconomyRoleCard({
   return (
     <article
       className={classNames(
-        "flex w-full max-w-full flex-col pt-8",
+        "flex w-full max-w-full flex-col lg:pt-8",
         !className ? "" : className
       )}
     >
@@ -30,7 +30,7 @@ export function DataEconomyRoleCard({
           {title}
         </h4>
       </div>
-      <p className="mb-14 mt-4 text-[1.6rem] font-light leading-7 tracking-tight text-black">
+      <p className="mb-14 mt-8 text-[1.6rem] font-light leading-7 tracking-tight text-black lg:mt-4">
         {description}
       </p>
     </article>

@@ -17,7 +17,7 @@ export function CompanyHistory({
   return (
     <section
       className={classNames(
-        "flex h-full w-full items-center justify-between overflow-hidden lg:pb-40",
+        "flex h-full w-full flex-col items-center justify-between overflow-hidden lg:flex-row lg:pb-40",
         !className ? "" : className
       )}
     >
@@ -49,33 +49,29 @@ export function CompanyHistory({
         </div>
       </article>
       {/* mobile view */}
-      <section className="mt-10 flex h-full w-full flex-col lg:hidden">
-        <article className="flex w-full flex-col lg:pr-20 xl:basis-6/12">
-          <header>
-            <h4 className="body-x-small uppercase text-brand-green">
-              {category}
-            </h4>
-          </header>
-        </article>
-        <article className="flex w-full flex-col lg:hidden lg:pr-20 xl:basis-6/12">
-          {!title ? null : (
-            <p className="mb-4 mt-5 text-[3.4rem] font-normal leading-[3.75rem] tracking-tight">
-              {title}
-            </p>
-          )}
-          <p className="mt-5 text-[1.3rem] leading-[1.8rem] tracking-tight text-current lg:text-[1.6rem] lg:leading-7">
-            {mainContent}
+      <article className="flex w-full flex-col lg:hidden lg:pr-20 xl:basis-6/12">
+        <header>
+          <h4 className="peerdata-header uppercase">{category}</h4>
+        </header>
+      </article>
+      <article className="flex w-full flex-col lg:hidden lg:pr-20 xl:basis-6/12">
+        {!title ? null : (
+          <p className="mb-4 mt-5 text-[3.4rem] font-normal leading-[3.75rem] tracking-tight">
+            {title}
           </p>
-        </article>
+        )}
+        <p className="mt-5 text-[1.3rem] leading-[1.8rem] tracking-tight text-current lg:hidden lg:text-[1.6rem] lg:leading-7">
+          {mainContent}
+        </p>
+      </article>
 
-        <article className="mt-10 w-full lg:hidden">
-          <img
-            alt="home-1"
-            className="max-h-screen w-full bg-cover bg-no-repeat"
-            src={Image1}
-          ></img>
-        </article>
-      </section>
+      <article className="mt-16 w-full lg:hidden">
+        <img
+          alt="home-1"
+          className="max-h-screen w-full bg-cover bg-no-repeat"
+          src={Image1}
+        ></img>
+      </article>
     </section>
   );
 }

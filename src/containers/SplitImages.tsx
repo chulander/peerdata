@@ -20,7 +20,7 @@ export function SplitImages({ className, left, right }: SplitImages) {
       ></img>
       <img
         alt="home-2"
-        className="max-h-screen lg:mt-48 lg:h-full lg:w-10 lg:basis-1/2"
+        className="hidden max-h-screen lg:mt-48 lg:block lg:h-full lg:w-10 lg:basis-1/2"
         src={right}
       ></img>
     </section>

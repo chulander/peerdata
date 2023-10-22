@@ -17,18 +17,18 @@ export function CompanyTransparency({
   return (
     <section
       className={classNames(
-        "mt-10 w-full lg:mt-0 lg:flex lg:items-center",
+        "w-full lg:flex lg:items-center lg:gap-x-10",
         !className ? "" : className
       )}
     >
-      <article className="hidden w-full grow justify-end lg:flex lg:pr-20 xl:h-1/2 xl:basis-6/12">
+      <article className="hidden w-full grow justify-end lg:flex lg:basis-4/12 xl:h-1/2 xl:basis-6/12">
         <img
           alt="home-1"
           className="max-h-screen bg-contain bg-no-repeat object-scale-down"
           src={Image3}
         ></img>
       </article>
-      <article className="flex grow flex-col lg:pr-20 xl:basis-6/12">
+      <article className="flex grow flex-col lg:basis-8/12 xl:basis-6/12">
         <header>
           <h2 className="peerdata-header uppercase">{category}</h2>
         </header>
@@ -41,7 +41,7 @@ export function CompanyTransparency({
           {mainContent}
         </p>
       </article>
-      <article className="mt-10 w-full justify-end lg:hidden">
+      <article className="mt-16 w-full justify-end lg:hidden">
         <img
           alt="home-1"
           className="max-h-screen w-full bg-cover bg-no-repeat"
