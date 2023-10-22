@@ -15,7 +15,7 @@ export function Signup({ className }: Signup) {
       <div className="xs:flex xs:flex-col xs:items-center mx-auto bg-circular bg-no-repeat sm:block lg:flex lg:flex-col lg:gap-x-10">
         <h2 className="text-2xl font-thin leading-7 tracking-tight text-white md:max-w-full md:text-5xl lg:max-w-3xl lg:leading-[3.65rem] xl:max-w-6xl xl:text-6xl">
           Stay up to date with the latest news and trends in data. Sign up to
-          the PEER DATA Newsletter, where we cover datasets, technology, and
+          the Peer Data Newsletter, where we cover datasets, technology, and
           company news.
         </h2>
         <InputButton

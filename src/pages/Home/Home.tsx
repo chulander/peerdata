@@ -30,7 +30,7 @@ export function Home({ className }: Home) {
         className="peerdata-container bg-brand-light-background"
         category="Data Revolution"
         mainContent="Data is experiencing exponential growth, having doubled in the last two years. There is an ever-increasing demand for diverse and extensive datasets, and yet the industry has no direct way to invest in data."
-        subContent="PEER DATA is building tools to empower organizations to unlock the maximum value of
+        subContent="Peer Data is building tools to empower organizations to unlock the maximum value of
         their data, amplify its reach and allow institutions to invest in the data asset class."
       />
       <DataEconomyRoles
@@ -49,7 +49,7 @@ export function Home({ className }: Home) {
         className="peerdata-container bg-brand-light-background"
         category="Mission"
         title="Our mission is to empower organizations to transform their data into assets."
-        mainContent="PEER DATA was born out of the observation that data is powering nearly
+        mainContent="Peer Data was born out of the observation that data is powering nearly
         everything we do today and is becoming an essential commodity for the digital world.
         Usage of data to power artificial intelligence (AI) is rapidly growing across all industries."
         subContent="We witnessed the transformative journey of data, from its role in supporting human

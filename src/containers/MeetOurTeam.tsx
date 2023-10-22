@@ -18,7 +18,7 @@ export function MeetOurTeam({ className, teamMembers }: MeetOurTeam) {
           Meet our team team of experts
         </h4>
         <p className="mt-4 text-[1.3rem] font-thin leading-[1.8rem] text-brand-light-background lg:w-3/5 lg:text-[1.6rem] lg:leading-7 lg:tracking-tight">
-          The PEER DATA founding team has a proven track record of success in
+          The Peer Data founding team has a proven track record of success in
           the financial data industry. We have built a multi-trillion-dollar
           asset class (ABX and CMBX), collectively ran $1B+ data businesses, and
           worked together for over 10 years. We have a strong understanding of

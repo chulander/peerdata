@@ -35,7 +35,7 @@ export function Hero({ className }: Hero) {
       </div>
       <iframe
         className="mt-7 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[30%]"
-        title="Sign up for the PEER DATA Newsletter"
+        title="Sign up for the Peer Data Newsletter"
         src="https://embeds.beehiiv.com/53970974-f548-44fe-b43f-c5c4f1f5f43c?slim=true"
         data-test-id="beehiiv-embed"
         // frameBorder="0"

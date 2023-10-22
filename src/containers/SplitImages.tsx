@@ -9,7 +9,7 @@ export function SplitImages({ className, left, right }: SplitImages) {
   return (
     <section
       className={classNames(
-        "flex lg:gap-y-12 flex-col w-full lg:flex-row lg:items-center lg:justify-between lg:gap-x-16",
+        "flex w-full flex-col gap-y-16 lg:flex-row lg:justify-between lg:gap-x-16 lg:gap-y-0",
         !className ? "" : className
       )}
     >

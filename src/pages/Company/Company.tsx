@@ -37,7 +37,7 @@ export function Company({ className }: Company) {
         className="peerdata-container my-10 bg-brand-light-background lg:my-0"
         buttonLabel="Find out more"
         externalHref={externalRoutes.waitlist.href}
-        title="PEER DATA is helping the participants in the data ecosystem by building tools which:"
+        title="Peer Data is helping the participants in the data ecosystem by building tools which:"
       />
       <MeetOurTeam
         className="peerdata-container"

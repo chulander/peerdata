@@ -21,12 +21,12 @@ export function AlternateHero({ className }: AlternateHero) {
           <h1 className="header-2 mt-10 font-medium text-black lg:w-full">
             Everyone is in the data business, they just don&apos;t know it yet
           </h1>
-          <p className="mt-8 text-[1.6rem] leading-7 tracking-tight text-black xl:w-3/5">
-            At PEER DATA, we are passionate about helping businesses unlock the
+          <p className="mt-8 mb-16 text-[1.6rem] leading-7 tracking-tight text-black xl:w-3/5">
+            At Peer Data, we are passionate about helping businesses unlock the
             full value of their data and transform how data operates in the
             market.
           </p>
-          <section className="mt-12 flex flex-col items-center gap-y-4 lg:flex-row lg:gap-y-0">
+          <section className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-y-0">
             <LinkButton
               className="w-full text-[1.15rem] font-normal"
               to={externalRoutes["waitlist"].href}

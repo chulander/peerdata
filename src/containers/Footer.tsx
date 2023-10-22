@@ -52,7 +52,7 @@ export function Footer({ className, items }: Footer) {
           </header>
           <p className="text-md mt-2 font-thin text-brand-light-background">
             Stay up to date with the latest news and trends in data. Sign up to
-            the PEER DATA Newsletter, where we cover datasets, technology, and
+            the Peer Data Newsletter, where we cover datasets, technology, and
             company news.
           </p>
           <InputButton
