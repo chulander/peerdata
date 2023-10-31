@@ -3,7 +3,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink, NavLinkWithRef } from "../components/NavLink";
 import { classNames } from "../utils";
 import { Icon } from "../components/Icon";
-import { useState } from "react";
 
 export interface Nav {
   className?: string;

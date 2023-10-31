@@ -55,7 +55,23 @@ export function Footer({ className, items }: Footer) {
             the Peer Data Newsletter, where we cover datasets, technology, and
             company news.
           </p>
-          <InputButton
+          <div className="mt-8 h-16 w-full text-[1.35rem]">
+            <iframe
+              src="https://embeds.beehiiv.com/3c4248e2-aa56-46f4-80bd-93ae1e8a5772?slim=true"
+              title="Newsletter Signup2"
+              data-test-id="beehiiv-embed"
+              height="52"
+              width={"100%"}
+              frameBorder="0"
+              scrolling="no"
+              style={{
+                margin: "0",
+                borderRadius: "0px",
+                backgroundColor: "transparent",
+              }}
+            ></iframe>
+          </div>
+          {/* <InputButton
             className="mt-8 h-16 w-full text-[1.35rem]"
             buttonClass="bg-brand-light-background"
             id="hero-signup"
@@ -69,7 +85,7 @@ export function Footer({ className, items }: Footer) {
             onClick={() => {
               console.log("test");
             }}
-          />
+          /> */}
         </article>
       </section>
       <section

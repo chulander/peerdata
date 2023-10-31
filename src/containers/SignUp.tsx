@@ -1,5 +1,5 @@
 import { classNames } from "../utils";
-import { InputButton } from "./InputButton";
+// import { InputButton } from "./InputButton";
 
 export interface Signup {
   className?: string;
@@ -18,7 +18,53 @@ export function Signup({ className }: Signup) {
           the Peer Data Newsletter, where we cover datasets, technology, and
           company news.
         </h2>
-        <InputButton
+        {/* <iframe
+          src="https://embeds.beehiiv.com/3c4248e2-aa56-46f4-80bd-93ae1e8a5772"
+          data-test-id="beehiiv-embed"
+          title="Newsletter Signup 1"
+          width="100%"
+          height="320"
+          frameBorder="0"
+          scrolling="no"
+          style={{
+            borderRadius: "4px",
+            border: "2px solid #e5e7eb",
+            margin: "0",
+            backgroundColor: "transparent",
+          }}
+        ></iframe>
+        <iframe
+          src="https://embeds.beehiiv.com/3c4248e2-aa56-46f4-80bd-93ae1e8a5772"
+          title="Newsletter Signup"
+          data-test-id="beehiiv-embed"
+          width="480"
+          height="320"
+          frameBorder="0"
+          scrolling="no"
+          style={{
+            borderRadius: "4px",
+            border: "2px solid #e5e7eb",
+            margin: "0",
+            backgroundColor: "transparent",
+          }}
+        ></iframe> */}
+        <div className="mt-36 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[39%]">
+          <iframe
+            src="https://embeds.beehiiv.com/3c4248e2-aa56-46f4-80bd-93ae1e8a5772?slim=true"
+            title="Newsletter Signup2"
+            data-test-id="beehiiv-embed"
+            height="52"
+            width={"100%"}
+            frameBorder="0"
+            scrolling="no"
+            style={{
+              margin: "0",
+              borderRadius: "0px",
+              backgroundColor: "transparent",
+            }}
+          ></iframe>
+        </div>
+        {/* <InputButton
           className="mt-36 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[39%]"
           buttonClass="bg-brand-light-background"
           id="hero-signup"
@@ -32,7 +78,7 @@ export function Signup({ className }: Signup) {
           onClick={() => {
             console.log("test");
           }}
-        />
+        /> */}
       </div>
     </div>
   );
