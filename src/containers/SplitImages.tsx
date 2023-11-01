@@ -9,18 +9,18 @@ export function SplitImages({ className, left, right }: SplitImages) {
   return (
     <section
       className={classNames(
-        "flex gap-y-12 flex-col w-full lg:flex-row lg:items-center lg:justify-between lg:gap-x-16",
+        "flex w-full flex-col gap-y-16 lg:flex-row lg:justify-between lg:gap-x-16 lg:gap-y-0",
         !className ? "" : className
       )}
     >
       <img
         alt="home-1"
-        className="lg:mb-36 lg:h-full lg:w-10 lg:basis-1/2"
+        className="max-h-screen lg:mb-36 lg:h-full lg:w-10 lg:basis-1/2"
         src={left}
       ></img>
       <img
         alt="home-2"
-        className="lg:mt-48 lg:h-full lg:w-10 lg:basis-1/2"
+        className="hidden max-h-screen lg:mt-48 lg:block lg:h-full lg:w-10 lg:basis-1/2"
         src={right}
       ></img>
     </section>

@@ -136,7 +136,7 @@
   @apply text-8xl font-medium tracking-tight;
 }
 .header-2 {
-  @apply text-7xl font-normal tracking-tight;
+  @apply text-4xl font-normal tracking-tight md:text-6xl lg:text-7xl;
 }
 .header-3 {
   @apply text-xl font-normal uppercase tracking-tight;
@@ -154,6 +154,10 @@
   @apply text-xl font-normal leading-6 tracking-tight;
 }
 
+.peerdata-header {
+  @apply text-4xl font-bold tracking-tight text-black md:text-6xl lg:text-[4.1rem] lg:leading-10 lg:tracking-tighter;
+}
+
 .focus {
   @apply focus:outline-dashed focus:outline-2 focus:outline-offset-4 focus:outline-brand-green focus-visible:outline-dashed focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-green;
 }
@@ -164,7 +168,7 @@
   @apply focus border-2 border-solid border-brand-dark-blue bg-transparent text-brand-dark-blue hover:border-brand-dark-blue hover:bg-brand-light-background;
 }
 .anchor {
-  @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-2 underline-offset-4 hover:decoration-transparent;
+  @apply border-brand-blue text-brand-blue underline decoration-brand-blue decoration-solid decoration-1 underline-offset-4 hover:decoration-transparent;
 }
 .anchor-border {
   @apply border-b border-brand-blue text-brand-blue hover:border-transparent;
@@ -172,6 +176,9 @@
 
 .tk-indivisible {
   font-family: "indivisible", sans-serif;
+}
+.peerdata-container {
+  @apply px-5 py-10 md:py-16 lg:px-12;
 }
 
 .Modal {

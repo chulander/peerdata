@@ -1,7 +1,7 @@
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
-  PhoneIcon,
+  // PhoneIcon,
 } from "@heroicons/react/24/outline";
 
 import { classNames } from "../utils";
@@ -19,9 +19,11 @@ export function ContactUs({ className }: ContactUs) {
       )}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
+        <div className="relative mt-40 lg:myb-40 lg:mt-0 lg:px-8 lg:pb-20 lg:pt-48">
           <div className="mx-auto lg:mx-0">
-            <h2 className="text-6xl font-medium text-black">Contact us</h2>
+            <h2 className="text-4xl font-medium text-black lg:text-6xl">
+              Contact us
+            </h2>
             <p className="mt-6 text-lg font-light leading-6 text-black">
               Let us help you make better business decisions.
             </p>
@@ -30,7 +32,7 @@ export function ContactUs({ className }: ContactUs) {
             </p>
             <dl className="mt-10 space-y-4 text-base font-light leading-7 text-black">
               <a
-                className="focus hover:text-brand-700 flex gap-x-4 text-black"
+                className="focus hover:text-brand-700 flex items-center gap-x-4 text-black"
                 href={`mailto:${externalRoutes.mailbox.href}`}
               >
                 <dt className="flex-none">
@@ -72,10 +74,9 @@ export function ContactUs({ className }: ContactUs) {
                     aria-hidden="true"
                   />
                 </dt>
-                <dd className="focus hover:text-brand-700 text-black">
-                  560 Sylvan Ave
-                  <br />
-                  Englewood Cliffs, New Jersey 07632
+                <dd className="focus hover:text-brand-700 flex flex-col text-black">
+                  <span>560 Sylvan Ave</span>
+                  <span>Englewood Cliffs, New Jersey 07632</span>
                 </dd>
               </a>
             </dl>

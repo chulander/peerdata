@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
   <g id="Group_158" data-name="Group 158" transform="translate(616 138)">
-    <g id="Rectangle_131" data-name="Rectangle 131" transform="translate(-616 -138)" fill="none" stroke="#000" stroke-width="1">
+    <g id="Rectangle_131" data-name="Rectangle 131" transform="translate(-616 -138)" fill="none" stroke="currentColor" stroke-width="1">
       <rect width="21" height="21" rx="3" stroke="none"/>
       <rect x="0.5" y="0.5" width="20" height="20" rx="2.5" fill="none"/>
     </g>
-    <path id="Path_73" data-name="Path 73" d="M1847.051,44.724h19.413" transform="translate(-2462.202 -178)" fill="none" stroke="#000" stroke-width="1"/>
-    <g id="Rectangle_132" data-name="Rectangle 132" transform="translate(-613 -131)" fill="none" stroke="#000" stroke-width="1">
+    <path id="Path_73" data-name="Path 73" d="M1847.051,44.724h19.413" transform="translate(-2462.202 -178)" fill="none" stroke="currentColor" stroke-width="1"/>
+    <g id="Rectangle_132" data-name="Rectangle 132" transform="translate(-613 -131)" fill="none" stroke="currentColor" stroke-width="1">
       <rect width="5" height="5" rx="1" stroke="none"/>
       <rect x="0.5" y="0.5" width="4" height="4" rx="0.5" fill="none"/>
     </g>

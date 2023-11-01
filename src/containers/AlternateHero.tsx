@@ -16,25 +16,25 @@ export function AlternateHero({ className }: AlternateHero) {
         !className ? "" : className
       )}
     >
-      <div className="mx-auto my-8 pb-36 lg:flex lg:flex-col lg:gap-x-10">
+      <div className="mx-auto my-16 pb-36 lg:my-8 lg:flex lg:flex-col lg:gap-x-10">
         <div className=" xs:flex xs:flex-col xs:items-center sm:block">
           <h1 className="header-2 mt-10 font-medium text-black lg:w-full">
             Everyone is in the data business, they just don&apos;t know it yet
           </h1>
-          <p className="mt-8 text-[1.6rem] leading-7 tracking-tight text-black xl:w-3/5">
-            At PEER DATA, we are passionate about helping businesses unlock the
+          <p className="mt-8 mb-16 text-[1.6rem] leading-7 tracking-tight text-black xl:w-3/5">
+            At Peer Data, we are passionate about helping businesses unlock the
             full value of their data and transform how data operates in the
             market.
           </p>
-          <section className="mt-12 flex items-center">
+          <section className="flex flex-col items-center gap-y-4 lg:flex-row lg:gap-y-0">
             <LinkButton
-              className="w-48 text-[1.15rem] font-normal"
+              className="w-full text-[1.15rem] font-normal"
               to={externalRoutes["waitlist"].href}
             >
               Learn more
             </LinkButton>
             <Anchor
-              className="ml-10 text-[1.15rem] tracking-tight"
+              className="w-full text-center text-xl tracking-tight lg:ml-10 lg:text-left lg:text-[1.15rem]"
               to={externalRoutes["careers"].href}
               target="_blank"
               id="join-our-team"

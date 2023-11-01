@@ -7,7 +7,7 @@ export interface Hero {
 export function Hero({ className }: Hero) {
   return (
     <div className={classNames("relative pt-24", !className ? "" : className)}>
-      <div className="mx-auto my-8 lg:flex lg:flex-col lg:gap-x-10">
+      <div className="mx-auto my-16 lg:my-8 lg:flex lg:flex-col lg:gap-x-10">
         <div className=" xs:flex xs:flex-col xs:items-center sm:block">
           <h1 className="header-2 mt-10 font-medium text-black">
             Powering and digitizing
@@ -35,7 +35,7 @@ export function Hero({ className }: Hero) {
       </div>
       <iframe
         className="mt-7 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[30%]"
-        title="Sign up for the PEER DATA Newsletter"
+        title="Sign up for the Peer Data Newsletter"
         src="https://embeds.beehiiv.com/53970974-f548-44fe-b43f-c5c4f1f5f43c?slim=true"
         data-test-id="beehiiv-embed"
         // frameBorder="0"

@@ -18,22 +18,19 @@ export function DataEconomyRoles({
   return (
     <div className={classNames("flex w-full", !className ? "" : className)}>
       <section
-        className="flex flex-col items-center justify-between pb-24 pt-16
-      "
+        className="flex flex-col items-center justify-between "
       >
         <header className="w-full">
-          <h1 className="text-[4.1rem] leading-10 tracking-tighter text-brand-dark-blue">
-            {title}
-          </h1>
+          <h2 className="peerdata-header uppercase">{title}</h2>
         </header>
-        <section className="mt-16 flex w-full flex-col gap-y-12 lg:flex-row lg:gap-x-16 lg:gap-y-0">
+        <section className="flex w-full flex-col gap-y-6 lg:mt-16 lg:flex-row lg:gap-x-16 lg:gap-y-0">
           {items.map((item) => (
             <DataEconomyRoleCard key={item.id} {...item} />
           ))}
         </section>
 
         <LinkButtonInternalRoute
-          className="mt-10 w-full self-start text-[1.35rem] lg:w-[28%] xl:w-[19%]"
+          className="mt-10 w-full text-[1.35rem] lg:w-[28%] xl:w-[19%]"
           to={internalRoutes.contact.href}
         >
           {buttonLabel}

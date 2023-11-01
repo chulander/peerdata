@@ -1,4 +1,4 @@
-# PEER DATA Marketing Page
+# Peer Data Marketing Page
 
 ## Installation instructions
 

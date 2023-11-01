@@ -17,7 +17,7 @@ export function LinkButton({
   return (
     <a
       className={classNames(
-        "flex w-fit items-center justify-between px-4 py-3 font-medium tracking-normal",
+        "flex items-center justify-between px-4 py-3 font-medium tracking-normal lg:w-4/12",
         isPrimary
           ? "button-primary text-white"
           : "button-secondary text-brand-dark-blue",
@@ -30,7 +30,7 @@ export function LinkButton({
       <span>{children}</span>
       <ArrowLongRightIcon
         className={classNames(
-          "-mr-2 ml-20 h-8",
+          "-mr-2 lg:ml-20 h-8",
           isPrimary ? "text-white" : "text-brand-dark-blue"
         )}
         aria-hidden="true"
@@ -48,7 +48,7 @@ export function LinkButtonInternalRoute({
   return (
     <NavLink
       className={classNames(
-        "flex w-fit items-center justify-between px-4 py-3 font-medium tracking-normal",
+        "flex w-fit items-center justify-between px-2 py-3 font-medium tracking-normal lg:px-4",
         isPrimary
           ? "button-primary text-white"
           : "button-secondary text-brand-dark-blue",
@@ -59,10 +59,10 @@ export function LinkButtonInternalRoute({
       {/* <span className="text-[1.4rem]">{children}</span> */}
       <span>{children}</span>
 
-      <span className="block">
+      <span className="">
         <ArrowLongRightIcon
           className={classNames(
-            "-mr-2 h-8 w-full",
+            "h-8 lg:-mr-2",
             isPrimary ? "text-white" : "text-brand-dark-blue"
           )}
           aria-hidden="true"

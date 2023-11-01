@@ -131,7 +131,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
   return (
     <section
       className={classNames(
-        "pb-24 pt-20 sm:pb-32 lg:py-48",
+        "pt-10 lg:mt-40 lg:pb-24",
         !className ? "" : className
       )}
     >
@@ -139,7 +139,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
         <header>
           <h2 className="text-normal text-3xl tracking-tight">{title}</h2>
         </header>
-        <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
+        <div className="mt-6 flex flex-col gap-y-6 lg:grid lg:grid-cols-2 lg:gap-x-8">
           <ContactUsInput
             disabled={isLoading}
             name="firstname"
@@ -189,7 +189,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
               <Dropdown
                 disabled={isLoading}
                 items={items}
-                className="bg-brand-light-background focus"
+                className="focus"
                 value={persona}
                 onChange={onPersonaChange}
               />
@@ -216,7 +216,7 @@ export function ContactUsForm({ className, title }: ContactUsForm) {
                 rows={4}
                 value={message}
                 onChange={onMessageChange}
-                className="block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand-dark-blue sm:text-sm sm:leading-6 focus"
+                className="focus block w-full border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-brand-dark-blue placeholder:text-brand-light-background focus:ring-2 focus:ring-inset focus:ring-brand-dark-blue sm:text-sm sm:leading-6"
               />
             </div>
           </div>
