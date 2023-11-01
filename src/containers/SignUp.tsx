@@ -50,15 +50,15 @@ export function Signup({ className }: Signup) {
         ></iframe> */}
         <div className="mt-36 h-16 w-full text-[1.35rem] lg:w-[59%] xl:w-[39%]">
           <iframe
-            src="https://embeds.beehiiv.com/3c4248e2-aa56-46f4-80bd-93ae1e8a5772?slim=true"
-            title="Newsletter Signup2"
+            src="https://embeds.beehiiv.com/53970974-f548-44fe-b43f-c5c4f1f5f43c?slim=true"
             data-test-id="beehiiv-embed"
+            title="Newsletter Signup2"
             height="52"
             width={"100%"}
             frameBorder="0"
             scrolling="no"
             style={{
-              margin: "0",
+              margin: 0,
               borderRadius: "0px",
               backgroundColor: "transparent",
             }}
